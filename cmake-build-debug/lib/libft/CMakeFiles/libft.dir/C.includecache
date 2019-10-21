@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../lib/libft/includes/libft.h
+string.h
+-
+stdint.h
+-
+
+/home/alexey/projects/push_swap/lib/libft/src/ft_lstd_push_front.c
+libft.h
+/home/alexey/projects/push_swap/lib/libft/src/libft.h
+

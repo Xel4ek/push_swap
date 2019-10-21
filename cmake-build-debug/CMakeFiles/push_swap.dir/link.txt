@@ -1,0 +1,1 @@
+/usr/bin/gcc -g   CMakeFiles/push_swap.dir/src/ft_lstprint.c.o CMakeFiles/push_swap.dir/src/read.c.o CMakeFiles/push_swap.dir/main.c.o  -o push_swap lib/libft/liblibft.a 
