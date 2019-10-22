@@ -9,15 +9,20 @@ void ft_lstd_pop_front(t_list **head)
 		{
 			if (!ptr)
 				ptr = *head;
+
 			if (ptr != (*head)->next)
 				ptr = (*head)->next;
 			else
 				ptr = NULL;
-			if (ptr)
+			if (ptr != NULL) {
 				ptr->prev = (*head)->prev;
+			}
 			ft_memdel(&((*head)->content));
 			ft_memdel((void**)head);
+			if (ptr != NULL)
+				ptr->prev->next = ptr;
 			*head = ptr;
+
 		}
 }
 //{

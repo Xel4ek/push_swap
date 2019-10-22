@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../includes/push_swap.h
+libft.h
+../includes/libft.h
+
+../lib/libft/includes/libft.h
+string.h
+-
+stdint.h
+-
+
+/cygdrive/e/shcool_42/push_swap/checker.c
+push_swap.h
+/cygdrive/e/shcool_42/push_swap/push_swap.h
+stdio.h
+-
+

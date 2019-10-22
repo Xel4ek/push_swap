@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	ft_strcmp(const char *s1, const char *s2)
+size_t	ft_strcmp(const char *s1, const char *s2)
 {
 	unsigned char *ptr1;
 	unsigned char *ptr2;

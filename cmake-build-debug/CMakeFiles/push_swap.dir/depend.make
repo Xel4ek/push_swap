@@ -5,9 +5,33 @@ CMakeFiles/push_swap.dir/main.c.o: ../includes/push_swap.h
 CMakeFiles/push_swap.dir/main.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/push_swap.dir/main.c.o: ../main.c
 
+CMakeFiles/push_swap.dir/src/ft_is_str_in_lstd.c.o: ../includes/push_swap.h
+CMakeFiles/push_swap.dir/src/ft_is_str_in_lstd.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/push_swap.dir/src/ft_is_str_in_lstd.c.o: ../src/ft_is_str_in_lstd.c
+
+CMakeFiles/push_swap.dir/src/ft_lstd_swap.c.o: ../includes/push_swap.h
+CMakeFiles/push_swap.dir/src/ft_lstd_swap.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/push_swap.dir/src/ft_lstd_swap.c.o: ../src/ft_lstd_swap.c
+
+CMakeFiles/push_swap.dir/src/ft_lstd_to_str.c.o: ../includes/push_swap.h
+CMakeFiles/push_swap.dir/src/ft_lstd_to_str.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/push_swap.dir/src/ft_lstd_to_str.c.o: ../src/ft_lstd_to_str.c
+
 CMakeFiles/push_swap.dir/src/ft_lstprint.c.o: ../includes/push_swap.h
 CMakeFiles/push_swap.dir/src/ft_lstprint.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/push_swap.dir/src/ft_lstprint.c.o: ../src/ft_lstprint.c
+
+CMakeFiles/push_swap.dir/src/ft_operation.c.o: ../includes/push_swap.h
+CMakeFiles/push_swap.dir/src/ft_operation.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/push_swap.dir/src/ft_operation.c.o: ../src/ft_operation.c
+
+CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.o: ../includes/push_swap.h
+CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.o: ../src/ft_swap_stacks.c
+
+CMakeFiles/push_swap.dir/src/is_sorted.c.o: ../includes/push_swap.h
+CMakeFiles/push_swap.dir/src/is_sorted.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/push_swap.dir/src/is_sorted.c.o: ../src/is_sorted.c
 
 CMakeFiles/push_swap.dir/src/read.c.o: ../includes/push_swap.h
 CMakeFiles/push_swap.dir/src/read.c.o: ../lib/libft/includes/libft.h

@@ -4,14 +4,26 @@
 
 int main() {
 	t_list *list;
-	char str[]="1 2 3 4 5 6 7 8 10 11 -1 0";
+	t_list *buff;
+	t_list *visizted;
+	char str[]="8 7 6 5 4 3 2 1";
 	int tmp[] = {123};
-
+	int size;
+	list = NULL;
+	buff = NULL;
+	visizted = NULL;
 	list = ft_strsplit_to_lstd(str);
-//	ft_lstditer(list, &ft_lstprint);
-//	printf("list size: %ld", ft_lstdlen(list));
-//	ft_lstd_push_front(&list, ft_lstdnew(tmp,sizeof(tmp)));
-	ft_lstditer(list, &ft_lstprint);
-//	ft_lstddel(&list);
+
+	ft_lstditer_two(list, buff, &ft_lstprint);
+	printf("--------------------------------------\n");
+//	ft_lstd_push_front(&visizted, ft_lstdnew(ft_lstd_to_str(list, buff, 8, 0, 8,0),
+//			18));
+//	ft_lstd_swap(&list);
+//	ft_lstd_push_front(&visizted, ft_lstdnew(ft_lstd_to_str(list, buff, 8, 0, 8,0),
+//											 18));
+//	ft_lstditer(visizted, &ft_lstprint);
+//	printf("%d\n",ft_is_str_in_lstd("1 2 3 4 5 6 7 8 /", visizted));
+	ft_operation("ra", &list, &buff);
+	ft_lstditer_two(list, buff, &ft_lstprint);
 	return 0;
 }

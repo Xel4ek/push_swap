@@ -39,38 +39,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/88/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /cygdrive/c/Users/Admin/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /snap/clion/88/bin/cmake/linux/bin/cmake -E remove -f
+RM = /cygdrive/c/Users/Admin/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alexey/projects/push_swap
+CMAKE_SOURCE_DIR = /cygdrive/e/shcool_42/push_swap
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alexey/projects/push_swap/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/e/shcool_42/push_swap/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/88/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/88/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/cygdrive/c/Users/Admin/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,11 +67,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/cygdrive/c/Users/Admin/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles /home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/e/shcool_42/push_swap/cmake-build-debug/CMakeFiles /cygdrive/e/shcool_42/push_swap/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/e/shcool_42/push_swap/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -124,6 +124,19 @@ push_swap/fast:
 .PHONY : push_swap/fast
 
 #=============================================================================
+# Target rules for targets named checker
+
+# Build rule for target.
+checker: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 checker
+.PHONY : checker
+
+# fast build rule for target.
+checker/fast:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/build
+.PHONY : checker/fast
+
+#=============================================================================
 # Target rules for targets named libft
 
 # Build rule for target.
@@ -135,6 +148,33 @@ libft: cmake_check_build_system
 libft/fast:
 	$(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/build
 .PHONY : libft/fast
+
+checker.o: checker.c.o
+
+.PHONY : checker.o
+
+# target to build an object file
+checker.c.o:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/checker.c.o
+.PHONY : checker.c.o
+
+checker.i: checker.c.i
+
+.PHONY : checker.i
+
+# target to preprocess a source file
+checker.c.i:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/checker.c.i
+.PHONY : checker.c.i
+
+checker.s: checker.c.s
+
+.PHONY : checker.s
+
+# target to generate assembly for a file
+checker.c.s:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/checker.c.s
+.PHONY : checker.c.s
 
 main.o: main.c.o
 
@@ -163,6 +203,96 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/main.c.s
 .PHONY : main.c.s
 
+src/ft_is_str_in_lstd.o: src/ft_is_str_in_lstd.c.o
+
+.PHONY : src/ft_is_str_in_lstd.o
+
+# target to build an object file
+src/ft_is_str_in_lstd.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_is_str_in_lstd.c.o
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_is_str_in_lstd.c.o
+.PHONY : src/ft_is_str_in_lstd.c.o
+
+src/ft_is_str_in_lstd.i: src/ft_is_str_in_lstd.c.i
+
+.PHONY : src/ft_is_str_in_lstd.i
+
+# target to preprocess a source file
+src/ft_is_str_in_lstd.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_is_str_in_lstd.c.i
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_is_str_in_lstd.c.i
+.PHONY : src/ft_is_str_in_lstd.c.i
+
+src/ft_is_str_in_lstd.s: src/ft_is_str_in_lstd.c.s
+
+.PHONY : src/ft_is_str_in_lstd.s
+
+# target to generate assembly for a file
+src/ft_is_str_in_lstd.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_is_str_in_lstd.c.s
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_is_str_in_lstd.c.s
+.PHONY : src/ft_is_str_in_lstd.c.s
+
+src/ft_lstd_swap.o: src/ft_lstd_swap.c.o
+
+.PHONY : src/ft_lstd_swap.o
+
+# target to build an object file
+src/ft_lstd_swap.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_swap.c.o
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstd_swap.c.o
+.PHONY : src/ft_lstd_swap.c.o
+
+src/ft_lstd_swap.i: src/ft_lstd_swap.c.i
+
+.PHONY : src/ft_lstd_swap.i
+
+# target to preprocess a source file
+src/ft_lstd_swap.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_swap.c.i
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstd_swap.c.i
+.PHONY : src/ft_lstd_swap.c.i
+
+src/ft_lstd_swap.s: src/ft_lstd_swap.c.s
+
+.PHONY : src/ft_lstd_swap.s
+
+# target to generate assembly for a file
+src/ft_lstd_swap.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_swap.c.s
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstd_swap.c.s
+.PHONY : src/ft_lstd_swap.c.s
+
+src/ft_lstd_to_str.o: src/ft_lstd_to_str.c.o
+
+.PHONY : src/ft_lstd_to_str.o
+
+# target to build an object file
+src/ft_lstd_to_str.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_to_str.c.o
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstd_to_str.c.o
+.PHONY : src/ft_lstd_to_str.c.o
+
+src/ft_lstd_to_str.i: src/ft_lstd_to_str.c.i
+
+.PHONY : src/ft_lstd_to_str.i
+
+# target to preprocess a source file
+src/ft_lstd_to_str.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_to_str.c.i
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstd_to_str.c.i
+.PHONY : src/ft_lstd_to_str.c.i
+
+src/ft_lstd_to_str.s: src/ft_lstd_to_str.c.s
+
+.PHONY : src/ft_lstd_to_str.s
+
+# target to generate assembly for a file
+src/ft_lstd_to_str.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_to_str.c.s
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstd_to_str.c.s
+.PHONY : src/ft_lstd_to_str.c.s
+
 src/ft_lstprint.o: src/ft_lstprint.c.o
 
 .PHONY : src/ft_lstprint.o
@@ -170,6 +300,7 @@ src/ft_lstprint.o: src/ft_lstprint.c.o
 # target to build an object file
 src/ft_lstprint.c.o:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstprint.c.o
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstprint.c.o
 .PHONY : src/ft_lstprint.c.o
 
 src/ft_lstprint.i: src/ft_lstprint.c.i
@@ -179,6 +310,7 @@ src/ft_lstprint.i: src/ft_lstprint.c.i
 # target to preprocess a source file
 src/ft_lstprint.c.i:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstprint.c.i
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstprint.c.i
 .PHONY : src/ft_lstprint.c.i
 
 src/ft_lstprint.s: src/ft_lstprint.c.s
@@ -188,7 +320,98 @@ src/ft_lstprint.s: src/ft_lstprint.c.s
 # target to generate assembly for a file
 src/ft_lstprint.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstprint.c.s
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstprint.c.s
 .PHONY : src/ft_lstprint.c.s
+
+src/ft_operation.o: src/ft_operation.c.o
+
+.PHONY : src/ft_operation.o
+
+# target to build an object file
+src/ft_operation.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_operation.c.o
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_operation.c.o
+.PHONY : src/ft_operation.c.o
+
+src/ft_operation.i: src/ft_operation.c.i
+
+.PHONY : src/ft_operation.i
+
+# target to preprocess a source file
+src/ft_operation.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_operation.c.i
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_operation.c.i
+.PHONY : src/ft_operation.c.i
+
+src/ft_operation.s: src/ft_operation.c.s
+
+.PHONY : src/ft_operation.s
+
+# target to generate assembly for a file
+src/ft_operation.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_operation.c.s
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_operation.c.s
+.PHONY : src/ft_operation.c.s
+
+src/ft_swap_stacks.o: src/ft_swap_stacks.c.o
+
+.PHONY : src/ft_swap_stacks.o
+
+# target to build an object file
+src/ft_swap_stacks.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.o
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_swap_stacks.c.o
+.PHONY : src/ft_swap_stacks.c.o
+
+src/ft_swap_stacks.i: src/ft_swap_stacks.c.i
+
+.PHONY : src/ft_swap_stacks.i
+
+# target to preprocess a source file
+src/ft_swap_stacks.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.i
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_swap_stacks.c.i
+.PHONY : src/ft_swap_stacks.c.i
+
+src/ft_swap_stacks.s: src/ft_swap_stacks.c.s
+
+.PHONY : src/ft_swap_stacks.s
+
+# target to generate assembly for a file
+src/ft_swap_stacks.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.s
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_swap_stacks.c.s
+.PHONY : src/ft_swap_stacks.c.s
+
+src/is_sorted.o: src/is_sorted.c.o
+
+.PHONY : src/is_sorted.o
+
+# target to build an object file
+src/is_sorted.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/is_sorted.c.o
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/is_sorted.c.o
+.PHONY : src/is_sorted.c.o
+
+src/is_sorted.i: src/is_sorted.c.i
+
+.PHONY : src/is_sorted.i
+
+# target to preprocess a source file
+src/is_sorted.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/is_sorted.c.i
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/is_sorted.c.i
+.PHONY : src/is_sorted.c.i
+
+src/is_sorted.s: src/is_sorted.c.s
+
+.PHONY : src/is_sorted.s
+
+# target to generate assembly for a file
+src/is_sorted.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/is_sorted.c.s
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/is_sorted.c.s
+.PHONY : src/is_sorted.c.s
 
 src/read.o: src/read.c.o
 
@@ -197,6 +420,7 @@ src/read.o: src/read.c.o
 # target to build an object file
 src/read.c.o:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/read.c.o
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/read.c.o
 .PHONY : src/read.c.o
 
 src/read.i: src/read.c.i
@@ -206,6 +430,7 @@ src/read.i: src/read.c.i
 # target to preprocess a source file
 src/read.c.i:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/read.c.i
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/read.c.i
 .PHONY : src/read.c.i
 
 src/read.s: src/read.c.s
@@ -215,6 +440,7 @@ src/read.s: src/read.c.s
 # target to generate assembly for a file
 src/read.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/read.c.s
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/read.c.s
 .PHONY : src/read.c.s
 
 # Help Target
@@ -223,16 +449,38 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... push_swap"
 	@echo "... edit_cache"
+	@echo "... push_swap"
+	@echo "... rebuild_cache"
+	@echo "... checker"
 	@echo "... libft"
+	@echo "... checker.o"
+	@echo "... checker.i"
+	@echo "... checker.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/ft_is_str_in_lstd.o"
+	@echo "... src/ft_is_str_in_lstd.i"
+	@echo "... src/ft_is_str_in_lstd.s"
+	@echo "... src/ft_lstd_swap.o"
+	@echo "... src/ft_lstd_swap.i"
+	@echo "... src/ft_lstd_swap.s"
+	@echo "... src/ft_lstd_to_str.o"
+	@echo "... src/ft_lstd_to_str.i"
+	@echo "... src/ft_lstd_to_str.s"
 	@echo "... src/ft_lstprint.o"
 	@echo "... src/ft_lstprint.i"
 	@echo "... src/ft_lstprint.s"
+	@echo "... src/ft_operation.o"
+	@echo "... src/ft_operation.i"
+	@echo "... src/ft_operation.s"
+	@echo "... src/ft_swap_stacks.o"
+	@echo "... src/ft_swap_stacks.i"
+	@echo "... src/ft_swap_stacks.s"
+	@echo "... src/is_sorted.o"
+	@echo "... src/is_sorted.i"
+	@echo "... src/is_sorted.s"
 	@echo "... src/read.o"
 	@echo "... src/read.i"
 	@echo "... src/read.s"

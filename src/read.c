@@ -4,7 +4,7 @@
 t_list		*ft_strsplit_to_lstd(char const *string)
 {
 	t_list	*list;
-	int		value;
+//	int		value;
 	char 	**tab;
 	int 	size;
 
@@ -17,11 +17,11 @@ t_list		*ft_strsplit_to_lstd(char const *string)
 	size = 0;
 	while (tab[size])
 	{
-			value = ft_atoi(tab[size]);
-			ft_lstd_push_front(&list, ft_lstdnew(&value, sizeof(value)));
+//			value = ft_atoi(tab[size]);
+			ft_lstd_push_front(&list, ft_lstdnew(tab[size], 1 + ft_strlen(tab[size])));
 			ft_memdel((void**)&tab[size]);
 			size++;
 	}
-//	ft_memdel((void**)&tab);
+	ft_memdel((void**)&tab);
 	return (list);
 }

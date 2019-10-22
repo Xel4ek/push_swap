@@ -14,6 +14,7 @@
 # define LIBFT_H
 # include <string.h>
 # include <stdint.h>
+# define MAX(x, y)		(x < y ? y : x)
 # define MAX_FD 1024
 # define BUFF_SIZE 256
 
@@ -31,7 +32,7 @@ typedef struct		s_list
 }					t_list;
 
 void				ft_striter(char *s, void (*f)(char *));
-int					ft_strcmp(const char *s1, const char *s2);
+size_t				ft_strcmp(const char *s1, const char *s2);
 void				ft_strclr(char *s);
 char				*ft_strcat(char *dst, const char *src);
 int					ft_isascii(int ch);
@@ -57,7 +58,6 @@ char				*ft_strrchr(const char *str, int c);
 char				*ft_strstr(const char *str1, const char *str2);
 char				*ft_strnstr(const char *big, const char *little,\
 								size_t len);
-int					ft_strcmp(const char *s1, const char *s2);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
 int					ft_atoi(const char *str);
 int					ft_isalpha(int ch);
@@ -116,12 +116,15 @@ char				*ft_strjoin_free_first(char **s1, char const *s2);
 char				*ft_strjoin_free_second(char const *s1, char **s2);
 char				*ft_strch(const char *str, int ch);
 size_t				ft_putstr_ptr_fd( const int fd, char const *start ,char const *finish);
-void				ft_lstditer(t_list *list, void (*f)(t_list *elem));
+void				ft_lstditer(t_list *list, void (*f)());
 size_t				ft_lstdlen(const t_list *list);
 void				ft_lstd_push_front(t_list **head, t_list *new);
 
 t_list				*ft_lstdnew(void const *content, size_t content_size);
 void				ft_lstd_pop_front(t_list **head);
 void				ft_lstddel(t_list **list);
+char				*ft_strcat_end(char *dst, const char *src);
 
+
+void				ft_lstditer_two(t_list *list1, t_list *list2, void (*f)(t_list *elem));
 #endif
