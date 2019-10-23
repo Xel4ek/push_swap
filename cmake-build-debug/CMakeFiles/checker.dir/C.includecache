@@ -7,6 +7,10 @@
 #IncludeRegexTransform: 
 
 ../includes/push_swap.h
+sys/types.h
+-
+sys/stat.h
+-
 libft.h
 ../includes/libft.h
 
@@ -16,9 +20,17 @@ string.h
 stdint.h
 -
 
-/cygdrive/e/shcool_42/push_swap/checker.c
+/home/alexey/projects/push_swap/checker.c
 push_swap.h
-/cygdrive/e/shcool_42/push_swap/push_swap.h
+/home/alexey/projects/push_swap/push_swap.h
 stdio.h
+-
+fcntl.h
+-
+stdlib.h
+-
+zconf.h
+-
+unistd.h
 -
 

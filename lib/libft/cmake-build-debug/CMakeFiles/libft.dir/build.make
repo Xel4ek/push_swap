@@ -989,7 +989,7 @@ CMakeFiles/libft.dir/src/ft_lstddel.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libft.dir/src/ft_lstddel.i"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/e/shcool_42/push_swap/lib/libft/src/ft_lstddel.c > CMakeFiles/libft.dir/src/ft_lstddel.i
 
-CMakeFiles/libft.dir/src/ft_lstddel.s: cmake_force
+CMakeFiles/libft.dir/src/ft_lstd_del.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft.dir/src/ft_lstddel.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/e/shcool_42/push_swap/lib/libft/src/ft_lstddel.c -o CMakeFiles/libft.dir/src/ft_lstddel.s
 

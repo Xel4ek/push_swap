@@ -1261,7 +1261,7 @@ help:
 	@echo "... src/ft_lstd_push_front.i"
 	@echo "... src/ft_lstd_push_front.s"
 	@echo "... src/ft_lstddel.o"
-	@echo "... src/ft_lstddel.i"
+	@echo "... src/ft_lstd_del.i"
 	@echo "... src/ft_lstddel.s"
 	@echo "... src/ft_lstdel.o"
 	@echo "... src/ft_lstdel.i"

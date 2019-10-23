@@ -7,6 +7,10 @@
 #IncludeRegexTransform: 
 
 ../includes/push_swap.h
+sys/types.h
+-
+sys/stat.h
+-
 libft.h
 ../includes/libft.h
 
@@ -16,11 +20,53 @@ string.h
 stdint.h
 -
 
-/cygdrive/e/shcool_42/push_swap/main.c
+/home/alexey/projects/push_swap/main.c
 stdio.h
 -
 push_swap.h
-/cygdrive/e/shcool_42/push_swap/push_swap.h
+/home/alexey/projects/push_swap/push_swap.h
+stdlib.h
+-
+
+/home/alexey/projects/push_swap/src/ft_is_str_in_lstd.c
+push_swap.h
+/home/alexey/projects/push_swap/src/push_swap.h
+
+/home/alexey/projects/push_swap/src/ft_lstd_swap.c
+push_swap.h
+/home/alexey/projects/push_swap/src/push_swap.h
+
+/home/alexey/projects/push_swap/src/ft_lstd_to_str.c
+push_swap.h
+/home/alexey/projects/push_swap/src/push_swap.h
+stdlib.h
+-
+
+/home/alexey/projects/push_swap/src/ft_lstprint.c
+push_swap.h
+/home/alexey/projects/push_swap/src/push_swap.h
+stdio.h
+-
+unistd.h
+-
+
+/home/alexey/projects/push_swap/src/ft_operation.c
+push_swap.h
+/home/alexey/projects/push_swap/src/push_swap.h
+
+/home/alexey/projects/push_swap/src/ft_swap_stacks.c
+push_swap.h
+/home/alexey/projects/push_swap/src/push_swap.h
+stdio.h
+-
+
+/home/alexey/projects/push_swap/src/is_sorted.c
+push_swap.h
+/home/alexey/projects/push_swap/src/push_swap.h
+
+/home/alexey/projects/push_swap/src/read.c
+push_swap.h
+/home/alexey/projects/push_swap/src/push_swap.h
 stdlib.h
 -
 

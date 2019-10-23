@@ -17,8 +17,10 @@ t_forward_list	*ft_lstnew(void const *content, size_t content_size)
 {
 	t_forward_list *ptr;
 
+
 	if (!(ptr = (t_forward_list*)malloc(sizeof(*ptr))))
 		return (NULL);
+	ptr->content_size = content_size;
 	if (content)
 	{
 		if (!(ptr->content = malloc(content_size)))
@@ -27,13 +29,10 @@ t_forward_list	*ft_lstnew(void const *content, size_t content_size)
 			return (NULL);
 		}
 		ft_memcpy(ptr->content, content, content_size);
-		ptr->content_size = content_size;
+
 	}
 	else
-	{
 		ptr->content = NULL;
-		ptr->content_size = 0;
-	}
 	ptr->next = NULL;
 	return (ptr);
 }

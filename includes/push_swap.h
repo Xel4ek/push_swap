@@ -1,6 +1,8 @@
 #ifndef PUSH_SWAP_H
 #define PUSH_SWAP_H
 
+#include <sys/types.h>
+#include <sys/stat.h>
 #include "libft.h"
 
 void					ft_lstprint(t_list *list);

@@ -1,27 +1,38 @@
 #include "push_swap.h"
 #include <stdio.h>
+#include <fcntl.h>
+#include <stdlib.h>
+#include <zconf.h>
+#include <unistd.h>
+
 
 int main(int argc, char **argv){
-	int i;
-	int value;
-	size_t len;
+
+	int fd;
 	t_list *list;
+	char *line;
+	t_list *buff;
 
-	list = NULL;
-	i = argc;
-	if (argc > 1){
-		while (i-- > 1) {
-//			printf("%s\n",argv[i]);
-			value = ft_atoi(argv[i]);
-//			printf("%d\n",value);
-			ft_lstd_push_front(&list, ft_lstdnew(&value, sizeof(value)));
-		}
-		ft_lstditer(list, &ft_lstprint);
-		printf("\nreduce: %d", is_sorted(list));
-		ft_lstddel(&list);
+	buff = NULL;
+	fd = STDIN_FILENO;
+
+	get_next_line(fd,&line);
+	list = ft_strsplit_to_lstd(line);
+	printf("Input\n");
+	ft_lstditer_two(list, buff, &ft_lstprint);
+	printf("--------------------------------------\n");
+	ft_memdel((void**)&line);
+	while (get_next_line(fd,&line) > 0) {
+		printf("Exec %s:\n", line);
+		ft_operation(line, &list, &buff);
+		ft_memdel((void**)&line);
+		ft_lstditer_two(list, buff, &ft_lstprint);
+		printf("--------------------------------------\n");
 	}
-
-
+		if (is_sorted(list))
+			printf("OK");
+		else
+			printf("KO");
+	ft_lstd_del(&list);
 	return (0);
-
 }

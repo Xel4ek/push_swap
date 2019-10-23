@@ -8,8 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.o"
   "CMakeFiles/push_swap.dir/src/is_sorted.c.o"
   "CMakeFiles/push_swap.dir/src/read.c.o"
-  "libpush_swap.dll.a"
-  "push_swap.exe"
+  "push_swap"
   "push_swap.pdb"
 )
 

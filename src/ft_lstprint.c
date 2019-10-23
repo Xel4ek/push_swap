@@ -4,7 +4,7 @@
 
 void	ft_lstprint(t_list *list){
 	if (list)
-		printf("%s",list->content);
+		printf("%6s ",(char*)list->content);
 		//write(1 , list->content, list->content_size);
 	else
 		printf("%5s_","");

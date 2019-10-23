@@ -4,15 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/cygdrive/e/shcool_42/push_swap/checker.c" "/cygdrive/e/shcool_42/push_swap/cmake-build-debug/CMakeFiles/checker.dir/checker.c.o"
-  "/cygdrive/e/shcool_42/push_swap/src/ft_is_str_in_lstd.c" "/cygdrive/e/shcool_42/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/ft_is_str_in_lstd.c.o"
-  "/cygdrive/e/shcool_42/push_swap/src/ft_lstd_swap.c" "/cygdrive/e/shcool_42/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/ft_lstd_swap.c.o"
-  "/cygdrive/e/shcool_42/push_swap/src/ft_lstd_to_str.c" "/cygdrive/e/shcool_42/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/ft_lstd_to_str.c.o"
-  "/cygdrive/e/shcool_42/push_swap/src/ft_lstprint.c" "/cygdrive/e/shcool_42/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/ft_lstprint.c.o"
-  "/cygdrive/e/shcool_42/push_swap/src/ft_operation.c" "/cygdrive/e/shcool_42/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/ft_operation.c.o"
-  "/cygdrive/e/shcool_42/push_swap/src/ft_swap_stacks.c" "/cygdrive/e/shcool_42/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/ft_swap_stacks.c.o"
-  "/cygdrive/e/shcool_42/push_swap/src/is_sorted.c" "/cygdrive/e/shcool_42/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/is_sorted.c.o"
-  "/cygdrive/e/shcool_42/push_swap/src/read.c" "/cygdrive/e/shcool_42/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/read.c.o"
+  "/home/alexey/projects/push_swap/checker.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/checker.c.o"
+  "/home/alexey/projects/push_swap/src/ft_is_str_in_lstd.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/ft_is_str_in_lstd.c.o"
+  "/home/alexey/projects/push_swap/src/ft_lstd_swap.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/ft_lstd_swap.c.o"
+  "/home/alexey/projects/push_swap/src/ft_lstd_to_str.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/ft_lstd_to_str.c.o"
+  "/home/alexey/projects/push_swap/src/ft_lstprint.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/ft_lstprint.c.o"
+  "/home/alexey/projects/push_swap/src/ft_operation.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/ft_operation.c.o"
+  "/home/alexey/projects/push_swap/src/ft_swap_stacks.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/ft_swap_stacks.c.o"
+  "/home/alexey/projects/push_swap/src/is_sorted.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/is_sorted.c.o"
+  "/home/alexey/projects/push_swap/src/read.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/read.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -25,7 +25,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/cygdrive/e/shcool_42/push_swap/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/DependInfo.cmake"
+  "/home/alexey/projects/push_swap/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

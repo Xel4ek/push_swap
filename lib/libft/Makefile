@@ -84,7 +84,7 @@ SRC =   ft_atoi_base.c  \
 		ft_lstd_push_front.c \
 		ft_lstd_pop_front.c \
 		ft_lstd_collapse.c \
-		ft_lstddel.c
+		ft_lstd_del.c
 
 SRCDIR = src
 OBJDIR = obj

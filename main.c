@@ -23,7 +23,9 @@ int main() {
 //											 18));
 //	ft_lstditer(visizted, &ft_lstprint);
 //	printf("%d\n",ft_is_str_in_lstd("1 2 3 4 5 6 7 8 /", visizted));
-	ft_operation("ra", &list, &buff);
+	ft_operation("rra", &list, &buff);
+//	printf("ans: %d\n", !ft_strcmp("rr", "rra"));
+
 	ft_lstditer_two(list, buff, &ft_lstprint);
 	return 0;
 }

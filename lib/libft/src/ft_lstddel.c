@@ -1,6 +1,6 @@
 #include "libft.h"
 
-void	ft_lstddel(t_list **list)
+void	ft_lstd_del(t_list **list)
 {
 	if (list)
 		while (*list)

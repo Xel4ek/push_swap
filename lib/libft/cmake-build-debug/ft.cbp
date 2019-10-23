@@ -133,7 +133,7 @@
 		<Unit filename="/cygdrive/e/shcool_42/push_swap/lib/libft/src/ft_lstd_push_front.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/cygdrive/e/shcool_42/push_swap/lib/libft/src/ft_lstddel.c">
+		<Unit filename="/cygdrive/e/shcool_42/push_swap/lib/libft/src/ft_lstd_del.c">
 			<Option target="libft"/>
 		</Unit>
 		<Unit filename="/cygdrive/e/shcool_42/push_swap/lib/libft/src/ft_lstdel.c">

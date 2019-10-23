@@ -14,38 +14,32 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-static char		*ft_replace(const char *str, int c)
+static char		*ft_replace(char *str, int c)
 {
-	char *ptr;
-
-	ptr = (char*)str;
-	while (*ptr != c)
+	while (*str != c)
 	{
-		if (!*ptr)
-			return (ptr);
-		++ptr;
+		if (*str == 0)
+			return (str);
+		++str;
 	}
-	*ptr = 0;
-	return (ptr + 1);
+	*str = 0;
+	return (str + 1);
 }
 
 static int		get_new_line(char **line, t_forward_list **ptr)
 {
-	char *tmp;
+	char *temp;
 
-	if (*(char*)((*ptr)->content))
+	if (*(char*)(*ptr)->content)
 	{
-		tmp = ft_replace((*ptr)->content, '\n');
+		temp = ft_strdup(ft_replace((*ptr)->content, '\n'));
 		*line = ft_strdup((*ptr)->content);
-		tmp = ft_strdup(tmp);
-		free((*ptr)->content);
-		(*ptr)->content = tmp;
+		ft_memdel(&(*ptr)->content);
+		(*ptr)->content = (void*)temp;
 		return (1);
 	}
-	if ((*ptr)->content != NULL)
-		ft_memdel(&((*ptr)->content));
-	free((*ptr));
-	(*ptr) = NULL;
+	ft_memdel(&(*ptr)->content);
+	ft_memdel((void**)ptr);
 	*line = NULL;
 	return (0);
 }
@@ -59,7 +53,7 @@ int				get_next_line(const int fd, char **line)
 
 	if (fd < 0 || line == NULL || read(fd, buf, 0) < 0)
 		return (-1);
-	if (!ptr[fd])
+	if (ptr[fd] == NULL || ptr[fd]->content == NULL)
 		ptr[fd] = ft_lstnew("", 1);
 	while ((ret = read(fd, buf, BUFF_SIZE)))
 	{
@@ -70,5 +64,5 @@ int				get_next_line(const int fd, char **line)
 		if (ft_strchr(ptr[fd]->content, '\n'))
 			break ;
 	}
-	return (get_new_line(line, &ptr[fd]));
+	return (get_new_line(line, ptr+fd));
 }

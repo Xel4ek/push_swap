@@ -1,9 +1,9 @@
 #include "push_swap.h"
 
-size_t	ft_lstditer_reduce_2(t_list *list, char *string, size_t (*f)())
+int	ft_lstditer_reduce_2(t_list *list, char *string, int (*f)())
 {
 	t_list *ptr;
-	size_t count;
+	int count;
 
 	count = 0;
 	ptr = NULL;
