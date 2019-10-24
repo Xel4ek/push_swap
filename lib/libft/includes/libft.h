@@ -117,7 +117,7 @@ char				*ft_strjoin_free_second(char const *s1, char **s2);
 char				*ft_strch(const char *str, int ch);
 size_t				ft_putstr_ptr_fd( const int fd, char const *start ,char const *finish);
 void				ft_lstditer(t_list *list, void (*f)());
-size_t				ft_lstdlen(const t_list *list);
+int					ft_lstdlen(const t_list *list);
 void				ft_lstd_push_front(t_list **head, t_list *new);
 
 t_list				*ft_lstdnew(void const *content, size_t content_size);

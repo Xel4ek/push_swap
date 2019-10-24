@@ -24,9 +24,9 @@ int	ft_lstlen(const t_forward_list *list)
 	return (len + 1);
 }
 
-size_t	ft_lstdlen(const t_list *list)
+int	ft_lstdlen(const t_list *list)
 {
-	size_t	len;
+	int	len;
 	t_list *ptr;
 
 	len = 0;

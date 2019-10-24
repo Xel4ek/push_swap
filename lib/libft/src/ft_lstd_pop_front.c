@@ -15,13 +15,14 @@ void ft_lstd_pop_front(t_list **head)
 			else
 				ptr = NULL;
 			if (ptr != NULL) {
-				ptr->prev = (*head)->prev;
-			}
-			ft_memdel(&(*head)->content);
-			ft_memdel((void**)head);
-			if (ptr != NULL)
+				ptr->prev = ptr->prev->prev;
 				ptr->prev->next = ptr;
-			*head = ptr;
+			}
+			ft_memdel(&((*head)->content));
+			ft_memdel((void**)head);
+//			if (ptr != NULL)
+//				ptr->prev->next = ptr;
+			(*head) = ptr;
 		}
 }
 //{

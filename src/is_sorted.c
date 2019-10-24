@@ -26,7 +26,7 @@ void reduce(t_list *list, int *n)
 
 int	is_sorted(t_list *list)
 {
-	size_t len;
+	int len;
 
 	len = ft_lstdlen(list) - 1;
 	if (len > 0)

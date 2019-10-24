@@ -3,9 +3,7 @@
 int	ft_lstditer_reduce_2(t_list *list, char *string, int (*f)())
 {
 	t_list *ptr;
-	int count;
 
-	count = 0;
 	ptr = NULL;
 	if (*f) {
 		if (list) {
@@ -13,13 +11,15 @@ int	ft_lstditer_reduce_2(t_list *list, char *string, int (*f)())
 				while (list && ptr != list->next) {
 					if (!ptr)
 						ptr = list;
-							count += (*f)((char*)list->content, string);
+					if(!(*f)((char *) list->content, string))
+						return 1;
 					list = list->next;
 				}
+			if(!(*f)((char *) list->content, string))
+				return 1;
 		}
-		count += (*f)((char*)list->content, string);
 	}
-	return count;
+	return 0;
 }
 
 size_t ft_is_str_in_lstd(char *string, t_list *list){
