@@ -203,6 +203,36 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/main.c.s
 .PHONY : main.c.s
 
+src/dfs.o: src/dfs.c.o
+
+.PHONY : src/dfs.o
+
+# target to build an object file
+src/dfs.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/dfs.c.o
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/dfs.c.o
+.PHONY : src/dfs.c.o
+
+src/dfs.i: src/dfs.c.i
+
+.PHONY : src/dfs.i
+
+# target to preprocess a source file
+src/dfs.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/dfs.c.i
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/dfs.c.i
+.PHONY : src/dfs.c.i
+
+src/dfs.s: src/dfs.c.s
+
+.PHONY : src/dfs.s
+
+# target to generate assembly for a file
+src/dfs.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/dfs.c.s
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/dfs.c.s
+.PHONY : src/dfs.c.s
+
 src/ft_is_str_in_lstd.o: src/ft_is_str_in_lstd.c.o
 
 .PHONY : src/ft_is_str_in_lstd.o
@@ -353,6 +383,36 @@ src/ft_operation.c.s:
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_operation.c.s
 .PHONY : src/ft_operation.c.s
 
+src/ft_sort_lstd.o: src/ft_sort_lstd.c.o
+
+.PHONY : src/ft_sort_lstd.o
+
+# target to build an object file
+src/ft_sort_lstd.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_lstd.c.o
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_sort_lstd.c.o
+.PHONY : src/ft_sort_lstd.c.o
+
+src/ft_sort_lstd.i: src/ft_sort_lstd.c.i
+
+.PHONY : src/ft_sort_lstd.i
+
+# target to preprocess a source file
+src/ft_sort_lstd.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_lstd.c.i
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_sort_lstd.c.i
+.PHONY : src/ft_sort_lstd.c.i
+
+src/ft_sort_lstd.s: src/ft_sort_lstd.c.s
+
+.PHONY : src/ft_sort_lstd.s
+
+# target to generate assembly for a file
+src/ft_sort_lstd.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_lstd.c.s
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_sort_lstd.c.s
+.PHONY : src/ft_sort_lstd.c.s
+
 src/ft_swap_stacks.o: src/ft_swap_stacks.c.o
 
 .PHONY : src/ft_swap_stacks.o
@@ -460,6 +520,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/dfs.o"
+	@echo "... src/dfs.i"
+	@echo "... src/dfs.s"
 	@echo "... src/ft_is_str_in_lstd.o"
 	@echo "... src/ft_is_str_in_lstd.i"
 	@echo "... src/ft_is_str_in_lstd.s"
@@ -475,6 +538,9 @@ help:
 	@echo "... src/ft_operation.o"
 	@echo "... src/ft_operation.i"
 	@echo "... src/ft_operation.s"
+	@echo "... src/ft_sort_lstd.o"
+	@echo "... src/ft_sort_lstd.i"
+	@echo "... src/ft_sort_lstd.s"
 	@echo "... src/ft_swap_stacks.o"
 	@echo "... src/ft_swap_stacks.i"
 	@echo "... src/ft_swap_stacks.s"

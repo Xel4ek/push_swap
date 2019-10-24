@@ -33,6 +33,7 @@ typedef struct		s_list
 
 void				ft_striter(char *s, void (*f)(char *));
 int					ft_strcmp(const char *s1, const char *s2);
+int					ft_strcmp2(const char *s1, const char *s2);
 void				ft_strclr(char *s);
 char				*ft_strcat(char *dst, const char *src);
 int					ft_isascii(int ch);
@@ -124,7 +125,8 @@ t_list				*ft_lstdnew(void const *content, size_t content_size);
 void				ft_lstd_pop_front(t_list **head);
 void				ft_lstd_del(t_list **list);
 char				*ft_strcat_end(char *dst, const char *src);
-
+void				ft_lstd_push_back(t_list **head, t_list *new);
+void				ft_str_to_lstd(char *string,t_list **list1, t_list **list2);
 
 void				ft_lstditer_two(t_list *list1, t_list *list2, void (*f)(t_list *elem));
 #endif

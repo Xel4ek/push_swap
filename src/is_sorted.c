@@ -31,7 +31,7 @@ int	is_sorted(t_list *list)
 	len = ft_lstdlen(list) - 1;
 	if (len > 0)
 		while (len--) {
-			if (ft_strcmp(list->content , list->next->content) >= 0)
+			if (ft_strcmp2(list->content , list->next->content) >= 0)
 				return 0;
 			list = list->next;
 		}

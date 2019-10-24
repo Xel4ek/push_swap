@@ -227,6 +227,9 @@
 		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_lstd_pop_front.c">
 			<Option target="libft"/>
 		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_lstd_push_back.c">
+			<Option target="libft"/>
+		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_lstd_push_front.c">
 			<Option target="libft"/>
 		</Unit>
@@ -401,6 +404,10 @@
 		<Unit filename="/home/alexey/projects/push_swap/main.c">
 			<Option target="push_swap"/>
 		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/src/dfs.c">
+			<Option target="push_swap"/>
+			<Option target="checker"/>
+		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/src/ft_is_str_in_lstd.c">
 			<Option target="push_swap"/>
 			<Option target="checker"/>
@@ -418,6 +425,10 @@
 			<Option target="checker"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/src/ft_operation.c">
+			<Option target="push_swap"/>
+			<Option target="checker"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/src/ft_sort_lstd.c">
 			<Option target="push_swap"/>
 			<Option target="checker"/>
 		</Unit>

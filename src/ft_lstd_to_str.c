@@ -28,3 +28,21 @@ char *ft_lstd_to_str(t_list *list1, t_list *list2, int size1, int size2, int len
 	*temp = 0;
 	return ptr;
 }
+
+void ft_str_to_lstd(char *string,t_list **list1, t_list **list2){
+	char **tab;
+	int i;
+	*list1 = NULL;
+	*list2 = NULL;
+	tab = ft_strsplit(string, ' ');
+	i = 0;
+	while (tab[i] && ft_strcmp2(tab[i], "/")) {
+		ft_lstd_push_back(list1, ft_lstdnew(tab[i], 1 + ft_strlen(tab[i])));
+		i++;
+	}
+	i++;
+	while (tab[i]) {
+		ft_lstd_push_back(list2, ft_lstdnew(tab[i], 1 +  ft_strlen(tab[i])));
+		i++;
+	}
+}

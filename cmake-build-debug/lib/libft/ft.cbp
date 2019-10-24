@@ -112,6 +112,9 @@
 		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_lstd_pop_front.c">
 			<Option target="libft"/>
 		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_lstd_push_back.c">
+			<Option target="libft"/>
+		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_lstd_push_front.c">
 			<Option target="libft"/>
 		</Unit>

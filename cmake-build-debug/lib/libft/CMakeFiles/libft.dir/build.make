@@ -993,6 +993,19 @@ lib/libft/CMakeFiles/libft.dir/src/ft_lstddel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft.dir/src/ft_lstddel.c.s"
 	cd /home/alexey/projects/push_swap/cmake-build-debug/lib/libft && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap/lib/libft/src/ft_lstddel.c -o CMakeFiles/libft.dir/src/ft_lstddel.c.s
 
+lib/libft/CMakeFiles/libft.dir/src/ft_lstd_push_back.c.o: lib/libft/CMakeFiles/libft.dir/flags.make
+lib/libft/CMakeFiles/libft.dir/src/ft_lstd_push_back.c.o: ../lib/libft/src/ft_lstd_push_back.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object lib/libft/CMakeFiles/libft.dir/src/ft_lstd_push_back.c.o"
+	cd /home/alexey/projects/push_swap/cmake-build-debug/lib/libft && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/src/ft_lstd_push_back.c.o   -c /home/alexey/projects/push_swap/lib/libft/src/ft_lstd_push_back.c
+
+lib/libft/CMakeFiles/libft.dir/src/ft_lstd_push_back.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libft.dir/src/ft_lstd_push_back.c.i"
+	cd /home/alexey/projects/push_swap/cmake-build-debug/lib/libft && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/push_swap/lib/libft/src/ft_lstd_push_back.c > CMakeFiles/libft.dir/src/ft_lstd_push_back.c.i
+
+lib/libft/CMakeFiles/libft.dir/src/ft_lstd_push_back.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft.dir/src/ft_lstd_push_back.c.s"
+	cd /home/alexey/projects/push_swap/cmake-build-debug/lib/libft && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap/lib/libft/src/ft_lstd_push_back.c -o CMakeFiles/libft.dir/src/ft_lstd_push_back.c.s
+
 # Object files for target libft
 libft_OBJECTS = \
 "CMakeFiles/libft.dir/src/ft_atoi_base.c.o" \
@@ -1066,7 +1079,8 @@ libft_OBJECTS = \
 "CMakeFiles/libft.dir/src/ft_lstd_push_front.c.o" \
 "CMakeFiles/libft.dir/src/ft_lstd_pop_front.c.o" \
 "CMakeFiles/libft.dir/src/ft_lstd_collapse.c.o" \
-"CMakeFiles/libft.dir/src/ft_lstddel.c.o"
+"CMakeFiles/libft.dir/src/ft_lstddel.c.o" \
+"CMakeFiles/libft.dir/src/ft_lstd_push_back.c.o"
 
 # External object files for target libft
 libft_EXTERNAL_OBJECTS =
@@ -1143,9 +1157,10 @@ lib/libft/liblibft.a: lib/libft/CMakeFiles/libft.dir/src/ft_lstd_push_front.c.o
 lib/libft/liblibft.a: lib/libft/CMakeFiles/libft.dir/src/ft_lstd_pop_front.c.o
 lib/libft/liblibft.a: lib/libft/CMakeFiles/libft.dir/src/ft_lstd_collapse.c.o
 lib/libft/liblibft.a: lib/libft/CMakeFiles/libft.dir/src/ft_lstddel.c.o
+lib/libft/liblibft.a: lib/libft/CMakeFiles/libft.dir/src/ft_lstd_push_back.c.o
 lib/libft/liblibft.a: lib/libft/CMakeFiles/libft.dir/build.make
 lib/libft/liblibft.a: lib/libft/CMakeFiles/libft.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Linking C static library liblibft.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Linking C static library liblibft.a"
 	cd /home/alexey/projects/push_swap/cmake-build-debug/lib/libft && $(CMAKE_COMMAND) -P CMakeFiles/libft.dir/cmake_clean_target.cmake
 	cd /home/alexey/projects/push_swap/cmake-build-debug/lib/libft && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libft.dir/link.txt --verbose=$(VERBOSE)
 

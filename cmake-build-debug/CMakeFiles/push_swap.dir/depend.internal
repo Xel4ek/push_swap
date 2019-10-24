@@ -5,6 +5,10 @@ CMakeFiles/push_swap.dir/main.c.o
  ../includes/push_swap.h
  ../lib/libft/includes/libft.h
  /home/alexey/projects/push_swap/main.c
+CMakeFiles/push_swap.dir/src/dfs.c.o
+ ../includes/push_swap.h
+ ../lib/libft/includes/libft.h
+ /home/alexey/projects/push_swap/src/dfs.c
 CMakeFiles/push_swap.dir/src/ft_is_str_in_lstd.c.o
  ../includes/push_swap.h
  ../lib/libft/includes/libft.h
@@ -25,6 +29,10 @@ CMakeFiles/push_swap.dir/src/ft_operation.c.o
  ../includes/push_swap.h
  ../lib/libft/includes/libft.h
  /home/alexey/projects/push_swap/src/ft_operation.c
+CMakeFiles/push_swap.dir/src/ft_sort_lstd.c.o
+ ../includes/push_swap.h
+ ../lib/libft/includes/libft.h
+ /home/alexey/projects/push_swap/src/ft_sort_lstd.c
 CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.o
  ../includes/push_swap.h
  ../lib/libft/includes/libft.h

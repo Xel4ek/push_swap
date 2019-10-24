@@ -530,6 +530,33 @@ src/ft_lstd_pop_front.c.s:
 	cd /home/alexey/projects/push_swap/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstd_pop_front.c.s
 .PHONY : src/ft_lstd_pop_front.c.s
 
+src/ft_lstd_push_back.o: src/ft_lstd_push_back.c.o
+
+.PHONY : src/ft_lstd_push_back.o
+
+# target to build an object file
+src/ft_lstd_push_back.c.o:
+	cd /home/alexey/projects/push_swap/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstd_push_back.c.o
+.PHONY : src/ft_lstd_push_back.c.o
+
+src/ft_lstd_push_back.i: src/ft_lstd_push_back.c.i
+
+.PHONY : src/ft_lstd_push_back.i
+
+# target to preprocess a source file
+src/ft_lstd_push_back.c.i:
+	cd /home/alexey/projects/push_swap/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstd_push_back.c.i
+.PHONY : src/ft_lstd_push_back.c.i
+
+src/ft_lstd_push_back.s: src/ft_lstd_push_back.c.s
+
+.PHONY : src/ft_lstd_push_back.s
+
+# target to generate assembly for a file
+src/ft_lstd_push_back.c.s:
+	cd /home/alexey/projects/push_swap/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstd_push_back.c.s
+.PHONY : src/ft_lstd_push_back.c.s
+
 src/ft_lstd_push_front.o: src/ft_lstd_push_front.c.o
 
 .PHONY : src/ft_lstd_push_front.o
@@ -2123,6 +2150,9 @@ help:
 	@echo "... src/ft_lstd_pop_front.o"
 	@echo "... src/ft_lstd_pop_front.i"
 	@echo "... src/ft_lstd_pop_front.s"
+	@echo "... src/ft_lstd_push_back.o"
+	@echo "... src/ft_lstd_push_back.i"
+	@echo "... src/ft_lstd_push_back.s"
 	@echo "... src/ft_lstd_push_front.o"
 	@echo "... src/ft_lstd_push_front.i"
 	@echo "... src/ft_lstd_push_front.s"

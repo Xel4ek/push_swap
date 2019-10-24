@@ -14,6 +14,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/libft.dir/src/ft_lstappend.c.o"
   "CMakeFiles/libft.dir/src/ft_lstd_collapse.c.o"
   "CMakeFiles/libft.dir/src/ft_lstd_pop_front.c.o"
+  "CMakeFiles/libft.dir/src/ft_lstd_push_back.c.o"
   "CMakeFiles/libft.dir/src/ft_lstd_push_front.c.o"
   "CMakeFiles/libft.dir/src/ft_lstddel.c.o"
   "CMakeFiles/libft.dir/src/ft_lstdel.c.o"

@@ -38,6 +38,9 @@ lib/libft/CMakeFiles/libft.dir/src/ft_lstd_collapse.c.o: ../lib/libft/src/ft_lst
 lib/libft/CMakeFiles/libft.dir/src/ft_lstd_pop_front.c.o: ../lib/libft/includes/libft.h
 lib/libft/CMakeFiles/libft.dir/src/ft_lstd_pop_front.c.o: ../lib/libft/src/ft_lstd_pop_front.c
 
+lib/libft/CMakeFiles/libft.dir/src/ft_lstd_push_back.c.o: ../lib/libft/includes/libft.h
+lib/libft/CMakeFiles/libft.dir/src/ft_lstd_push_back.c.o: ../lib/libft/src/ft_lstd_push_back.c
+
 lib/libft/CMakeFiles/libft.dir/src/ft_lstd_push_front.c.o: ../lib/libft/includes/libft.h
 lib/libft/CMakeFiles/libft.dir/src/ft_lstd_push_front.c.o: ../lib/libft/src/ft_lstd_push_front.c
 

@@ -19,6 +19,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/alexey/projects/push_swap/lib/libft/src/ft_lstappend.c" "/home/alexey/projects/push_swap/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/src/ft_lstappend.c.o"
   "/home/alexey/projects/push_swap/lib/libft/src/ft_lstd_collapse.c" "/home/alexey/projects/push_swap/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/src/ft_lstd_collapse.c.o"
   "/home/alexey/projects/push_swap/lib/libft/src/ft_lstd_pop_front.c" "/home/alexey/projects/push_swap/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/src/ft_lstd_pop_front.c.o"
+  "/home/alexey/projects/push_swap/lib/libft/src/ft_lstd_push_back.c" "/home/alexey/projects/push_swap/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/src/ft_lstd_push_back.c.o"
   "/home/alexey/projects/push_swap/lib/libft/src/ft_lstd_push_front.c" "/home/alexey/projects/push_swap/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/src/ft_lstd_push_front.c.o"
   "/home/alexey/projects/push_swap/lib/libft/src/ft_lstddel.c" "/home/alexey/projects/push_swap/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/src/ft_lstddel.c.o"
   "/home/alexey/projects/push_swap/lib/libft/src/ft_lstdel.c" "/home/alexey/projects/push_swap/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/src/ft_lstdel.c.o"
