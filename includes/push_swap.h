@@ -35,6 +35,7 @@ int						ft_sort_lstd(t_list **list, t_list **buff);
 int						dfs_with_max_len(t_list **list, t_list **buff, t_list **visited, int max_steps);
 char					*ft_lstd_to_str(t_list *list1, t_list *list2, int size1, int size2, int len1, int len2);
 int						ft_operations(enum Operations operation, t_list **a, t_list **b);
-
+int					ft_quick_sort(t_list **list, t_list **buff, char *pivot);
 int bfs(t_list **list, t_list **buff, t_list **visited, t_list **queue, int *deep);
+int longes_subsequence(t_list *list, t_list **buff);
 #endif

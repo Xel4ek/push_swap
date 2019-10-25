@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/alexey/projects/push_swap/src/ft_lstd_to_str.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_lstd_to_str.c.o"
   "/home/alexey/projects/push_swap/src/ft_lstprint.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_lstprint.c.o"
   "/home/alexey/projects/push_swap/src/ft_operation.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_operation.c.o"
+  "/home/alexey/projects/push_swap/src/ft_quick_sort.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_quick_sort.c.o"
   "/home/alexey/projects/push_swap/src/ft_sort_lstd.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_sort_lstd.c.o"
   "/home/alexey/projects/push_swap/src/ft_swap_stacks.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.o"
   "/home/alexey/projects/push_swap/src/is_sorted.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/is_sorted.c.o"

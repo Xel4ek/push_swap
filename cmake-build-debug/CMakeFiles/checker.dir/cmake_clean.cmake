@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/checker.dir/src/ft_lstd_to_str.c.o"
   "CMakeFiles/checker.dir/src/ft_lstprint.c.o"
   "CMakeFiles/checker.dir/src/ft_operation.c.o"
+  "CMakeFiles/checker.dir/src/ft_quick_sort.c.o"
   "CMakeFiles/checker.dir/src/ft_sort_lstd.c.o"
   "CMakeFiles/checker.dir/src/ft_swap_stacks.c.o"
   "CMakeFiles/checker.dir/src/is_sorted.c.o"

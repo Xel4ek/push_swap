@@ -6,7 +6,9 @@ set(SRC
         src/is_sorted.c
         src/ft_lstd_swap.c
         src/ft_lstprint.c
-        src/read.c src/ft_lstd_to_str.c src/ft_is_str_in_lstd.c src/ft_swap_stacks.c src/ft_operation.c src/ft_sort_lstd.c src/dfs.c)
+        src/read.c src/ft_lstd_to_str.c src/ft_is_str_in_lstd.c src/ft_swap_stacks.c src/ft_operation.c src/ft_sort_lstd.c
+        src/dfs.c
+        src/ft_quick_sort.c)
 
 
 include_directories(lib/libft/includes)

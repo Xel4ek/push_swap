@@ -383,6 +383,36 @@ src/ft_operation.c.s:
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_operation.c.s
 .PHONY : src/ft_operation.c.s
 
+src/ft_quick_sort.o: src/ft_quick_sort.c.o
+
+.PHONY : src/ft_quick_sort.o
+
+# target to build an object file
+src/ft_quick_sort.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_quick_sort.c.o
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_quick_sort.c.o
+.PHONY : src/ft_quick_sort.c.o
+
+src/ft_quick_sort.i: src/ft_quick_sort.c.i
+
+.PHONY : src/ft_quick_sort.i
+
+# target to preprocess a source file
+src/ft_quick_sort.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_quick_sort.c.i
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_quick_sort.c.i
+.PHONY : src/ft_quick_sort.c.i
+
+src/ft_quick_sort.s: src/ft_quick_sort.c.s
+
+.PHONY : src/ft_quick_sort.s
+
+# target to generate assembly for a file
+src/ft_quick_sort.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_quick_sort.c.s
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_quick_sort.c.s
+.PHONY : src/ft_quick_sort.c.s
+
 src/ft_sort_lstd.o: src/ft_sort_lstd.c.o
 
 .PHONY : src/ft_sort_lstd.o
@@ -538,6 +568,9 @@ help:
 	@echo "... src/ft_operation.o"
 	@echo "... src/ft_operation.i"
 	@echo "... src/ft_operation.s"
+	@echo "... src/ft_quick_sort.o"
+	@echo "... src/ft_quick_sort.i"
+	@echo "... src/ft_quick_sort.s"
 	@echo "... src/ft_sort_lstd.o"
 	@echo "... src/ft_sort_lstd.i"
 	@echo "... src/ft_sort_lstd.s"
