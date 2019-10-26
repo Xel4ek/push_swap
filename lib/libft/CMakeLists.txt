@@ -71,7 +71,7 @@ set(SRC
         src/ft_lstd_push_front.c
         src/ft_lstd_pop_front.c
         src/ft_lstd_collapse.c
-        src/ft_lstddel.c
+        src/ft_lstd_del.c
         src/ft_lstd_push_back.c)
 set(HEADERS includes/libft.h)
 add_library(libft STATIC ${SRC} ${HEADERS})

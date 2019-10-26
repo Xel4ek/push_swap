@@ -6,13 +6,13 @@
 #    By: hwolf <hwolf@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/17 15:24:49 by hwolf             #+#    #+#              #
-#    Updated: 2019/10/19 15:21:16 by hwolf            ###   ########.fr        #
+#    Updated: 2019/10/26 17:42:42 by hwolf            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -O3
 SRC =   ft_atoi_base.c  \
         ft_atoi.c  \
         ft_bzero.c  \
@@ -81,10 +81,10 @@ SRC =   ft_atoi_base.c  \
         get_next_line.c  \
         ft_ceil.c \
         ft_nbrlen.c \
-		ft_lstd_push_front.c \
-		ft_lstd_pop_front.c \
-		ft_lstd_collapse.c \
-		ft_lstd_del.c
+	ft_lstd_push_front.c \
+	ft_lstd_pop_front.c \
+	ft_lstd_collapse.c \
+	ft_lstd_del.c
 
 SRCDIR = src
 OBJDIR = obj
