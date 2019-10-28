@@ -10,16 +10,16 @@ int ft_sort_lstd(t_list **list, t_list **buff)
 	if(ft_strcmp2((*buff)->content, (*buff)->next->content) <=0)
 			ft_operation("rb",list, buff);
 	while (*list){
-		if(ft_strcmp2((*list)->content, (*buff)->content)>=0 && ft_strcmp2((*list)->content, (*buff)->prev->content) <= 0)
-			ft_operation("pb",list, buff);
-		else if(ft_strcmp2((*list)->content, (*buff)->content)>=0 && ft_strcmp2((*buff)->content, (*buff)->prev->content)>=0)
-			ft_operation("pb",list, buff);
-		else if(ft_strcmp2((*list)->content, (*buff)->prev->content)<=0 && ft_strcmp2((*buff)->content, (*buff)->prev->content)>=0) {
-			ft_operation("pb", list, buff);
-		}
-		else
-			ft_operation("rb", list, buff);
-		count++;
+			if(ft_strcmp2((*list)->content, (*buff)->content)>=0 && ft_strcmp2((*list)->content, (*buff)->prev->content) <= 0)
+				ft_operation("pb",list, buff);
+			else if(ft_strcmp2((*list)->content, (*buff)->content)>=0 && ft_strcmp2((*buff)->content, (*buff)->prev->content)>=0)
+				ft_operation("pb",list, buff);
+			else if(ft_strcmp2((*list)->content, (*buff)->prev->content)<=0 && ft_strcmp2((*buff)->content, (*buff)->prev->content)>=0) {
+				ft_operation("pb", list, buff);
+			}
+			else
+				ft_operation("rb", list, buff);
+			count++;
 	}
 	while( ft_strcmp2((*buff)->content, (*buff)->prev->content)<=0) {
 		ft_operation("rb", list, buff);

@@ -129,4 +129,5 @@ void				ft_lstd_push_back(t_list **head, t_list *new);
 void				ft_str_to_lstd(char *string,t_list **list1, t_list **list2);
 
 void				ft_lstditer_two(t_list *list1, t_list *list2, void (*f)(t_list *elem));
+void				ft_quick_sort(int *start, int *finish);
 #endif

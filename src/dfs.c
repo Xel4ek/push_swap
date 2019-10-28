@@ -83,74 +83,42 @@ int dfs_with_max_len(t_list **list, t_list **buff, t_list **visited, int max_ste
 	}
 	return 0;
 }
+int try_add(t_list **list, t_list **buff){
+	if (((t_ps_content *) (*buff)->content)->serial <= ((t_ps_content *)(*list)->content)->serial &&
+		((t_ps_content *) (*buff)->content)->serial >= ((t_ps_content *) (*list)->prev->content)->serial) {
+		ft_operations(PA, list, buff);
+	} else if (((t_ps_content *) (*buff)->content)->serial <= ((t_ps_content *) (*list)->content)->serial &&
+			   ((t_ps_content *) (*list)->content)->serial <= ((t_ps_content *) (*list)->prev->content)->serial) {
+		ft_operations(PA, list, buff);
 
-int bfs(t_list **list, t_list **buff, t_list **visited, t_list **queue, int *deep){
-	int len1;
-	int len2;
-	char *string;
-	char *u;
-	enum Operations operations;
+	}
+//				else if (ft_strcmp2((*list)->content, (*buff)->prev->content) <= 0 &&
+	else if (((t_ps_content *) (*buff)->content)->serial >=
+			 ((t_ps_content *) (*list)->prev->content)->serial &&
+			 //						 ft_strcmp2((*buff)->content, (*buff)->prev->content) >= 0) {
+			 ((t_ps_content *) (*list)->content)->serial <=
+			 ((t_ps_content *) (*list)->prev->content)->serial) {
+		ft_operations(PA, list, buff);
 
-	len1 = ft_lstdlen(*list);
-	len2 = ft_lstdlen(*buff);
-	string = ft_lstd_to_str(*list, *buff, 128, 0, len1, len2);
-	ft_lstd_push_front(queue, ft_lstdnew(string, ft_strlen(string) + 1));
-//	if 	(!ft_is_str_in_lstd(string, *visited)) {
-//		ft_lstd_push_front(visited, ft_lstdnew(string, ft_strlen(string) + 1));
-//	}
-	while (*queue && (*deep) >= 0)
-	{
-		printf("%d\n",*deep);
-		u = (*queue)->content;
-		ft_lstd_push_back(visited, ft_lstdnew(u, ft_strlen(string) + 1));
-		ft_str_to_lstd(u,list, buff);
-		operations = SA;
-		(*deep)--;
-		while (1){
-			len1 = ft_lstdlen(*list);
-			len2 = ft_lstdlen(*buff);
-			if (operations == PA && len2 == 0) {
-				operations++;
-				continue;
-			}
-			if (operations == PB && len1 == 0) {
-				operations++;
-				break;
-			}
-			ft_operations(operations, list, buff);
-			if (ft_lstdlen(*buff) == 0 && is_sorted(*list)) {
-//				temp = ft_lstd_to_str(*list, *buff, 8, 0, ft_lstdlen(*list), ft_lstdlen(*buff));
-//				printf("!{%s} \n", temp);
-//				printf("{%s} ", string);
-//				printf("!operation : %d ", operations);
-//				printf("!max_step : %d \n", max_steps);
-//				ft_lstditer(*visited, &ft_lstprint2);
-				printf("!!!!!!!!!!!!!!!!!!!!\n");
-				return 1;
-			}
-
-			len1 = ft_lstdlen(*list);
-			len2 = ft_lstdlen(*buff);
-			string = ft_lstd_to_str(*list, *buff, 128, 0, len1, len2);
-			if (!ft_is_str_in_lstd(string, *visited)) {
-				ft_lstd_push_back(queue, ft_lstdnew(string, ft_strlen(string) + 1));
-			}
-			if (operations / 3 == 0)
-				ft_operations(operations, list, buff);
-			if (operations / 3 == 1)
-				ft_operations(operations + 3, list, buff);
-			if (operations / 3 == 2)
-				ft_operations(operations - 3, list, buff);
-			if (operations == PA)
-				ft_operations(PB, list, buff);
-			if (operations == PB)
-				ft_operations(PA, list, buff);
-
-			if (operations == PB)
-				break;
-			operations++;
-		}
-		ft_lstd_pop_front(queue);
-		}
+	}
+	else
 		return 0;
+	return 1;
+}
+
+
+int bfs(t_list **list, t_list **buff, t_list **visited, t_list **queue){
+	int steps;
+	steps = 0;
+
+	while (*buff) {
+		if (try_add(list, buff))
+			steps++;
+		else {
+			ft_operations(RA, list, buff);
+		++steps;
+		}
+	}
+
+	return steps;
 }

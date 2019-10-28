@@ -1,13 +1,13 @@
 #include "push_swap.h"
 #include <stdlib.h>
 
-t_list		*ft_strsplit_to_lstd(char const *string)
+t_list		*ft_strsplit_to_lstd(const char *string)
 {
 	t_list	*list;
 //	int		value;
 	char 	**tab;
 	int 	size;
-
+	t_ps_content *item;
 
 
 	list = NULL;
@@ -18,7 +18,10 @@ t_list		*ft_strsplit_to_lstd(char const *string)
 	while (tab[size])
 	{
 //			value = ft_atoi(tab[size]);
-			ft_lstd_push_front(&list, ft_lstdnew(tab[size], 1 + ft_strlen(tab[size])));
+			item = ft_ps_new_content(tab[size]);
+			ft_lstd_push_front(&list, ft_lstdnew(item, sizeof(*item)));
+//			list->value = ft_atoi(tab[size]);
+//			list->operation = -1;
 			ft_memdel((void**)&tab[size]);
 			size++;
 	}
