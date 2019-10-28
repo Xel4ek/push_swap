@@ -17,7 +17,7 @@ void	ft_lstprint(t_list *list){
 
 void	ft_lstprint2(t_list *list){
 	if (list)
-		printf("{%s}\n",((t_ps_content*)list->content)->content);
+		printf("{%s}\n",(char*)list->content);
 		//write(1 , list->content, list->content_size);
 	else
 		printf("{}");

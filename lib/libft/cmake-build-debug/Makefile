@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/Admin/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /snap/clion/88/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/Admin/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /snap/clion/88/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/e/shcool_42/push_swap/lib/libft
+CMAKE_SOURCE_DIR = /home/alexey/projects/push_swap/lib/libft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/e/shcool_42/push_swap/lib/libft/cmake-build-debug
+CMAKE_BINARY_DIR = /home/alexey/projects/push_swap/lib/libft/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /cygdrive/e/shcool_42/push_swap/lib/libft/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/cygdrive/c/Users/Admin/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/88/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/cygdrive/c/Users/Admin/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/88/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/e/shcool_42/push_swap/lib/libft/cmake-build-debug/CMakeFiles /cygdrive/e/shcool_42/push_swap/lib/libft/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexey/projects/push_swap/lib/libft/cmake-build-debug/CMakeFiles /home/alexey/projects/push_swap/lib/libft/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/e/shcool_42/push_swap/lib/libft/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexey/projects/push_swap/lib/libft/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -334,6 +334,21 @@ src/ft_lstd_collapse.s:
 .PHONY : src/ft_lstd_collapse.s
 
 # target to build an object file
+src/ft_lstd_del.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_lstd_del.o
+.PHONY : src/ft_lstd_del.o
+
+# target to preprocess a source file
+src/ft_lstd_del.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_lstd_del.i
+.PHONY : src/ft_lstd_del.i
+
+# target to generate assembly for a file
+src/ft_lstd_del.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_lstd_del.s
+.PHONY : src/ft_lstd_del.s
+
+# target to build an object file
 src/ft_lstd_pop_front.o:
 	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_lstd_pop_front.o
 .PHONY : src/ft_lstd_pop_front.o
@@ -349,6 +364,21 @@ src/ft_lstd_pop_front.s:
 .PHONY : src/ft_lstd_pop_front.s
 
 # target to build an object file
+src/ft_lstd_push_back.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_lstd_push_back.o
+.PHONY : src/ft_lstd_push_back.o
+
+# target to preprocess a source file
+src/ft_lstd_push_back.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_lstd_push_back.i
+.PHONY : src/ft_lstd_push_back.i
+
+# target to generate assembly for a file
+src/ft_lstd_push_back.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_lstd_push_back.s
+.PHONY : src/ft_lstd_push_back.s
+
+# target to build an object file
 src/ft_lstd_push_front.o:
 	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_lstd_push_front.o
 .PHONY : src/ft_lstd_push_front.o
@@ -362,21 +392,6 @@ src/ft_lstd_push_front.i:
 src/ft_lstd_push_front.s:
 	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_lstd_push_front.s
 .PHONY : src/ft_lstd_push_front.s
-
-# target to build an object file
-src/ft_lstddel.o:
-	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_lstddel.o
-.PHONY : src/ft_lstddel.o
-
-# target to preprocess a source file
-src/ft_lstddel.i:
-	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_lstddel.i
-.PHONY : src/ft_lstddel.i
-
-# target to generate assembly for a file
-src/ft_lstddel.s:
-	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_lstddel.s
-.PHONY : src/ft_lstddel.s
 
 # target to build an object file
 src/ft_lstdel.o:
@@ -737,6 +752,21 @@ src/ft_putstr_fd.i:
 src/ft_putstr_fd.s:
 	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_putstr_fd.s
 .PHONY : src/ft_putstr_fd.s
+
+# target to build an object file
+src/ft_quick_sort.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_quick_sort.o
+.PHONY : src/ft_quick_sort.o
+
+# target to preprocess a source file
+src/ft_quick_sort.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_quick_sort.i
+.PHONY : src/ft_quick_sort.i
+
+# target to generate assembly for a file
+src/ft_quick_sort.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_quick_sort.s
+.PHONY : src/ft_quick_sort.s
 
 # target to build an object file
 src/ft_sort_str_table.o:
@@ -1159,6 +1189,21 @@ src/ft_strtrim.s:
 .PHONY : src/ft_strtrim.s
 
 # target to build an object file
+src/ft_swap.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_swap.o
+.PHONY : src/ft_swap.o
+
+# target to preprocess a source file
+src/ft_swap.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_swap.i
+.PHONY : src/ft_swap.i
+
+# target to generate assembly for a file
+src/ft_swap.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_swap.s
+.PHONY : src/ft_swap.s
+
+# target to build an object file
 src/ft_tolower.o:
 	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_tolower.o
 .PHONY : src/ft_tolower.o
@@ -1187,6 +1232,21 @@ src/ft_toupper.i:
 src/ft_toupper.s:
 	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_toupper.s
 .PHONY : src/ft_toupper.s
+
+# target to build an object file
+src/ft_upper_bound.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_upper_bound.o
+.PHONY : src/ft_upper_bound.o
+
+# target to preprocess a source file
+src/ft_upper_bound.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_upper_bound.i
+.PHONY : src/ft_upper_bound.i
+
+# target to generate assembly for a file
+src/ft_upper_bound.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_upper_bound.s
+.PHONY : src/ft_upper_bound.s
 
 # target to build an object file
 src/get_next_line.o:
@@ -1254,15 +1314,18 @@ help:
 	@echo "... src/ft_lstd_collapse.o"
 	@echo "... src/ft_lstd_collapse.i"
 	@echo "... src/ft_lstd_collapse.s"
+	@echo "... src/ft_lstd_del.o"
+	@echo "... src/ft_lstd_del.i"
+	@echo "... src/ft_lstd_del.s"
 	@echo "... src/ft_lstd_pop_front.o"
 	@echo "... src/ft_lstd_pop_front.i"
 	@echo "... src/ft_lstd_pop_front.s"
+	@echo "... src/ft_lstd_push_back.o"
+	@echo "... src/ft_lstd_push_back.i"
+	@echo "... src/ft_lstd_push_back.s"
 	@echo "... src/ft_lstd_push_front.o"
 	@echo "... src/ft_lstd_push_front.i"
 	@echo "... src/ft_lstd_push_front.s"
-	@echo "... src/ft_lstddel.o"
-	@echo "... src/ft_lstd_del.i"
-	@echo "... src/ft_lstddel.s"
 	@echo "... src/ft_lstdel.o"
 	@echo "... src/ft_lstdel.i"
 	@echo "... src/ft_lstdel.s"
@@ -1335,6 +1398,9 @@ help:
 	@echo "... src/ft_putstr_fd.o"
 	@echo "... src/ft_putstr_fd.i"
 	@echo "... src/ft_putstr_fd.s"
+	@echo "... src/ft_quick_sort.o"
+	@echo "... src/ft_quick_sort.i"
+	@echo "... src/ft_quick_sort.s"
 	@echo "... src/ft_sort_str_table.o"
 	@echo "... src/ft_sort_str_table.i"
 	@echo "... src/ft_sort_str_table.s"
@@ -1419,12 +1485,18 @@ help:
 	@echo "... src/ft_strtrim.o"
 	@echo "... src/ft_strtrim.i"
 	@echo "... src/ft_strtrim.s"
+	@echo "... src/ft_swap.o"
+	@echo "... src/ft_swap.i"
+	@echo "... src/ft_swap.s"
 	@echo "... src/ft_tolower.o"
 	@echo "... src/ft_tolower.i"
 	@echo "... src/ft_tolower.s"
 	@echo "... src/ft_toupper.o"
 	@echo "... src/ft_toupper.i"
 	@echo "... src/ft_toupper.s"
+	@echo "... src/ft_upper_bound.o"
+	@echo "... src/ft_upper_bound.i"
+	@echo "... src/ft_upper_bound.s"
 	@echo "... src/get_next_line.o"
 	@echo "... src/get_next_line.i"
 	@echo "... src/get_next_line.s"

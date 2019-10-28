@@ -106,17 +106,99 @@ int try_add(t_list **list, t_list **buff){
 	return 1;
 }
 
-
+#include <stdlib.h>
 int bfs(t_list **list, t_list **buff, t_list **visited, t_list **queue){
 	int steps;
+	int iter;
+	int deep;
+	t_ps_string *item;
+	enum Operations operation;
+	char *temp;
+	int i;
+	char **print;
 	steps = 0;
+	item = (t_ps_string*) malloc(sizeof(t_ps_string));
+	item->string  = ft_lstd_to_str(*list, *buff, 250, 0, ft_lstdlen(*list), ft_lstdlen(*buff));
+	item->queue = (char*)malloc(sizeof(char)*500);
+	item->queue[0] = '+';
+	item->queue[1] = 0;
+	ft_lstd_push_back(queue, ft_lstdnew(item, sizeof(*item)));
+	ft_lstd_push_back(visited, ft_lstdnew(item, sizeof(*item)));
+	iter = 0;
+	deep = 0;
+	while (iter < 70000 && *buff && *queue) {
+		item = (t_ps_string*)(*queue)->content;
+		ft_lstd_del(list);
+		ft_lstd_del(buff);
+		ft_str_to_lstd(item->string, list, buff);
+		temp = (char*)malloc(sizeof(char)*500);
+		ft_strcpy(temp, item->queue);
+		ft_lstd_pop_front(queue);
 
-	while (*buff) {
-		if (try_add(list, buff))
-			steps++;
-		else {
-			ft_operations(RA, list, buff);
-		++steps;
+		if (try_add(list, buff)) {
+//			steps += 1;
+			steps += ft_strlen(temp) / 2;
+			iter++;
+			print = ft_strsplit(temp,' ');
+			i = ft_strlen(temp) / 2;
+			while (i>= 0) {
+				if (!ft_strcmp(print[i],"+"))
+					printf("pa\n");
+				else if (!ft_strcmp(print[i],"3"))
+					printf("ra\n");
+				else if (!ft_strcmp(print[i],"4"))
+					printf("rb\n");
+				else if (!ft_strcmp(print[i],"5"))
+					printf("rr\n");
+				else if (!ft_strcmp(print[i],"6"))
+					printf("rra\n");
+				else if (!ft_strcmp(print[i],"7"))
+					printf("rrb\n");
+				else if (!ft_strcmp(print[i],"8"))
+					printf("rrr\n");
+				--i;
+			}
+
+			ft_lstd_del(queue);
+			ft_lstd_del(visited);
+			item = (t_ps_string*) malloc(sizeof(t_ps_string));
+			item->queue = (char*)malloc(sizeof(char)*500);
+			item->queue[0] = '+';
+			item->queue[1] = 0;
+			item->string  = ft_lstd_to_str(*list, *buff, 250, 0, ft_lstdlen(*list), ft_lstdlen(*buff));
+			ft_lstd_push_back(queue, ft_lstdnew(item, sizeof(*item)));
+			ft_lstd_push_back(visited, ft_lstdnew(item, sizeof(*item)));
+		}
+		else
+			{
+			operation = RA;
+			while (operation < PA) {
+//				if (operation == SA || operation == SS){
+//					++operation;
+//					continue;
+//				}
+				ft_operations(operation, list, buff);
+		//		temp = item->queue;
+				item = (t_ps_string*) malloc(sizeof(t_ps_string));
+				item->string  = ft_lstd_to_str(*list, *buff, 250, 0, ft_lstdlen(*list), ft_lstdlen(*buff));
+				if (!ft_is_str_in_lstd(item->string, *visited)) {
+					item->queue = (char*)malloc(sizeof(char)*500);
+					ft_strcpy(item->queue, temp);
+					ft_strcat(item->queue, " ");
+					ft_strcat(item->queue, ft_itoa(operation));
+					ft_lstd_push_back(queue, ft_lstdnew(item, sizeof(*item)));
+					ft_lstd_push_back(visited, ft_lstdnew(item, sizeof(*item)));
+				}if (operation / 3 == 0)
+					ft_operations(operation, list, buff);
+				if (operation / 3 == 1)
+					ft_operations(operation + 3, list, buff);
+				if (operation / 3 == 2)
+					ft_operations(operation - 3, list, buff);
+			++operation;
+			++deep;
+			}
+//			ft_operations(RA, list, buff);
+			++iter;
 		}
 	}
 

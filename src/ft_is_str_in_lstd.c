@@ -11,11 +11,11 @@ int	ft_lstditer_reduce_2(t_list *list, char *string, int (*f)())
 				while (list && ptr != list->next) {
 					if (!ptr)
 						ptr = list;
-					if(!(*f)((char *) list->content, string))
+					if(!(*f)(((t_ps_string*) list->content)->string, string))
 						return 1;
 					list = list->next;
 				}
-			if(!(*f)((char *) list->content, string))
+			if(!(*f)(((t_ps_string*) list->content)->string, string))
 				return 1;
 		}
 	}

@@ -7,16 +7,16 @@
 
 
 enum Operations{
-	SA,
-	SB,
-	SS,
-	RA,
-	RB,
-	RR,
-	RRA,
-	RRB,
-	RRR,
-	PA,
+	SA, //0
+	SB, //1
+	SS, //2
+	RA, //3
+	RB, //4
+	RR, //5
+	RRA, //6
+	RRB, //7
+	RRR, //8
+	PA, //9
 	PB,
 	FREEZE,
 };
@@ -30,6 +30,10 @@ typedef struct s_ps_contetnt{
 
 }				t_ps_content;
 
+typedef  struct s_ps_string{
+	char		*string;
+	char		*queue;
+}				t_ps_string;
 
 void					ft_lstprint(t_list *list);
 void					ft_lstprint2(t_list *list);

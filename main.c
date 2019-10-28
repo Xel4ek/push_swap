@@ -2,7 +2,7 @@
 #include "push_swap.h"
 #include <stdlib.h>
 
-int main() {
+int main(int argc, char **argv) {
 	t_list *list;
 	t_list *buff;
 	t_list *visited;
@@ -10,10 +10,22 @@ int main() {
 	int size;
 	int *vector;
 	int value;
-	char str[]="61 94 86 69 79 93 53 54 51 97 78 65 96 82 74 95 91 80 81 57 98 64 56 87 66 52 84 68 100 76 85 75 62 77 83 50 67 89 55 88 70 72 59 99 63 92 58 60 71 73";
+	char *str;//[]="21 59 60 19 17 31 68 66 8 99 28 7 5 50 36 45 37 3 53 4";
 	char *string;
 	int max_steps;
 	int deep;
+	int p;
+	str = ft_strnew(2);
+	str[0] = 0;
+	if (argc > 1) {
+		p = 1;
+		while (p < argc) {
+			if (p != 1)
+				str = ft_strjoin(str, " ");
+			str = ft_strjoin(str, argv[p++]);
+		}
+	}else
+		return 0;
 	list = NULL;
 	buff = NULL;
 	visited = NULL;
@@ -22,24 +34,24 @@ int main() {
 	list = ft_strsplit_to_lstd(str);
 	size = ft_strsplit_to_inttab(&vector, str);
 
-	printf("we get %d numbers\n",size);
+//	printf("we get %d numbers\n",size);
 	int steps;
 //	ft_operations(PB,&list, &buff);
-	ft_lstditer_two(list, buff, &ft_lstprint);
-	printf("--------------------------------------\n");
+//	ft_lstditer_two(list, buff, &ft_lstprint);
+//	printf("--------------------------------------\n");
 	int i = 0;
-	while (i < size)
-		printf(" %2d", vector[i++]);
+//	while (i < size)
+//		printf(" %2d", vector[i++]);
 	ft_quick_sort(vector, vector + size -1);
-	printf("\n");
-	i = 0;
-	while (i < size)
-		printf(" %2d", vector[i++]);
-	i = 0;
-	printf("\n");
-	while (i < size)
-		printf(" %2d",i++);
-	printf("\n--------------------------------------\n");
+//	printf("\n");
+//	i = 0;
+//	while (i < size)
+//		printf(" %2d", vector[i++]);
+//	i = 0;
+//	printf("\n");
+//	while (i < size)
+//		printf(" %2d",i++);
+//	printf("\n--------------------------------------\n");
 	i = 0;
 	int j;
 	while (i < size){
@@ -67,8 +79,8 @@ int m;
 		if (max_steps > take_it)
 		{
 			take_it = max_steps;
-			printf("we find %d\n",i);
-			ft_lstditer_two(list, buff, &ft_lstprint);
+//			printf("we find %d\n",i);
+//			ft_lstditer_two(list, buff, &ft_lstprint);
 			int k;
 
 			j = size;
@@ -86,17 +98,17 @@ int m;
 					}
 				buff = buff->next;
 			}
-			printf("--------------------------------------\n");
-			printf("steps: %d\n", max_steps);
+//			printf("--------------------------------------\n");
+//			printf("steps: %d\n", max_steps);
 		}
 		ft_lstd_del(&buff);
 		list = list->next;
 	}
-	ft_lstditer_two(list, buff, &ft_lstprint);
-	printf("--------------------------------------\n");
+//	ft_lstditer_two(list, buff, &ft_lstprint);
+//	printf("--------------------------------------\n");
 
-	ft_lstditer_two(list, buff, &ft_lstprint3);
-	printf("--------------------------------------\n");
+//	ft_lstditer_two(list, buff, &ft_lstprint3);
+//	printf("--------------------------------------\n");
 	i = size;
 	int move;
 
@@ -108,6 +120,7 @@ int m;
 //			move = 1;
 //			if (!buff) {
 				ft_operations(PB, &list, &buff);
+				printf("pb\n");
 				//			else {
 //				while (move) {
 //					move = 0;
@@ -137,19 +150,29 @@ int m;
 //				}
 //			}
 		}
-		else
+		else {
 			ft_operations(RA, &list, &buff);
+			printf("ra\n");
+		}
 		++steps;
 	}
+//	printf("--------------------------------------\n");
+//	ft_lstditer_two(list, buff, &ft_lstprint3);
+//	printf("--------------------------------------\n");
+//	printf("steps: %d\n", steps);
+//	steps += bfs(&list, &buff, &visited, &queue);
+//	ft_lstditer_two(list, buff, &ft_lstprint3);
+//	printf("--------------------------------------\n");
+//	printf("steps: %d\n", steps);
 
-	printf("--------------------------------------\n");
-	ft_lstditer_two(list, buff, &ft_lstprint3);
-	printf("--------------------------------------\n");
-	printf("steps: %d\n", steps);
-	steps += bfs(&list, &buff, NULL, NULL);
-	ft_lstditer_two(list, buff, &ft_lstprint3);
-	printf("--------------------------------------\n");
-	printf("steps: %d\n", steps);
-
+//	char *test;
+//	test = ft_lstd_to_str(list, buff, 250, 0, ft_lstdlen(list),ft_lstdlen(buff));
+//	printf("%s\n", test);
+//	ft_lstd_del(&list);
+//	ft_lstd_del(&buff);
+//	ft_str_to_lstd(test, &list, &buff);
+//	ft_lstditer_two(list, buff, &ft_lstprint);
+//	ft_lstditer(queue, &ft_lstprint2);
+//	printf("steps: %d\n", steps);
 	return 0;
 }
