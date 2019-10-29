@@ -21,8 +21,8 @@ int main(int argc, char **argv) {
 		p = 1;
 		while (p < argc) {
 			if (p != 1)
-				str = ft_strjoin(str, " ");
-			str = ft_strjoin(str, argv[p++]);
+				str = ft_strjoin(" ", str);
+			str = ft_strjoin(argv[p++],str);
 		}
 	}else
 		return 0;
@@ -160,7 +160,7 @@ int m;
 //	ft_lstditer_two(list, buff, &ft_lstprint3);
 //	printf("--------------------------------------\n");
 //	printf("steps: %d\n", steps);
-//	steps += bfs(&list, &buff, &visited, &queue);
+	steps += bfs(&list, &buff, &visited, &queue);
 //	ft_lstditer_two(list, buff, &ft_lstprint3);
 //	printf("--------------------------------------\n");
 //	printf("steps: %d\n", steps);
