@@ -48,10 +48,10 @@ RM = /snap/clion/88/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alexey/projects/push_swap
+CMAKE_SOURCE_DIR = /home/alexey/projects/push_swap_1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alexey/projects/push_swap/cmake-build-debug
+CMAKE_BINARY_DIR = /home/alexey/projects/push_swap_1/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles /home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles /home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -262,6 +262,36 @@ src/ft_is_str_in_lstd.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_is_str_in_lstd.c.s
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_is_str_in_lstd.c.s
 .PHONY : src/ft_is_str_in_lstd.c.s
+
+src/ft_lstd_del_2.o: src/ft_lstd_del_2.c.o
+
+.PHONY : src/ft_lstd_del_2.o
+
+# target to build an object file
+src/ft_lstd_del_2.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.o
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstd_del_2.c.o
+.PHONY : src/ft_lstd_del_2.c.o
+
+src/ft_lstd_del_2.i: src/ft_lstd_del_2.c.i
+
+.PHONY : src/ft_lstd_del_2.i
+
+# target to preprocess a source file
+src/ft_lstd_del_2.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.i
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstd_del_2.c.i
+.PHONY : src/ft_lstd_del_2.c.i
+
+src/ft_lstd_del_2.s: src/ft_lstd_del_2.c.s
+
+.PHONY : src/ft_lstd_del_2.s
+
+# target to generate assembly for a file
+src/ft_lstd_del_2.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.s
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstd_del_2.c.s
+.PHONY : src/ft_lstd_del_2.c.s
 
 src/ft_lstd_swap.o: src/ft_lstd_swap.c.o
 
@@ -616,6 +646,9 @@ help:
 	@echo "... src/ft_is_str_in_lstd.o"
 	@echo "... src/ft_is_str_in_lstd.i"
 	@echo "... src/ft_is_str_in_lstd.s"
+	@echo "... src/ft_lstd_del_2.o"
+	@echo "... src/ft_lstd_del_2.i"
+	@echo "... src/ft_lstd_del_2.s"
 	@echo "... src/ft_lstd_swap.o"
 	@echo "... src/ft_lstd_swap.i"
 	@echo "... src/ft_lstd_swap.s"

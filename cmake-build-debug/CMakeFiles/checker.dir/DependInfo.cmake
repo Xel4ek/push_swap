@@ -4,20 +4,21 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/alexey/projects/push_swap/checker.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/checker.c.o"
-  "/home/alexey/projects/push_swap/src/dfs.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/dfs.c.o"
-  "/home/alexey/projects/push_swap/src/ft_is_str_in_lstd.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/ft_is_str_in_lstd.c.o"
-  "/home/alexey/projects/push_swap/src/ft_lstd_swap.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/ft_lstd_swap.c.o"
-  "/home/alexey/projects/push_swap/src/ft_lstd_to_str.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/ft_lstd_to_str.c.o"
-  "/home/alexey/projects/push_swap/src/ft_lstprint.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/ft_lstprint.c.o"
-  "/home/alexey/projects/push_swap/src/ft_operation.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/ft_operation.c.o"
-  "/home/alexey/projects/push_swap/src/ft_ps_new_content.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/ft_ps_new_content.c.o"
-  "/home/alexey/projects/push_swap/src/ft_quick_sort.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/ft_quick_sort.c.o"
-  "/home/alexey/projects/push_swap/src/ft_sort_lstd.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/ft_sort_lstd.c.o"
-  "/home/alexey/projects/push_swap/src/ft_strsplit_to_inttab.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/ft_strsplit_to_inttab.c.o"
-  "/home/alexey/projects/push_swap/src/ft_swap_stacks.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/ft_swap_stacks.c.o"
-  "/home/alexey/projects/push_swap/src/is_sorted.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/is_sorted.c.o"
-  "/home/alexey/projects/push_swap/src/read.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/read.c.o"
+  "/home/alexey/projects/push_swap_1/checker.c" "/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/checker.dir/checker.c.o"
+  "/home/alexey/projects/push_swap_1/src/dfs.c" "/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/checker.dir/src/dfs.c.o"
+  "/home/alexey/projects/push_swap_1/src/ft_is_str_in_lstd.c" "/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/checker.dir/src/ft_is_str_in_lstd.c.o"
+  "/home/alexey/projects/push_swap_1/src/ft_lstd_del_2.c" "/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/checker.dir/src/ft_lstd_del_2.c.o"
+  "/home/alexey/projects/push_swap_1/src/ft_lstd_swap.c" "/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/checker.dir/src/ft_lstd_swap.c.o"
+  "/home/alexey/projects/push_swap_1/src/ft_lstd_to_str.c" "/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/checker.dir/src/ft_lstd_to_str.c.o"
+  "/home/alexey/projects/push_swap_1/src/ft_lstprint.c" "/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/checker.dir/src/ft_lstprint.c.o"
+  "/home/alexey/projects/push_swap_1/src/ft_operation.c" "/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/checker.dir/src/ft_operation.c.o"
+  "/home/alexey/projects/push_swap_1/src/ft_ps_new_content.c" "/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/checker.dir/src/ft_ps_new_content.c.o"
+  "/home/alexey/projects/push_swap_1/src/ft_quick_sort.c" "/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/checker.dir/src/ft_quick_sort.c.o"
+  "/home/alexey/projects/push_swap_1/src/ft_sort_lstd.c" "/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/checker.dir/src/ft_sort_lstd.c.o"
+  "/home/alexey/projects/push_swap_1/src/ft_strsplit_to_inttab.c" "/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/checker.dir/src/ft_strsplit_to_inttab.c.o"
+  "/home/alexey/projects/push_swap_1/src/ft_swap_stacks.c" "/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/checker.dir/src/ft_swap_stacks.c.o"
+  "/home/alexey/projects/push_swap_1/src/is_sorted.c" "/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/checker.dir/src/is_sorted.c.o"
+  "/home/alexey/projects/push_swap_1/src/read.c" "/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/checker.dir/src/read.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -30,7 +31,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/alexey/projects/push_swap/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/DependInfo.cmake"
+  "/home/alexey/projects/push_swap_1/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -33,6 +33,7 @@ typedef struct s_ps_contetnt{
 typedef  struct s_ps_string{
 	char		*string;
 	char		*queue;
+	int			last;
 }				t_ps_string;
 
 void					ft_lstprint(t_list *list);
@@ -55,4 +56,7 @@ int longes_subsequence(const t_list *list, t_list **buff);
 t_ps_content *ft_ps_new_content(char *string);
 int ft_strsplit_to_inttab(int **vector, char *string);
 void	ft_lstprint3(t_list *list);
+void	ft_lstd_del_2(t_list **list);
+void	ft_lstd_del_3(t_list **list);
+
 #endif

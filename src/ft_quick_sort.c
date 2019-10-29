@@ -9,6 +9,7 @@ int longes_subsequence(const t_list *list, t_list **buff){
 	int p[len];
 	int d[len];
 	int i = 0;
+	char *itoa_ptr;
 	t_ps_content *item;
 
 	while (i < len) {
@@ -47,7 +48,10 @@ int longes_subsequence(const t_list *list, t_list **buff){
 
 	while(pos != -1) {
 //		ft_lstd_push_back(buff, ft_lstdnew(ft_itoa(index[i]), 8));
-		item = ft_ps_new_content(ft_itoa(a[pos]));
+		itoa_ptr = ft_itoa(a[pos]);
+		item = ft_ps_new_content(itoa_ptr);
+		ft_memdel((void**)&itoa_ptr);
+
 		ft_lstd_push_front(buff, ft_lstdnew(item, sizeof(*item)));
 		pos = p[pos];
 

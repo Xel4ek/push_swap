@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/checker.dir/checker.c.o"
   "CMakeFiles/checker.dir/src/dfs.c.o"
   "CMakeFiles/checker.dir/src/ft_is_str_in_lstd.c.o"
+  "CMakeFiles/checker.dir/src/ft_lstd_del_2.c.o"
   "CMakeFiles/checker.dir/src/ft_lstd_swap.c.o"
   "CMakeFiles/checker.dir/src/ft_lstd_to_str.c.o"
   "CMakeFiles/checker.dir/src/ft_lstprint.c.o"

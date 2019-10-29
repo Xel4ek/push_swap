@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu99
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/alexey/projects/push_swap/lib/libft/includes -I/home/alexey/projects/push_swap/includes -I/home/alexey/projects/push_swap/lib/libft 
+C_INCLUDES = -I/home/alexey/projects/push_swap_1/lib/libft/includes -I/home/alexey/projects/push_swap_1/includes -I/home/alexey/projects/push_swap_1/lib/libft 
 

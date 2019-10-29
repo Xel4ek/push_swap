@@ -10,7 +10,8 @@ set(SRC
         src/dfs.c
         src/ft_quick_sort.c
         src/ft_ps_new_content.c
-        src/ft_strsplit_to_inttab.c)
+        src/ft_strsplit_to_inttab.c
+        src/ft_lstd_del_2.c)
 
 
 include_directories(lib/libft/includes)

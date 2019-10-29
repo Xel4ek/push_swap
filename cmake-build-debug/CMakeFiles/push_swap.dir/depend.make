@@ -13,6 +13,10 @@ CMakeFiles/push_swap.dir/src/ft_is_str_in_lstd.c.o: ../includes/push_swap.h
 CMakeFiles/push_swap.dir/src/ft_is_str_in_lstd.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/push_swap.dir/src/ft_is_str_in_lstd.c.o: ../src/ft_is_str_in_lstd.c
 
+CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.o: ../includes/push_swap.h
+CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.o: ../src/ft_lstd_del_2.c
+
 CMakeFiles/push_swap.dir/src/ft_lstd_swap.c.o: ../includes/push_swap.h
 CMakeFiles/push_swap.dir/src/ft_lstd_swap.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/push_swap.dir/src/ft_lstd_swap.c.o: ../src/ft_lstd_swap.c

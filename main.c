@@ -10,11 +10,13 @@ int main(int argc, char **argv) {
 	int size;
 	int *vector;
 	int value;
-	char *str;//[]="21 59 60 19 17 31 68 66 8 99 28 7 5 50 36 45 37 3 53 4";
+
 	char *string;
 	int max_steps;
 	int deep;
 	int p;
+//		char str[]="16 59 19 52 84 17 86 109 108 87 85 49 43 101 1 63 9 92 106 81 77 94 105 113 69 89 110 8 31 48 67 56 34 78 61 96 53 88 74 76 7 95 66 14 2 20 73 29 57";
+	char *str;
 	str = ft_strnew(2);
 	str[0] = 0;
 	if (argc > 1) {
@@ -54,6 +56,7 @@ int main(int argc, char **argv) {
 //	printf("\n--------------------------------------\n");
 	i = 0;
 	int j;
+
 	while (i < size){
 		j = 0;
 		while (j < size) {
@@ -64,6 +67,7 @@ int main(int argc, char **argv) {
 		list= list->next;
 		++i;
 	}
+	ft_memdel((void**)&vector);
 //	ft_operations(SA, &list, &buff);
 //	ft_lstditer_two(list, buff, &ft_lstprint);
 //	printf("--------------------------------------\n");
@@ -161,6 +165,8 @@ int m;
 //	printf("--------------------------------------\n");
 //	printf("steps: %d\n", steps);
 	steps += bfs(&list, &buff, &visited, &queue);
+	ft_lstd_del(&visited);
+	ft_lstd_del_3(&queue);
 //	ft_lstditer_two(list, buff, &ft_lstprint3);
 //	printf("--------------------------------------\n");
 //	printf("steps: %d\n", steps);
@@ -168,11 +174,12 @@ int m;
 //	char *test;
 //	test = ft_lstd_to_str(list, buff, 250, 0, ft_lstdlen(list),ft_lstdlen(buff));
 //	printf("%s\n", test);
-//	ft_lstd_del(&list);
-//	ft_lstd_del(&buff);
+//	ft_lstditer_two(list, buff, &ft_lstprint3);
+	ft_lstd_del_2(&list);
+	ft_lstd_del_2(&buff);
 //	ft_str_to_lstd(test, &list, &buff);
-//	ft_lstditer_two(list, buff, &ft_lstprint);
+
 //	ft_lstditer(queue, &ft_lstprint2);
-//	printf("steps: %d\n", steps);
+	printf("steps: %d\n", steps);
 	return 0;
 }
