@@ -84,6 +84,8 @@ int dfs_with_max_len(t_list **list, t_list **buff, t_list **visited, int max_ste
 	return 0;
 }
 int try_add(t_list **list, t_list **buff){
+//	if(((t_ps_content *)(*list)->content)->serial > 100)
+//		return 0;
 	if (((t_ps_content *) (*buff)->content)->serial <= ((t_ps_content *)(*list)->content)->serial &&
 		((t_ps_content *) (*buff)->content)->serial >= ((t_ps_content *) (*list)->prev->content)->serial) {
 		ft_operations(PA, list, buff);
@@ -92,16 +94,12 @@ int try_add(t_list **list, t_list **buff){
 		ft_operations(PA, list, buff);
 
 	}
-//				else if (ft_strcmp2((*list)->content, (*buff)->prev->content) <= 0 &&
 	else if (((t_ps_content *) (*buff)->content)->serial >=
 			 ((t_ps_content *) (*list)->prev->content)->serial &&
-			 //						 ft_strcmp2((*buff)->content, (*buff)->prev->content) >= 0) {
 			 ((t_ps_content *) (*list)->content)->serial <=
 			 ((t_ps_content *) (*list)->prev->content)->serial) {
 		ft_operations(PA, list, buff);
-	//	((t_ps_content*)((*list)->content))->operation = FREEZE;
-
-	}
+		}
 	else
 		return 0;
 	return 1;
