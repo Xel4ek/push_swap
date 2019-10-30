@@ -118,24 +118,26 @@ int bfs(t_list **list, t_list **buff, t_list **visited, t_list **queue){
 	int i;
 	char **print;
 	char *itoa_ptr;
+	int last;
 	steps = 0;
 	item = (t_ps_string*) malloc(sizeof(t_ps_string));
 	item->string  = ft_lstd_to_str(*list, *buff, 4096, 0, ft_lstdlen(*list), ft_lstdlen(*buff));
-	item->queue = (char*)malloc(sizeof(char)*256);
+	item->queue = (char*)malloc(sizeof(char)*1024);
 	item->queue[0] = '+';
 	item->queue[1] = 0;
+	item->last = -1;
 	ft_lstd_push_back(queue, ft_lstdnew(item, sizeof(*item)));
 	ft_lstd_push_back(visited, ft_lstdnew(item, sizeof(*item)));
 	iter = 0;
 	deep = 0;
-	while (iter < 70000 && *buff && *queue) {
+	while (iter < 170000 && *buff && *queue) {
 
 		ft_lstd_del_2(list);
 		ft_lstd_del_2(buff);
 
 		item = (t_ps_string*)((*queue)->content);
 		ft_str_to_lstd(item->string, list, buff);
-		temp = (char*)malloc(sizeof(char)*256);
+		temp = (char*)malloc(sizeof(char)*1024);
 		ft_strcpy(temp, item->queue);
 		ft_lstd_pop_front(queue);
 		if (try_add(list, buff)) {
@@ -166,9 +168,10 @@ int bfs(t_list **list, t_list **buff, t_list **visited, t_list **queue){
 			ft_lstd_del(queue);
 			ft_lstd_del_3(visited);
 			item = (t_ps_string*) malloc(sizeof(t_ps_string));
-			item->queue = (char*)malloc(sizeof(char)*256);
+			item->queue = (char*)malloc(sizeof(char)*1024);
 			item->queue[0] = '+';
 			item->queue[1] = 0;
+			item->last = -1;
 			item->string  = ft_lstd_to_str(*list, *buff, 4096, 0, ft_lstdlen(*list), ft_lstdlen(*buff));
 			ft_lstd_push_back(queue, ft_lstdnew(item, sizeof(*item)));
 			ft_lstd_push_back(visited, ft_lstdnew(item, sizeof(*item)));
@@ -178,11 +181,22 @@ int bfs(t_list **list, t_list **buff, t_list **visited, t_list **queue){
 			{
 			operation = RRR;
 			while (operation > SS) {
+				if (last !=-1 && operation / 3 == last / 3)
+				{
+					--operation;
+					continue;
+				}
+				if (last !=-1 && operation % 3 == last % 3)
+				{
+					--operation;
+					continue;
+				}
 				ft_operations(operation, list, buff);
 				item = (t_ps_string*) malloc(sizeof(t_ps_string));
 				item->string  = ft_lstd_to_str(*list, *buff, 4096, 0, ft_lstdlen(*list), ft_lstdlen(*buff));
 				if (!ft_is_str_in_lstd(item->string, *visited)) {
 					item->queue = (char*)malloc(sizeof(char)*4096);
+					item->last = operation;
 					ft_strcpy(item->queue, temp);
 					ft_strcat(item->queue, " ");
 					itoa_ptr  = ft_itoa(operation);

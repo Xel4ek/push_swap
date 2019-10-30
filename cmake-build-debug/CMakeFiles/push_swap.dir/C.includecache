@@ -20,11 +20,11 @@ string.h
 stdint.h
 -
 
-/cygdrive/e/shcool_42/push-swap_2/src/dfs.c
-push_swap.h
-/cygdrive/e/shcool_42/push-swap_2/src/push_swap.h
+/home/alexey/projects/push_swap_1/main.c
 stdio.h
 -
+push_swap.h
+/home/alexey/projects/push_swap_1/push_swap.h
 stdlib.h
 -
 
