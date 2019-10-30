@@ -99,6 +99,7 @@ int try_add(t_list **list, t_list **buff){
 			 ((t_ps_content *) (*list)->content)->serial <=
 			 ((t_ps_content *) (*list)->prev->content)->serial) {
 		ft_operations(PA, list, buff);
+	//	((t_ps_content*)((*list)->content))->operation = FREEZE;
 
 	}
 	else
@@ -116,22 +117,15 @@ int bfs(t_list **list, t_list **buff, t_list **visited, t_list **queue){
 	char *temp;
 	int i;
 	char **print;
-	int last;
-	int skip;
 	char *itoa_ptr;
-	skip =0;
 	steps = 0;
 	item = (t_ps_string*) malloc(sizeof(t_ps_string));
 	item->string  = ft_lstd_to_str(*list, *buff, 4096, 0, ft_lstdlen(*list), ft_lstdlen(*buff));
 	item->queue = (char*)malloc(sizeof(char)*256);
 	item->queue[0] = '+';
 	item->queue[1] = 0;
-	item->last = -1;
 	ft_lstd_push_back(queue, ft_lstdnew(item, sizeof(*item)));
 	ft_lstd_push_back(visited, ft_lstdnew(item, sizeof(*item)));
-//	ft_memdel((void**)&(item->queue));
-//	ft_memdel((void**)&(item));
-
 	iter = 0;
 	deep = 0;
 	while (iter < 70000 && *buff && *queue) {
@@ -143,12 +137,8 @@ int bfs(t_list **list, t_list **buff, t_list **visited, t_list **queue){
 		ft_str_to_lstd(item->string, list, buff);
 		temp = (char*)malloc(sizeof(char)*256);
 		ft_strcpy(temp, item->queue);
-		last = item->last;
-//		ft_memdel((void**)&(((t_ps_string*)((*queue)->content))->string));
 		ft_lstd_pop_front(queue);
-
 		if (try_add(list, buff)) {
-//			steps += 1;
 			steps += ft_strlen(temp) / 2;
 			iter++;
 			print = ft_strsplit(temp,' ');
@@ -173,68 +163,45 @@ int bfs(t_list **list, t_list **buff, t_list **visited, t_list **queue){
 
 			ft_memdel((void**)&print);
 			ft_memdel((void**)&temp);
-			ft_lstd_del(visited);
-			ft_lstd_del_3(queue);
+			ft_lstd_del(queue);
+			ft_lstd_del_3(visited);
 			item = (t_ps_string*) malloc(sizeof(t_ps_string));
 			item->queue = (char*)malloc(sizeof(char)*256);
 			item->queue[0] = '+';
 			item->queue[1] = 0;
-			item->last = -1;
 			item->string  = ft_lstd_to_str(*list, *buff, 4096, 0, ft_lstdlen(*list), ft_lstdlen(*buff));
 			ft_lstd_push_back(queue, ft_lstdnew(item, sizeof(*item)));
 			ft_lstd_push_back(visited, ft_lstdnew(item, sizeof(*item)));
-//			ft_memdel((void**)&(item->queue));
 			ft_memdel((void**)&(item));
 		}
 		else
 			{
 			operation = RRR;
 			while (operation > SS) {
-//				if (operation == SA || operation == SS){
-//					++operation;
-//					continue;
-//				}
-
-			if (operation /3  != last && last != -1)
-			{
-				skip++;
-//				printf("skip %d\n",skip);
-					--operation;
-					continue;
-				}
 				ft_operations(operation, list, buff);
-		//		temp = item->queue;
 				item = (t_ps_string*) malloc(sizeof(t_ps_string));
 				item->string  = ft_lstd_to_str(*list, *buff, 4096, 0, ft_lstdlen(*list), ft_lstdlen(*buff));
-
 				if (!ft_is_str_in_lstd(item->string, *visited)) {
-					item->last = operation / 3;
 					item->queue = (char*)malloc(sizeof(char)*4096);
 					ft_strcpy(item->queue, temp);
 					ft_strcat(item->queue, " ");
 					itoa_ptr  = ft_itoa(operation);
 					ft_strcat(item->queue,itoa_ptr);
-//					ft_memdel((void**) & itoa_ptr);
 					ft_lstd_push_back(queue, ft_lstdnew(item, sizeof(*item)));
 					ft_lstd_push_back(visited, ft_lstdnew(item, sizeof(*item)));
-//					ft_memdel((void**)&(item->string));
-				}if (operation / 3 == 0)
+				}
+				if (operation / 3 == 0)
 					ft_operations(operation, list, buff);
-				if (operation / 3 == 1)
+				else if (operation / 3 == 1)
 					ft_operations(operation + 3, list, buff);
-				if (operation / 3 == 2)
+				else if (operation / 3 == 2)
 					ft_operations(operation - 3, list, buff);
-//				ft_memdel((void**)&(item->string));
 				ft_memdel((void**)&(item));
 			--operation;
 			++deep;
 			}
-//			ft_operations(RA, list, buff);
 			++iter;
 		}
-
-//		ft_memdel((void**)&temp);
-
 	}
 
 	return steps;

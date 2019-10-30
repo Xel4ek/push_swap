@@ -1,7 +1,7 @@
-/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/push_swap.dir
-/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/checker.dir
-/home/alexey/projects/push_swap_1/cmake-build-debug/lib/libft/CMakeFiles/rebuild_cache.dir
-/home/alexey/projects/push_swap_1/cmake-build-debug/lib/libft/CMakeFiles/libft.dir
-/home/alexey/projects/push_swap_1/cmake-build-debug/lib/libft/CMakeFiles/edit_cache.dir
+/cygdrive/e/shcool_42/push-swap_2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/cygdrive/e/shcool_42/push-swap_2/cmake-build-debug/CMakeFiles/push_swap.dir
+/cygdrive/e/shcool_42/push-swap_2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/e/shcool_42/push-swap_2/cmake-build-debug/CMakeFiles/checker.dir
+/cygdrive/e/shcool_42/push-swap_2/cmake-build-debug/lib/libft/CMakeFiles/rebuild_cache.dir
+/cygdrive/e/shcool_42/push-swap_2/cmake-build-debug/lib/libft/CMakeFiles/libft.dir
+/cygdrive/e/shcool_42/push-swap_2/cmake-build-debug/lib/libft/CMakeFiles/edit_cache.dir

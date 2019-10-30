@@ -17,7 +17,7 @@ char	*ft_strchr(const char *str, int c)
 	char *ptr;
 
 	ptr = (char*)str;
-	while (*ptr != c)
+	while (*ptr != (char)c)
 	{
 		if (!*ptr)
 			return (NULL);
@@ -31,7 +31,7 @@ char	*ft_strch(const char *str, int ch)
 	char *ptr;
 
 	ptr = (char*)str;
-	while (*ptr != ch && *ptr)
+	while (*ptr != (char)ch && *ptr)
 		++ptr;
 	return (ptr);
 }

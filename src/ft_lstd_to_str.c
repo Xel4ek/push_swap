@@ -41,7 +41,7 @@ void ft_str_to_lstd(char *string, t_list **list1, t_list **list2){
 	*list2 = NULL;
 	tab = ft_strsplit(string, ' ');
 	i = 0;
-	while (tab[i] && ft_strcmp2(tab[i], "/")) {
+	while (tab[i] && ft_strcmp(tab[i], "/")) {
 		item = ft_ps_new_content(tab[i]);
 		item->serial = ft_atoi(tab[i]);
 		ft_lstd_push_back(list1, ft_lstdnew(item, sizeof(*item)));

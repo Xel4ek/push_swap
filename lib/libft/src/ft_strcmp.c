@@ -14,34 +14,10 @@
 
 int	ft_strcmp(const char *s1, const char *s2)
 {
-	unsigned char *ptr1;
-	unsigned char *ptr2;
-
-	ptr1 = (unsigned char*)s1;
-	ptr2 = (unsigned char*)s2;
-	while (*ptr1 && *ptr2 && *ptr2 == *ptr1)
+	while (*s1 && *s1 == *s2)
 	{
-		++ptr1;
-		++ptr2;
+		++s1;
+		++s2;
 	}
-	return (*ptr1 - *ptr2);
-}
-
-int	ft_strcmp2(const char *s1, const char *s2)
-{
-	unsigned char *ptr1;
-	unsigned char *ptr2;
-	int len;
-
-	len = ft_strlen(s1) - ft_strlen(s2);
-	ptr1 = (unsigned char*)s1;
-	ptr2 = (unsigned char*)s2;
-	if (len)
-		return (len);
-	while (*ptr2 == *ptr1 && *ptr1 && *ptr2)
-	{
-		++ptr1;
-		++ptr2;
-	}
-	return (*ptr1 - *ptr2);
+	return (*(const unsigned char *)s1 - *(const unsigned char *)s2);
 }

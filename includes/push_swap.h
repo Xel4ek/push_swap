@@ -33,7 +33,7 @@ typedef struct s_ps_contetnt{
 typedef  struct s_ps_string{
 	char		*string;
 	char		*queue;
-	int			last;
+//	int			last;
 }				t_ps_string;
 
 void					ft_lstprint(t_list *list);

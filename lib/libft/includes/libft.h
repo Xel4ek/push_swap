@@ -33,7 +33,6 @@ typedef struct		s_list
 
 void				ft_striter(char *s, void (*f)(char *));
 int					ft_strcmp(const char *s1, const char *s2);
-int					ft_strcmp2(const char *s1, const char *s2);
 void				ft_strclr(char *s);
 char				*ft_strcat(char *dst, const char *src);
 int					ft_isascii(int ch);
