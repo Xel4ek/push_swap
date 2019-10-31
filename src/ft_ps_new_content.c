@@ -1,6 +1,6 @@
 #include "push_swap.h"
 #include <stdlib.h>
-
+/*
 t_ps_content *ft_ps_new_content(char *string){
 	t_ps_content *ptr;
 	size_t content_size;
@@ -19,6 +19,23 @@ t_ps_content *ft_ps_new_content(char *string){
 	ptr->serial = -1;
 	ptr->content_size = content_size;
 	ptr->content = ft_memcpy(ptr->content, string, content_size + 1);
+
+	return ptr;
+}
+*/
+t_ps_content *ft_ps_new_content_int(int tab){
+	t_ps_content *ptr;
+	size_t content_size;
+
+
+	if (!(ptr = (t_ps_content*)malloc(sizeof(*ptr))))
+		return NULL;
+
+	ptr->value = tab;
+	ptr->operation = -1;
+	ptr->serial = -1;
+	ptr->content_size = sizeof(int);
+	ptr->content = tab;
 
 	return ptr;
 }

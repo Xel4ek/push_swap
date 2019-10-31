@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/88/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/92/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/88/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/92/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/alexey/projects/push_swap_1/cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/88/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/92/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/88/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/92/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -276,6 +276,72 @@ src/dfs.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/dfs.c.s
 .PHONY : src/dfs.c.s
 
+src/ft_array_to_lstd.o: src/ft_array_to_lstd.c.o
+
+.PHONY : src/ft_array_to_lstd.o
+
+# target to build an object file
+src/ft_array_to_lstd.c.o:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_array_to_lstd.c.o
+	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_array_to_lstd.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.o
+.PHONY : src/ft_array_to_lstd.c.o
+
+src/ft_array_to_lstd.i: src/ft_array_to_lstd.c.i
+
+.PHONY : src/ft_array_to_lstd.i
+
+# target to preprocess a source file
+src/ft_array_to_lstd.c.i:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_array_to_lstd.c.i
+	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_array_to_lstd.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.i
+.PHONY : src/ft_array_to_lstd.c.i
+
+src/ft_array_to_lstd.s: src/ft_array_to_lstd.c.s
+
+.PHONY : src/ft_array_to_lstd.s
+
+# target to generate assembly for a file
+src/ft_array_to_lstd.c.s:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_array_to_lstd.c.s
+	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_array_to_lstd.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.s
+.PHONY : src/ft_array_to_lstd.c.s
+
+src/ft_is_array_in_lstd.o: src/ft_is_array_in_lstd.c.o
+
+.PHONY : src/ft_is_array_in_lstd.o
+
+# target to build an object file
+src/ft_is_array_in_lstd.c.o:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_is_array_in_lstd.c.o
+	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_is_array_in_lstd.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_is_array_in_lstd.c.o
+.PHONY : src/ft_is_array_in_lstd.c.o
+
+src/ft_is_array_in_lstd.i: src/ft_is_array_in_lstd.c.i
+
+.PHONY : src/ft_is_array_in_lstd.i
+
+# target to preprocess a source file
+src/ft_is_array_in_lstd.c.i:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_is_array_in_lstd.c.i
+	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_is_array_in_lstd.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_is_array_in_lstd.c.i
+.PHONY : src/ft_is_array_in_lstd.c.i
+
+src/ft_is_array_in_lstd.s: src/ft_is_array_in_lstd.c.s
+
+.PHONY : src/ft_is_array_in_lstd.s
+
+# target to generate assembly for a file
+src/ft_is_array_in_lstd.c.s:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_is_array_in_lstd.c.s
+	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_is_array_in_lstd.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_is_array_in_lstd.c.s
+.PHONY : src/ft_is_array_in_lstd.c.s
+
 src/ft_is_str_in_lstd.o: src/ft_is_str_in_lstd.c.o
 
 .PHONY : src/ft_is_str_in_lstd.o
@@ -374,6 +440,39 @@ src/ft_lstd_swap.c.s:
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_lstd_swap.c.s
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_swap.c.s
 .PHONY : src/ft_lstd_swap.c.s
+
+src/ft_lstd_to_array.o: src/ft_lstd_to_array.c.o
+
+.PHONY : src/ft_lstd_to_array.o
+
+# target to build an object file
+src/ft_lstd_to_array.c.o:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstd_to_array.c.o
+	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_lstd_to_array.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_to_array.c.o
+.PHONY : src/ft_lstd_to_array.c.o
+
+src/ft_lstd_to_array.i: src/ft_lstd_to_array.c.i
+
+.PHONY : src/ft_lstd_to_array.i
+
+# target to preprocess a source file
+src/ft_lstd_to_array.c.i:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstd_to_array.c.i
+	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_lstd_to_array.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_to_array.c.i
+.PHONY : src/ft_lstd_to_array.c.i
+
+src/ft_lstd_to_array.s: src/ft_lstd_to_array.c.s
+
+.PHONY : src/ft_lstd_to_array.s
+
+# target to generate assembly for a file
+src/ft_lstd_to_array.c.s:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstd_to_array.c.s
+	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_lstd_to_array.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_to_array.c.s
+.PHONY : src/ft_lstd_to_array.c.s
 
 src/ft_lstd_to_str.o: src/ft_lstd_to_str.c.o
 
@@ -729,6 +828,12 @@ help:
 	@echo "... src/dfs.o"
 	@echo "... src/dfs.i"
 	@echo "... src/dfs.s"
+	@echo "... src/ft_array_to_lstd.o"
+	@echo "... src/ft_array_to_lstd.i"
+	@echo "... src/ft_array_to_lstd.s"
+	@echo "... src/ft_is_array_in_lstd.o"
+	@echo "... src/ft_is_array_in_lstd.i"
+	@echo "... src/ft_is_array_in_lstd.s"
 	@echo "... src/ft_is_str_in_lstd.o"
 	@echo "... src/ft_is_str_in_lstd.i"
 	@echo "... src/ft_is_str_in_lstd.s"
@@ -738,6 +843,9 @@ help:
 	@echo "... src/ft_lstd_swap.o"
 	@echo "... src/ft_lstd_swap.i"
 	@echo "... src/ft_lstd_swap.s"
+	@echo "... src/ft_lstd_to_array.o"
+	@echo "... src/ft_lstd_to_array.i"
+	@echo "... src/ft_lstd_to_array.s"
 	@echo "... src/ft_lstd_to_str.o"
 	@echo "... src/ft_lstd_to_str.i"
 	@echo "... src/ft_lstd_to_str.s"

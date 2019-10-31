@@ -6,9 +6,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/home/alexey/projects/push_swap_1/hash.c" "/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/hash.dir/hash.c.o"
   "/home/alexey/projects/push_swap_1/src/dfs.c" "/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/hash.dir/src/dfs.c.o"
+  "/home/alexey/projects/push_swap_1/src/ft_array_to_lstd.c" "/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/hash.dir/src/ft_array_to_lstd.c.o"
+  "/home/alexey/projects/push_swap_1/src/ft_is_array_in_lstd.c" "/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/hash.dir/src/ft_is_array_in_lstd.c.o"
   "/home/alexey/projects/push_swap_1/src/ft_is_str_in_lstd.c" "/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/hash.dir/src/ft_is_str_in_lstd.c.o"
   "/home/alexey/projects/push_swap_1/src/ft_lstd_del_2.c" "/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/hash.dir/src/ft_lstd_del_2.c.o"
   "/home/alexey/projects/push_swap_1/src/ft_lstd_swap.c" "/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/hash.dir/src/ft_lstd_swap.c.o"
+  "/home/alexey/projects/push_swap_1/src/ft_lstd_to_array.c" "/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/hash.dir/src/ft_lstd_to_array.c.o"
   "/home/alexey/projects/push_swap_1/src/ft_lstd_to_str.c" "/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/hash.dir/src/ft_lstd_to_str.c.o"
   "/home/alexey/projects/push_swap_1/src/ft_lstprint.c" "/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/hash.dir/src/ft_lstprint.c.o"
   "/home/alexey/projects/push_swap_1/src/ft_operation.c" "/home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/hash.dir/src/ft_operation.c.o"

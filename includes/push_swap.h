@@ -26,13 +26,14 @@ typedef struct s_ps_contetnt{
 	int value;
 	int operation;
 	int serial;
-	int  content_size;
-	char *content;
+	int content_size;
+	int content;
 
 }				t_ps_content;
 
 typedef  struct s_ps_string{
-	char		*string;
+	int			*string;
+	int			size;
 	char		*queue;
 	int			last;
 }				t_ps_string;
@@ -59,5 +60,11 @@ int ft_strsplit_to_inttab(int **vector, char *string);
 void	ft_lstprint3(t_list *list);
 void	ft_lstd_del_2(t_list **list);
 void	ft_lstd_del_3(t_list **list);
+int *ft_lstd_to_array(t_list *list1, t_list *list2, int len1, int len2);
+void ft_array_to_lstd(int *tab, int len, t_list **list1, t_list **list2);
+unsigned int ft_hash_int(const int *tab, unsigned int len,const unsigned int size);
+size_t ft_is_array_in_lstd(const int *tab, const int len, t_list *list);
+t_ps_content *ft_ps_new_content_int(int tab);
+void	ft_lstprint4(t_list *list);
 
 #endif

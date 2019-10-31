@@ -1,9 +1,12 @@
 file(REMOVE_RECURSE
   "CMakeFiles/hash.dir/hash.c.o"
   "CMakeFiles/hash.dir/src/dfs.c.o"
+  "CMakeFiles/hash.dir/src/ft_array_to_lstd.c.o"
+  "CMakeFiles/hash.dir/src/ft_is_array_in_lstd.c.o"
   "CMakeFiles/hash.dir/src/ft_is_str_in_lstd.c.o"
   "CMakeFiles/hash.dir/src/ft_lstd_del_2.c.o"
   "CMakeFiles/hash.dir/src/ft_lstd_swap.c.o"
+  "CMakeFiles/hash.dir/src/ft_lstd_to_array.c.o"
   "CMakeFiles/hash.dir/src/ft_lstd_to_str.c.o"
   "CMakeFiles/hash.dir/src/ft_lstprint.c.o"
   "CMakeFiles/hash.dir/src/ft_operation.c.o"

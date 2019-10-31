@@ -5,7 +5,7 @@ void	ft_lstd_del_2(t_list **list)
 	if (list)
 		while (*list)
 		{
-			ft_memdel((void**)&(((t_ps_content*)((*list)->content))->content));
+//			ft_memdel((void**)&(((t_ps_content*)((*list)->content))->content));
 			ft_lstd_pop_front(list);
 		}
 }

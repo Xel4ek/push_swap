@@ -18,7 +18,7 @@ t_list		*ft_strsplit_to_lstd(const char *string)
 	while (tab[size])
 	{
 //			value = ft_atoi(tab[size]);
-			item = ft_ps_new_content(tab[size]);
+			item = ft_ps_new_content_int(ft_atoi(tab[size]));
 			ft_lstd_push_front(&list, ft_lstdnew(item, sizeof(*item)));
 //			list->value = ft_atoi(tab[size]);
 //			list->operation = -1;

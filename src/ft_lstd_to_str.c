@@ -32,7 +32,7 @@ char *ft_lstd_to_str(t_list *list1, t_list *list2, int size1, int size2, int len
 	*temp = 0;
 	return ptr;
 }
-
+/*
 void ft_str_to_lstd(char *string, t_list **list1, t_list **list2){
 	char **tab;
 	int i;
@@ -61,3 +61,4 @@ void ft_str_to_lstd(char *string, t_list **list1, t_list **list2){
 	}
 	ft_memdel((void**)&tab);
 }
+ */
