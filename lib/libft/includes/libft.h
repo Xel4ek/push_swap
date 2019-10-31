@@ -18,6 +18,16 @@
 # define MAX_FD 1024
 # define BUFF_SIZE 256
 
+
+typedef struct s_tree
+{
+	void		*content;
+	size_t 		content_size;
+	struct s_tree *left;
+	struct s_tree *right;
+
+}				t_tree;
+
 typedef struct		s_forward_list
 {	void			*content;
 	size_t			content_size;

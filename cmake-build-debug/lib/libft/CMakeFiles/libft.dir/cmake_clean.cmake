@@ -73,6 +73,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/libft.dir/src/ft_swap.c.o"
   "CMakeFiles/libft.dir/src/ft_tolower.c.o"
   "CMakeFiles/libft.dir/src/ft_toupper.c.o"
+  "CMakeFiles/libft.dir/src/ft_tree_new.c.o"
   "CMakeFiles/libft.dir/src/ft_upper_bound.c.o"
   "CMakeFiles/libft.dir/src/get_next_line.c.o"
   "liblibft.a"

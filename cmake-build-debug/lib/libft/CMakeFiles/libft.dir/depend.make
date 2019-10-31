@@ -210,6 +210,9 @@ lib/libft/CMakeFiles/libft.dir/src/ft_tolower.c.o: ../lib/libft/src/ft_tolower.c
 
 lib/libft/CMakeFiles/libft.dir/src/ft_toupper.c.o: ../lib/libft/src/ft_toupper.c
 
+lib/libft/CMakeFiles/libft.dir/src/ft_tree_new.c.o: ../lib/libft/includes/libft.h
+lib/libft/CMakeFiles/libft.dir/src/ft_tree_new.c.o: ../lib/libft/src/ft_tree_new.c
+
 lib/libft/CMakeFiles/libft.dir/src/ft_upper_bound.c.o: ../lib/libft/includes/libft.h
 lib/libft/CMakeFiles/libft.dir/src/ft_upper_bound.c.o: ../lib/libft/src/ft_upper_bound.c
 
