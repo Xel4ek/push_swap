@@ -125,7 +125,7 @@ int bfs(t_list **list, t_list **buff, t_list **visited, t_list **queue){
 	item->queue[1] = 0;
 	item->last = -1;
 	ft_lstd_push_back(queue, ft_lstdnew(item, sizeof(*item)));
-	ft_lstd_push_back(visited, ft_lstdnew(item, sizeof(*item)));
+	ft_lstd_push_back(&visited[ft_hash(item->string, MAX_HASH_SIZE)], ft_lstdnew(item, sizeof(*item)));
 	iter = 0;
 	deep = 0;
 	while (iter < 170000 && *buff && *queue) {
@@ -164,7 +164,7 @@ int bfs(t_list **list, t_list **buff, t_list **visited, t_list **queue){
 			ft_memdel((void**)&print);
 			ft_memdel((void**)&temp);
 			ft_lstd_del(queue);
-			ft_lstd_del_3(visited);
+			ft_hash_del(visited, MAX_HASH_SIZE);
 			item = (t_ps_string*) malloc(sizeof(t_ps_string));
 			item->queue = (char*)malloc(sizeof(char)*1024);
 			item->queue[0] = '+';
@@ -172,7 +172,7 @@ int bfs(t_list **list, t_list **buff, t_list **visited, t_list **queue){
 			item->last = -1;
 			item->string  = ft_lstd_to_str(*list, *buff, 4096, 0, ft_lstdlen(*list), ft_lstdlen(*buff));
 			ft_lstd_push_back(queue, ft_lstdnew(item, sizeof(*item)));
-			ft_lstd_push_back(visited, ft_lstdnew(item, sizeof(*item)));
+			ft_lstd_push_back(&visited[ft_hash(item->string, MAX_HASH_SIZE)], ft_lstdnew(item, sizeof(*item)));
 			ft_memdel((void**)&(item));
 		}
 		else
@@ -192,7 +192,7 @@ int bfs(t_list **list, t_list **buff, t_list **visited, t_list **queue){
 				ft_operations(operation, list, buff);
 				item = (t_ps_string*) malloc(sizeof(t_ps_string));
 				item->string  = ft_lstd_to_str(*list, *buff, 4096, 0, ft_lstdlen(*list), ft_lstdlen(*buff));
-				if (!ft_is_str_in_lstd(item->string, *visited)) {
+				if (!ft_is_str_in_lstd(item->string, visited[ft_hash(item->string, MAX_HASH_SIZE)])) {
 					item->queue = (char*)malloc(sizeof(char)*4096);
 					item->last = operation;
 					ft_strcpy(item->queue, temp);
@@ -200,7 +200,7 @@ int bfs(t_list **list, t_list **buff, t_list **visited, t_list **queue){
 					itoa_ptr  = ft_itoa(operation);
 					ft_strcat(item->queue,itoa_ptr);
 					ft_lstd_push_back(queue, ft_lstdnew(item, sizeof(*item)));
-					ft_lstd_push_back(visited, ft_lstdnew(item, sizeof(*item)));
+					ft_lstd_push_back(&visited[ft_hash(item->string, MAX_HASH_SIZE)], ft_lstdnew(item, sizeof(*item)));
 				}
 				if (operation / 3 == 0)
 					ft_operations(operation, list, buff);

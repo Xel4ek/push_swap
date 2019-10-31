@@ -139,4 +139,6 @@ void				ft_str_to_lstd(char *string,t_list **list1, t_list **list2);
 
 void				ft_lstditer_two(t_list *list1, t_list *list2, void (*f)(t_list *elem));
 void				ft_quick_sort(int *start, int *finish);
+unsigned int ft_hash(const char *string, unsigned int size);
+void ft_hash_del(t_list **hash_table, unsigned size);
 #endif

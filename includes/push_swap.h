@@ -5,6 +5,7 @@
 #include <sys/stat.h>
 #include "libft.h"
 
+# define MAX_HASH_SIZE 4096
 
 enum Operations{
 	SA, //0

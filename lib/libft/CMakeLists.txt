@@ -73,7 +73,7 @@ set(SRC
         src/ft_lstd_collapse.c
         src/ft_lstd_del.c
         src/ft_lstd_push_back.c
-        src/ft_upper_bound.c src/ft_quick_sort.c src/ft_swap.c src/ft_tree_new.c)
+        src/ft_upper_bound.c src/ft_quick_sort.c src/ft_swap.c src/ft_tree_new.c src/ft_hash.c src/ft_hash_del.c)
 set(HEADERS includes/libft.h)
 add_library(libft STATIC ${SRC} ${HEADERS})
 target_include_directories(libft PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

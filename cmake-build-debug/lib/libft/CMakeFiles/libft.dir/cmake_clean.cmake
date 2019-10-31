@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/libft.dir/src/ft_atoi_base.c.o"
   "CMakeFiles/libft.dir/src/ft_bzero.c.o"
   "CMakeFiles/libft.dir/src/ft_ceil.c.o"
+  "CMakeFiles/libft.dir/src/ft_hash.c.o"
+  "CMakeFiles/libft.dir/src/ft_hash_del.c.o"
   "CMakeFiles/libft.dir/src/ft_isalnum.c.o"
   "CMakeFiles/libft.dir/src/ft_isalpha.c.o"
   "CMakeFiles/libft.dir/src/ft_isascii.c.o"
