@@ -22,6 +22,7 @@ t_list		*ft_strsplit_to_lstd(const char *string)
 			ft_lstd_push_front(&list, ft_lstdnew(item, sizeof(*item)));
 //			list->value = ft_atoi(tab[size]);
 //			list->operation = -1;
+			ft_memdel((void**)&(item));
 			ft_memdel((void**)&tab[size]);
 			size++;
 	}

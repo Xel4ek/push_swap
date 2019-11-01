@@ -12,7 +12,7 @@ string.h
 stdint.h
 -
 
-/home/alexey/projects/push_swap_1/lib/libft/src/ft_lstd_pop_front.c
+/home/alexey/projects/push_swap_1/lib/libft/src/ft_hash.c
 libft.h
 /home/alexey/projects/push_swap_1/lib/libft/src/libft.h
 

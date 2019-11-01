@@ -52,7 +52,7 @@ int longes_subsequence(const t_list *list, t_list **buff){
 
 		ft_lstd_push_front(buff, ft_lstdnew(item, sizeof(*item)));
 		pos = p[pos];
-
+		ft_memdel((void**)&(item));
 		i++;
 	}
 

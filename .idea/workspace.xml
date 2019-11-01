@@ -3,9 +3,9 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="push_swap" targetName="checker" />
-      <config projectName="push_swap" targetName="libft" />
-      <config projectName="push_swap" targetName="push_swap" />
       <config projectName="push_swap" targetName="hash" />
+      <config projectName="push_swap" targetName="push_swap" />
+      <config projectName="push_swap" targetName="libft" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -15,59 +15,110 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2779692a-d878-4531-b1d1-2b626a8dadda" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hash.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hash.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hash.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hash.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hash.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hash.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hash.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hash.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hash.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hash.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/main.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/dfs.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/dfs.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_is_array_in_lstd.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_is_array_in_lstd.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_is_str_in_lstd.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_is_str_in_lstd.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_lstd_to_array.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_lstd_to_array.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_lstd_to_str.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_lstd_to_str.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_lstprint.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_lstprint.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_operation.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_operation.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_ps_new_content.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_ps_new_content.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_quick_sort.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_quick_sort.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_strsplit_to_inttab.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_strsplit_to_inttab.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/is_sorted.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/is_sorted.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/read.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/read.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/src/ft_hash.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/src/ft_hash.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libft/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/libft/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libft/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/libft/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/src/ft_memcmp.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/src/ft_memcmp.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libft/liblibft.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/libft/liblibft.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/push_swap" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/push_swap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/push_swap.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/push_swap.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/push_swap.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/push_swap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/libft.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_atoi.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_atoi.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_atoi_base.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_atoi_base.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_bzero.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_bzero.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_ceil.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_ceil.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_isalnum.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_isalnum.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_isalpha.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_isalpha.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_isascii.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_isascii.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_isdigit.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_isdigit.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_isprint.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_isprint.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_itoa.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_itoa.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_itoa_base.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_itoa_base.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_lstadd.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_lstadd.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_lstappend.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_lstappend.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_lstd_collapse.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_lstd_collapse.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_lstd_del.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_lstd_del.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_lstd_pop_front.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_lstd_pop_front.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_lstd_push_front.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_lstd_push_front.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_lstdel.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_lstdel.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_lstdelone.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_lstdelone.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_lstiter.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_lstiter.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_lstlen.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_lstlen.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_lstmap.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_lstmap.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_lstnew.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_lstnew.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_memalloc.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_memalloc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_memccpy.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_memccpy.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_memchr.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_memchr.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_memcmp.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_memcmp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_memcpy.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_memcpy.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_memdel.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_memdel.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_memjoin.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_memjoin.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_memmove.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_memmove.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_memset.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_memset.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_nbrlen.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_nbrlen.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_putchar.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_putchar.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_putchar_fd.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_putchar_fd.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_putendl.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_putendl.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_putendl_fd.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_putendl_fd.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_putnbr.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_putnbr.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_putnbr_fd.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_putnbr_fd.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_putstr.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_putstr.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_putstr_fd.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_putstr_fd.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_sort_str_table.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_sort_str_table.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_strcapitalize.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_strcapitalize.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_strcat.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_strcat.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_strchr.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_strchr.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_strclr.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_strclr.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_strcmp.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_strcmp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_strcpy.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_strcpy.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_strdel.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_strdel.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_strdup.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_strdup.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_strequ.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_strequ.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_striter.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_striter.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_striteri.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_striteri.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_strjoin.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_strjoin.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_strlcat.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_strlcat.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_strlen.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_strlen.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_strmap.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_strmap.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_strmapi.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_strmapi.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_strncat.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_strncat.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_strncmp.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_strncmp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_strncpy.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_strncpy.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_strnequ.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_strnequ.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_strnew.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_strnew.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_strnstr.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_strnstr.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_strrchr.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_strrchr.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_strsplit.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_strsplit.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_strstr.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_strstr.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_strsub.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_strsub.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_strtrim.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_strtrim.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_tolower.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_tolower.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/ft_toupper.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/ft_toupper.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/obj/get_next_line.o" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/obj/get_next_line.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/libft/src/ft_hash.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/src/ft_hash.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/src/ft_memcmp.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/src/ft_memcmp.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dfs.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/dfs.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_array_to_lstd.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_array_to_lstd.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_is_array_in_lstd.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_is_array_in_lstd.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ft_lstd_del_2.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_lstd_del_2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ft_lstd_to_str.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_lstd_to_str.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ft_lstprint.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_lstprint.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ft_ps_new_content.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_ps_new_content.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ft_quick_sort.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_quick_sort.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/read.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/read.c" afterDir="false" />
     </list>
@@ -215,6 +266,7 @@
       <workItem from="1572537721967" duration="273000" />
       <workItem from="1572538692573" duration="1631000" />
       <workItem from="1572541011463" duration="586000" />
+      <workItem from="1572599914554" duration="15617000" />
     </task>
     <task id="LOCAL-00001" summary="8th">
       <created>1571842397140</created>

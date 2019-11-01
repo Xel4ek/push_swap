@@ -6,7 +6,8 @@
 #include "libft.h"
 
 # define MAX_HASH_SIZE 4096
-
+# define MAX_QUEUE_SIZE 1024
+# define MAX_ITEARATIONS 1500000
 enum Operations{
 	SA, //0
 	SB, //1
@@ -66,5 +67,7 @@ unsigned int ft_hash_int(const int *tab, unsigned int len,const unsigned int siz
 size_t ft_is_array_in_lstd(const int *tab, const int len, t_list *list);
 t_ps_content *ft_ps_new_content_int(int tab);
 void	ft_lstprint4(t_list *list);
+void	ft_lstd_del_4(t_list **list);
+
 
 #endif

@@ -23,7 +23,7 @@ void	ft_lstprint2(t_list *list){
 		printf("{}");
 //		write(1, "(null) ", 7);
 }
-
+*/
 void	ft_lstprint3(t_list *list) {
 	t_ps_content *item;
 	int stars;
@@ -31,7 +31,7 @@ void	ft_lstprint3(t_list *list) {
 
 	if (list){
 		item = (t_ps_content*)list->content;
-		printf("%6s ",item->content);
+		printf("%6d ",item->content);
 		stars = item->serial + 1;
 		line[stars] = 0;
 		while (stars-- > 0)
@@ -42,7 +42,7 @@ void	ft_lstprint3(t_list *list) {
 		printf("%5s_%50s","","");
 //		write(1, "(null) ", 7);
 }
-*/
+
 void	ft_lstprint4(t_list *list){
 	t_ps_string *item;
 	int i ;

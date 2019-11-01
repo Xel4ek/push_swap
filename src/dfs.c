@@ -122,21 +122,25 @@ int bfs(t_list **list, t_list **buff, t_list **visited, t_list **queue){
 	int len1;
 	int len2;
 	unsigned  int hash;
+	int skip;
+	skip = 0;
 	steps = 0;
 	item = (t_ps_string*) malloc(sizeof(t_ps_string));
 	item->string  = ft_lstd_to_array(*list, *buff, (len1 = ft_lstdlen(*list)), (len2 = ft_lstdlen(*buff)));
-	item->size = len1 + len2 + 1;
-	item->queue = (char*)malloc(sizeof(char)*8192);
+
+	item->queue = (char*)malloc(sizeof(char)*MAX_QUEUE_SIZE);
 	item->queue[0] = '+';
 	item->queue[1] = 0;
 	item->last = -1;
-
+	item->size = len1 + len2 + 1;
 	ft_lstd_push_back(queue, ft_lstdnew(item, sizeof(*item)));
 //	ft_lstd_push_back(visited, ft_lstdnew(item, sizeof(*item)));
-	ft_lstd_push_back(&visited[ft_hash_int(item->string,len1 + len2 + 1, MAX_HASH_SIZE)], ft_lstdnew(item, sizeof(*item)));
+
+	ft_lstd_push_back(&visited[ft_hash_int(item->string,item->size, MAX_HASH_SIZE)], ft_lstdnew(item, sizeof(*item)));
 	iter = 0;
 	deep = 0;
-	while (iter < 150000 && *buff && *queue) {
+
+	while (iter < MAX_ITEARATIONS && *buff && *queue) {
 
 		ft_lstd_del_2(list);
 		ft_lstd_del_2(buff);
@@ -144,7 +148,8 @@ int bfs(t_list **list, t_list **buff, t_list **visited, t_list **queue){
 		item = (t_ps_string*)((*queue)->content);
 		ft_array_to_lstd(item->string, item->size, list, buff);
 //		ft_lstd_push_back(visited, ft_lstdnew(item, sizeof(*item)));
-		temp = (char*)malloc(sizeof(char)*8192);
+		last = item->last;
+		temp = (char*)malloc(sizeof(char)*MAX_QUEUE_SIZE);
 		ft_strcpy(temp, item->queue);
 		ft_lstd_pop_front(queue);
 
@@ -168,71 +173,78 @@ int bfs(t_list **list, t_list **buff, t_list **visited, t_list **queue){
 					printf("rrb\n");
 				else if (!ft_strcmp(print[i],"8"))
 					printf("rrr\n");
+				ft_memdel((void**)&print[i]);
 				--i;
 			}
 
+
 			ft_memdel((void**)&print);
-//			ft_memdel((void**)&temp);
-			ft_lstd_del(queue);
+
+			ft_lstd_del_3(queue);
 			ft_hash_del(visited, MAX_HASH_SIZE);
 			item = (t_ps_string*) malloc(sizeof(t_ps_string));
-			item->queue = (char*)malloc(sizeof(char)*8192);
+			item->queue = (char*)malloc(sizeof(char)*MAX_QUEUE_SIZE);
 			item->queue[0] = '+';
 			item->queue[1] = 0;
 			item->last = -1;
-
 		//	item->string  = ft_lstd_to_str(*list, *buff, 8192, 0, ft_lstdlen(*list), ft_lstdlen(*buff));
 			item->string  = ft_lstd_to_array(*list, *buff, (len1 = ft_lstdlen(*list)), (len2 = ft_lstdlen(*buff)));
 			item->size = len1 + len2 + 1;
 			ft_lstd_push_back(queue, ft_lstdnew(item, sizeof(*item)));
 //			ft_lstd_push_back(visited, ft_lstdnew(item, sizeof(*item)));
-			ft_lstd_push_back(&visited[ft_hash_int(item->string,len1 + len2 + 1, MAX_HASH_SIZE)], ft_lstdnew(item, sizeof(*item)));
-//			ft_memdel((void**)&(item));
+			ft_lstd_push_back(&visited[ft_hash_int(item->string,item->size, MAX_HASH_SIZE)], ft_lstdnew(item, sizeof(*item)));
+			ft_memdel((void**)&(item));
 		}
 		else
 			{
 			operation = RRR;
 			while (operation > SS) {
-				if (last !=-1 && operation / 3 == last / 3)
+				if (last != -1 && operation / 3 != last / 3)
 				{
 					--operation;
+					skip++;
 					continue;
 				}
-				if (last !=-1 && operation % 3 == last % 3)
-				{
-					--operation;
-					continue;
-				}
+//				if (last != -1 && operation % 3 != 2 && operation % 3 != last % 3)
+//				{
+//					skip++;
+//					--operation;
+//					continue;
+//				}
 				ft_operations(operation, list, buff);
 				item = (t_ps_string*) malloc(sizeof(t_ps_string));
 				item->string  = ft_lstd_to_array(*list, *buff, (len1 = ft_lstdlen(*list)), (len2 = ft_lstdlen(*buff)));
-
-				if ( 0 == ft_is_array_in_lstd(item->string,len1 + len2 + 1, visited[(hash = ft_hash_int(item->string,len1 + len2 + 1, MAX_HASH_SIZE))])) {
-					item->queue = (char*)malloc(sizeof(char)*8192);
+				item->size = len1 + len2 + 1;
+				if ( 0 == ft_is_array_in_lstd(item->string,item->size, visited[(hash = ft_hash_int(item->string,len1 + len2 + 1, MAX_HASH_SIZE))])) {
+					item->queue = (char*)malloc(sizeof(char)*MAX_QUEUE_SIZE);
 					item->last = operation;
 					ft_strcpy(item->queue, temp);
 					ft_strcat(item->queue, " ");
-					item->size = len1 + len2 + 1;
+//					item->size = len1 + len2 + 1;
 					itoa_ptr  = ft_itoa(operation);
 					ft_strcat(item->queue,itoa_ptr);
+					ft_memdel((void**)&(itoa_ptr));
 					ft_lstd_push_back(queue, ft_lstdnew(item, sizeof(*item)));
 //					ft_lstd_push_back(visited, ft_lstdnew(item, sizeof(*item)));
 					 ft_lstd_push_back(&visited[hash], ft_lstdnew(item, sizeof(*item)));
 				}
+				else
+					ft_memdel((void**)&(item)->string);
 				if (operation / 3 == 0)
 					ft_operations(operation, list, buff);
 				else if (operation / 3 == 1)
 					ft_operations(operation + 3, list, buff);
 				else if (operation / 3 == 2)
 					ft_operations(operation - 3, list, buff);
-//				ft_memdel((void**)&(item));
+
+				ft_memdel((void**)&(item));
 			--operation;
 			++deep;
 			}
 			++iter;
 	}
-
+		ft_memdel((void**)&temp);
 	}
-	printf("iter :%d\n",iter);
-	return steps;
+
+	return iter;
 }

@@ -16,7 +16,7 @@ void  ft_array_to_lstd(int *tab, int len, t_list **list1, t_list **list2){
 		item->serial = tab[i];
 		item->content =  tab[i];
 		ft_lstd_push_back(list1, ft_lstdnew(item, sizeof(t_ps_content)));
-//		ft_memdel((void**)&item);
+		ft_memdel((void**)&item);
 		i++;
 
 	}
@@ -29,9 +29,9 @@ void  ft_array_to_lstd(int *tab, int len, t_list **list1, t_list **list2){
 		item->serial = tab[i];
 		item->content =  tab[i];
 		ft_lstd_push_back(list2, ft_lstdnew(item, sizeof(t_ps_content)));
-//		ft_memdel((void**)&item);
+		ft_memdel((void**)&item);
 		i++;
 	}
-//	ft_memdel((void**)&tab);
+	ft_memdel((void**)&tab);
 
  }
