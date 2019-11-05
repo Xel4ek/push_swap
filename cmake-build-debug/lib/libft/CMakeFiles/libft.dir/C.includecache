@@ -6,13 +6,23 @@
 
 #IncludeRegexTransform: 
 
+../includes/push_swap.h
+sys/types.h
+-
+sys/stat.h
+-
+libft.h
+../includes/libft.h
+
 ../lib/libft/includes/libft.h
 string.h
 -
 stdint.h
 -
 
-/home/alexey/projects/push_swap_1/lib/libft/src/ft_hash.c
+/home/alexey/projects/push_swap_4/lib/libft/src/ft_hash_del.c
 libft.h
-/home/alexey/projects/push_swap_1/lib/libft/src/libft.h
+/home/alexey/projects/push_swap_4/lib/libft/src/libft.h
+push_swap.h
+/home/alexey/projects/push_swap_4/lib/libft/src/push_swap.h
 

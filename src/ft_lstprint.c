@@ -31,7 +31,7 @@ void	ft_lstprint3(t_list *list) {
 
 	if (list){
 		item = (t_ps_content*)list->content;
-		printf("%6d ",item->content);
+		printf("%6d ",((t_ps_content *) list->content)->serial);
 		stars = item->serial + 1;
 		line[stars] = 0;
 		while (stars-- > 0)
@@ -54,6 +54,24 @@ void	ft_lstprint4(t_list *list){
 			printf("%d ", item->string[i++]);
 		printf("string: %s\n",item->queue);
 	//	printf("%6d %6d %4d %3d\n",item->content, item->value, item->serial, item->operation);
+
+	}	//write(1 , list->content, list->content_size);
+	else
+		printf("%13s_%9s","","");
+//		write(1, "(null) ", 7);
+}
+
+void	ft_lstprint5(t_list *list){
+	t_ps_string *item;
+	int i ;
+
+	i = 0;
+	if (list){
+		item = (t_ps_string*)list->content;
+		while(i < item->size)
+			printf("%d ", item->string[i++]);
+		printf("ratio: %d\n",ft_sort_ratio(item->string, item->size));
+		//	printf("%6d %6d %4d %3d\n",item->content, item->value, item->serial, item->operation);
 
 	}	//write(1 , list->content, list->content_size);
 	else

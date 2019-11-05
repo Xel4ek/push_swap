@@ -16,7 +16,7 @@ set(SRC
         src/ft_quick_sort.c
         src/ft_ps_new_content.c
         src/ft_strsplit_to_inttab.c
-        src/ft_lstd_del_2.c src/ft_lstd_to_array.c src/ft_array_to_lstd.c src/ft_is_array_in_lstd.c)
+        src/ft_lstd_del_2.c src/ft_lstd_to_array.c src/ft_array_to_lstd.c src/ft_is_array_in_lstd.c src/ft_sort_ratio.c src/ft_queue_sort.c)
 
 
 include_directories(lib/libft/includes)

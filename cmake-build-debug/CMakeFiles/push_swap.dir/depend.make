@@ -49,6 +49,10 @@ CMakeFiles/push_swap.dir/src/ft_ps_new_content.c.o: ../includes/push_swap.h
 CMakeFiles/push_swap.dir/src/ft_ps_new_content.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/push_swap.dir/src/ft_ps_new_content.c.o: ../src/ft_ps_new_content.c
 
+CMakeFiles/push_swap.dir/src/ft_queue_sort.c.o: ../includes/push_swap.h
+CMakeFiles/push_swap.dir/src/ft_queue_sort.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/push_swap.dir/src/ft_queue_sort.c.o: ../src/ft_queue_sort.c
+
 CMakeFiles/push_swap.dir/src/ft_quick_sort.c.o: ../includes/push_swap.h
 CMakeFiles/push_swap.dir/src/ft_quick_sort.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/push_swap.dir/src/ft_quick_sort.c.o: ../src/ft_quick_sort.c
@@ -56,6 +60,10 @@ CMakeFiles/push_swap.dir/src/ft_quick_sort.c.o: ../src/ft_quick_sort.c
 CMakeFiles/push_swap.dir/src/ft_sort_lstd.c.o: ../includes/push_swap.h
 CMakeFiles/push_swap.dir/src/ft_sort_lstd.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/push_swap.dir/src/ft_sort_lstd.c.o: ../src/ft_sort_lstd.c
+
+CMakeFiles/push_swap.dir/src/ft_sort_ratio.c.o: ../includes/push_swap.h
+CMakeFiles/push_swap.dir/src/ft_sort_ratio.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/push_swap.dir/src/ft_sort_ratio.c.o: ../src/ft_sort_ratio.c
 
 CMakeFiles/push_swap.dir/src/ft_strsplit_to_inttab.c.o: ../includes/push_swap.h
 CMakeFiles/push_swap.dir/src/ft_strsplit_to_inttab.c.o: ../lib/libft/includes/libft.h

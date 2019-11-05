@@ -48,10 +48,10 @@ RM = /snap/clion/92/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alexey/projects/push_swap_1
+CMAKE_SOURCE_DIR = /home/alexey/projects/push_swap_4
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alexey/projects/push_swap_1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/alexey/projects/push_swap_4/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles /home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexey/projects/push_swap_4/cmake-build-debug/CMakeFiles /home/alexey/projects/push_swap_4/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexey/projects/push_swap_1/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexey/projects/push_swap_4/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -606,6 +606,39 @@ src/ft_ps_new_content.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_ps_new_content.c.s
 .PHONY : src/ft_ps_new_content.c.s
 
+src/ft_queue_sort.o: src/ft_queue_sort.c.o
+
+.PHONY : src/ft_queue_sort.o
+
+# target to build an object file
+src/ft_queue_sort.c.o:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_queue_sort.c.o
+	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_queue_sort.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_queue_sort.c.o
+.PHONY : src/ft_queue_sort.c.o
+
+src/ft_queue_sort.i: src/ft_queue_sort.c.i
+
+.PHONY : src/ft_queue_sort.i
+
+# target to preprocess a source file
+src/ft_queue_sort.c.i:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_queue_sort.c.i
+	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_queue_sort.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_queue_sort.c.i
+.PHONY : src/ft_queue_sort.c.i
+
+src/ft_queue_sort.s: src/ft_queue_sort.c.s
+
+.PHONY : src/ft_queue_sort.s
+
+# target to generate assembly for a file
+src/ft_queue_sort.c.s:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_queue_sort.c.s
+	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_queue_sort.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_queue_sort.c.s
+.PHONY : src/ft_queue_sort.c.s
+
 src/ft_quick_sort.o: src/ft_quick_sort.c.o
 
 .PHONY : src/ft_quick_sort.o
@@ -671,6 +704,39 @@ src/ft_sort_lstd.c.s:
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_sort_lstd.c.s
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_lstd.c.s
 .PHONY : src/ft_sort_lstd.c.s
+
+src/ft_sort_ratio.o: src/ft_sort_ratio.c.o
+
+.PHONY : src/ft_sort_ratio.o
+
+# target to build an object file
+src/ft_sort_ratio.c.o:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_sort_ratio.c.o
+	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_sort_ratio.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_ratio.c.o
+.PHONY : src/ft_sort_ratio.c.o
+
+src/ft_sort_ratio.i: src/ft_sort_ratio.c.i
+
+.PHONY : src/ft_sort_ratio.i
+
+# target to preprocess a source file
+src/ft_sort_ratio.c.i:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_sort_ratio.c.i
+	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_sort_ratio.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_ratio.c.i
+.PHONY : src/ft_sort_ratio.c.i
+
+src/ft_sort_ratio.s: src/ft_sort_ratio.c.s
+
+.PHONY : src/ft_sort_ratio.s
+
+# target to generate assembly for a file
+src/ft_sort_ratio.c.s:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_sort_ratio.c.s
+	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_sort_ratio.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_ratio.c.s
+.PHONY : src/ft_sort_ratio.c.s
 
 src/ft_strsplit_to_inttab.o: src/ft_strsplit_to_inttab.c.o
 
@@ -858,12 +924,18 @@ help:
 	@echo "... src/ft_ps_new_content.o"
 	@echo "... src/ft_ps_new_content.i"
 	@echo "... src/ft_ps_new_content.s"
+	@echo "... src/ft_queue_sort.o"
+	@echo "... src/ft_queue_sort.i"
+	@echo "... src/ft_queue_sort.s"
 	@echo "... src/ft_quick_sort.o"
 	@echo "... src/ft_quick_sort.i"
 	@echo "... src/ft_quick_sort.s"
 	@echo "... src/ft_sort_lstd.o"
 	@echo "... src/ft_sort_lstd.i"
 	@echo "... src/ft_sort_lstd.s"
+	@echo "... src/ft_sort_ratio.o"
+	@echo "... src/ft_sort_ratio.i"
+	@echo "... src/ft_sort_ratio.s"
 	@echo "... src/ft_strsplit_to_inttab.o"
 	@echo "... src/ft_strsplit_to_inttab.i"
 	@echo "... src/ft_strsplit_to_inttab.s"

@@ -5,7 +5,10 @@
 #include <sys/stat.h>
 #include "libft.h"
 
-# define MAX_HASH_SIZE 4096
+# define MIN(x,y)		(x) > (y) ? (x) : (y)
+# define ABS(x)			(x) > 0 ? (x) : -(x)
+
+# define MAX_HASH_SIZE 10
 # define MAX_QUEUE_SIZE 1024
 # define MAX_ITEARATIONS 1500000
 enum Operations{
@@ -20,7 +23,7 @@ enum Operations{
 	RRR, //8
 	PA, //9
 	PB,
-	FREEZE,
+	FREEZE
 };
 
 typedef struct s_ps_contetnt{
@@ -68,6 +71,11 @@ size_t ft_is_array_in_lstd(const int *tab, const int len, t_list *list);
 t_ps_content *ft_ps_new_content_int(int tab);
 void	ft_lstprint4(t_list *list);
 void	ft_lstd_del_4(t_list **list);
-
+int ft_sort_ratio(const int *tab, size_t size);
+void ft_merge_sort_by(t_list **list,  int (*f)());
+void	ft_lstprint5(t_list *list);
+void ft_queue_sort(t_list **source);
+void ft_circle(t_list *list);
+int a_star(t_list **list, t_list **buff, t_list **visited, t_list **queue);
 
 #endif

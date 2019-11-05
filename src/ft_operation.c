@@ -182,7 +182,9 @@ int ft_swap_lstd_e(enum Operations operation, t_list **a, t_list **b){
 			return ft_lstd_swap(a);
 		if (*b && !*a)
 			return ft_lstd_swap(b);
-		return ft_lstd_swap(a) && ft_lstd_swap(b);
+//		ft_lstd_swap(a);
+//		ft_lstd_swap(b);
+		return ft_lstd_swap(a) &&  ft_lstd_swap(b);
 	}
 	return 1;
 }

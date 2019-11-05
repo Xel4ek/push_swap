@@ -1,4 +1,4 @@
-/snap/clion/92/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ -G "CodeBlocks - Unix Makefiles" /home/alexey/projects/push_swap_1
+/snap/clion/92/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ -G "CodeBlocks - Unix Makefiles" /home/alexey/projects/push_swap_4
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/alexey/projects/push_swap_1/cmake-build-debug
+-- Build files have been written to: /home/alexey/projects/push_swap_4/cmake-build-debug

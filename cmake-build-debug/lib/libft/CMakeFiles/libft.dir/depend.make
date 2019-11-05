@@ -99,6 +99,9 @@ lib/libft/CMakeFiles/libft.dir/src/ft_memmove.c.o: ../lib/libft/src/ft_memmove.c
 lib/libft/CMakeFiles/libft.dir/src/ft_memset.c.o: ../lib/libft/includes/libft.h
 lib/libft/CMakeFiles/libft.dir/src/ft_memset.c.o: ../lib/libft/src/ft_memset.c
 
+lib/libft/CMakeFiles/libft.dir/src/ft_merge_sort.c.o: ../lib/libft/includes/libft.h
+lib/libft/CMakeFiles/libft.dir/src/ft_merge_sort.c.o: ../lib/libft/src/ft_merge_sort.c
+
 lib/libft/CMakeFiles/libft.dir/src/ft_nbrlen.c.o: ../lib/libft/includes/libft.h
 lib/libft/CMakeFiles/libft.dir/src/ft_nbrlen.c.o: ../lib/libft/src/ft_nbrlen.c
 

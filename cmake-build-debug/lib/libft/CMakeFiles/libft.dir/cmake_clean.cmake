@@ -34,6 +34,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/libft.dir/src/ft_memjoin.c.o"
   "CMakeFiles/libft.dir/src/ft_memmove.c.o"
   "CMakeFiles/libft.dir/src/ft_memset.c.o"
+  "CMakeFiles/libft.dir/src/ft_merge_sort.c.o"
   "CMakeFiles/libft.dir/src/ft_nbrlen.c.o"
   "CMakeFiles/libft.dir/src/ft_putchar.c.o"
   "CMakeFiles/libft.dir/src/ft_putchar_fd.c.o"
