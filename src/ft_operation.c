@@ -154,6 +154,7 @@ int ft_push_lstd_e(enum Operations operation, t_list **a, t_list **b){
 	if (operation == PA)
 	{
 		if(*b){
+			((t_ps_content*)(*b)->content)->serial++;
 			ft_lstd_push_front(a, ft_lstdnew((*b)->content, (*b)->content_size));
 			ft_lstd_pop_front(b);
 		}

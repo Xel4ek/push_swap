@@ -549,6 +549,11 @@
 			<Option target="hash"/>
 			<Option target="push_swap"/>
 		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap_4/src/ft_sort_tools.c">
+			<Option target="checker"/>
+			<Option target="hash"/>
+			<Option target="push_swap"/>
+		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap_4/src/ft_strsplit_to_inttab.c">
 			<Option target="checker"/>
 			<Option target="hash"/>

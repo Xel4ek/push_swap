@@ -738,6 +738,39 @@ src/ft_sort_ratio.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_ratio.c.s
 .PHONY : src/ft_sort_ratio.c.s
 
+src/ft_sort_tools.o: src/ft_sort_tools.c.o
+
+.PHONY : src/ft_sort_tools.o
+
+# target to build an object file
+src/ft_sort_tools.c.o:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_sort_tools.c.o
+	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_sort_tools.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_tools.c.o
+.PHONY : src/ft_sort_tools.c.o
+
+src/ft_sort_tools.i: src/ft_sort_tools.c.i
+
+.PHONY : src/ft_sort_tools.i
+
+# target to preprocess a source file
+src/ft_sort_tools.c.i:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_sort_tools.c.i
+	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_sort_tools.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_tools.c.i
+.PHONY : src/ft_sort_tools.c.i
+
+src/ft_sort_tools.s: src/ft_sort_tools.c.s
+
+.PHONY : src/ft_sort_tools.s
+
+# target to generate assembly for a file
+src/ft_sort_tools.c.s:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_sort_tools.c.s
+	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_sort_tools.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_tools.c.s
+.PHONY : src/ft_sort_tools.c.s
+
 src/ft_strsplit_to_inttab.o: src/ft_strsplit_to_inttab.c.o
 
 .PHONY : src/ft_strsplit_to_inttab.o
@@ -936,6 +969,9 @@ help:
 	@echo "... src/ft_sort_ratio.o"
 	@echo "... src/ft_sort_ratio.i"
 	@echo "... src/ft_sort_ratio.s"
+	@echo "... src/ft_sort_tools.o"
+	@echo "... src/ft_sort_tools.i"
+	@echo "... src/ft_sort_tools.s"
 	@echo "... src/ft_strsplit_to_inttab.o"
 	@echo "... src/ft_strsplit_to_inttab.i"
 	@echo "... src/ft_strsplit_to_inttab.s"

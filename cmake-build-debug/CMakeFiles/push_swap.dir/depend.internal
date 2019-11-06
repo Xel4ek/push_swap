@@ -65,6 +65,10 @@ CMakeFiles/push_swap.dir/src/ft_sort_ratio.c.o
  ../includes/push_swap.h
  ../lib/libft/includes/libft.h
  /home/alexey/projects/push_swap_4/src/ft_sort_ratio.c
+CMakeFiles/push_swap.dir/src/ft_sort_tools.c.o
+ ../includes/push_swap.h
+ ../lib/libft/includes/libft.h
+ /home/alexey/projects/push_swap_4/src/ft_sort_tools.c
 CMakeFiles/push_swap.dir/src/ft_strsplit_to_inttab.c.o
  ../includes/push_swap.h
  ../lib/libft/includes/libft.h

@@ -11,27 +11,27 @@ int ft_sort_ratio(const int *tab, size_t size){
 	k = 0;
 	size--;
 	i = -1 ;
-//	while (tab[++i] != -1 && i < size)
-//		if (tab[i] % 2 == 1) {
-//
-//			if (pivot > tab[i])
-//				res += (tab[i] - pivot) * k;
-//
-//			pivot = tab[i];
-//			k = 0;
-//		}
-//		else {
-//			res += ABS(++k +  pivot - tab[i]);
-//		}
+	while (tab[++i] != -1 && i < size)
+		if (tab[i] % 2 == 1) {
 
-//	while (i++ < size - 1)
-//		if (tab[i] > tab[i + 1])
-//			res++;
-//		else
-//			res+= (tab[i + 1]  - tab[i]);
-//	return res;
+			if (pivot > tab[i])
+				res += (tab[i] - pivot) * k;
 
-	while (size--)
-		res += ABS(tab[size] / 2 - to[size]);
+			pivot = tab[i];
+			k = 0;
+		}
+		else {
+			res += ABS(++k +  pivot - tab[i]);
+		}
+
+	while (i++ < size - 1)
+		if (tab[i] > tab[i + 1])
+			res++;
+		else
+			res+= ABS(tab[i + 1]  - tab[i]);
+	return res;
+//	size--;
+//	while (size--)
+//		res += ABS(tab[size] / 2 - to[size]);
 			return res;
 }
