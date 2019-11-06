@@ -20,9 +20,11 @@ string.h
 stdint.h
 -
 
-/home/alexey/projects/push_swap_4/src/ft_sort_tools.c
-push_swap.h
-/home/alexey/projects/push_swap_4/src/push_swap.h
+/cygdrive/e/shcool_42/push-swap/main.c
 stdio.h
+-
+push_swap.h
+/cygdrive/e/shcool_42/push-swap/push_swap.h
+stdlib.h
 -
 

@@ -20,8 +20,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/hash.dir/src/ft_swap_stacks.c.o"
   "CMakeFiles/hash.dir/src/is_sorted.c.o"
   "CMakeFiles/hash.dir/src/read.c.o"
-  "hash"
+  "hash.exe"
   "hash.pdb"
+  "libhash.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

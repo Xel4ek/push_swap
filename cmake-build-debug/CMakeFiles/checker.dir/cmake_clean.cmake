@@ -20,8 +20,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/checker.dir/src/ft_swap_stacks.c.o"
   "CMakeFiles/checker.dir/src/is_sorted.c.o"
   "CMakeFiles/checker.dir/src/read.c.o"
-  "checker"
+  "checker.exe"
   "checker.pdb"
+  "libchecker.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

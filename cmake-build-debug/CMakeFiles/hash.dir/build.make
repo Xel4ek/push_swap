@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/92/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /cygdrive/c/Users/Admin/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /snap/clion/92/bin/cmake/linux/bin/cmake -E remove -f
+RM = /cygdrive/c/Users/Admin/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alexey/projects/push_swap_4
+CMAKE_SOURCE_DIR = /cygdrive/e/shcool_42/push-swap
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alexey/projects/push_swap_4/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/e/shcool_42/push-swap/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/hash.dir/depend.make
@@ -59,276 +59,276 @@ include CMakeFiles/hash.dir/flags.make
 
 CMakeFiles/hash.dir/src/is_sorted.c.o: CMakeFiles/hash.dir/flags.make
 CMakeFiles/hash.dir/src/is_sorted.c.o: ../src/is_sorted.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/hash.dir/src/is_sorted.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/is_sorted.c.o   -c /home/alexey/projects/push_swap_4/src/is_sorted.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/e/shcool_42/push-swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/hash.dir/src/is_sorted.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/is_sorted.c.o   -c /cygdrive/e/shcool_42/push-swap/src/is_sorted.c
 
 CMakeFiles/hash.dir/src/is_sorted.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hash.dir/src/is_sorted.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/push_swap_4/src/is_sorted.c > CMakeFiles/hash.dir/src/is_sorted.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/e/shcool_42/push-swap/src/is_sorted.c > CMakeFiles/hash.dir/src/is_sorted.c.i
 
 CMakeFiles/hash.dir/src/is_sorted.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hash.dir/src/is_sorted.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap_4/src/is_sorted.c -o CMakeFiles/hash.dir/src/is_sorted.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/e/shcool_42/push-swap/src/is_sorted.c -o CMakeFiles/hash.dir/src/is_sorted.c.s
 
 CMakeFiles/hash.dir/src/ft_lstd_swap.c.o: CMakeFiles/hash.dir/flags.make
 CMakeFiles/hash.dir/src/ft_lstd_swap.c.o: ../src/ft_lstd_swap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/hash.dir/src/ft_lstd_swap.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_lstd_swap.c.o   -c /home/alexey/projects/push_swap_4/src/ft_lstd_swap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/e/shcool_42/push-swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/hash.dir/src/ft_lstd_swap.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_lstd_swap.c.o   -c /cygdrive/e/shcool_42/push-swap/src/ft_lstd_swap.c
 
 CMakeFiles/hash.dir/src/ft_lstd_swap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hash.dir/src/ft_lstd_swap.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/push_swap_4/src/ft_lstd_swap.c > CMakeFiles/hash.dir/src/ft_lstd_swap.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/e/shcool_42/push-swap/src/ft_lstd_swap.c > CMakeFiles/hash.dir/src/ft_lstd_swap.c.i
 
 CMakeFiles/hash.dir/src/ft_lstd_swap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hash.dir/src/ft_lstd_swap.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap_4/src/ft_lstd_swap.c -o CMakeFiles/hash.dir/src/ft_lstd_swap.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/e/shcool_42/push-swap/src/ft_lstd_swap.c -o CMakeFiles/hash.dir/src/ft_lstd_swap.c.s
 
 CMakeFiles/hash.dir/src/ft_lstprint.c.o: CMakeFiles/hash.dir/flags.make
 CMakeFiles/hash.dir/src/ft_lstprint.c.o: ../src/ft_lstprint.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/hash.dir/src/ft_lstprint.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_lstprint.c.o   -c /home/alexey/projects/push_swap_4/src/ft_lstprint.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/e/shcool_42/push-swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/hash.dir/src/ft_lstprint.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_lstprint.c.o   -c /cygdrive/e/shcool_42/push-swap/src/ft_lstprint.c
 
 CMakeFiles/hash.dir/src/ft_lstprint.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hash.dir/src/ft_lstprint.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/push_swap_4/src/ft_lstprint.c > CMakeFiles/hash.dir/src/ft_lstprint.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/e/shcool_42/push-swap/src/ft_lstprint.c > CMakeFiles/hash.dir/src/ft_lstprint.c.i
 
 CMakeFiles/hash.dir/src/ft_lstprint.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hash.dir/src/ft_lstprint.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap_4/src/ft_lstprint.c -o CMakeFiles/hash.dir/src/ft_lstprint.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/e/shcool_42/push-swap/src/ft_lstprint.c -o CMakeFiles/hash.dir/src/ft_lstprint.c.s
 
 CMakeFiles/hash.dir/src/read.c.o: CMakeFiles/hash.dir/flags.make
 CMakeFiles/hash.dir/src/read.c.o: ../src/read.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/hash.dir/src/read.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/read.c.o   -c /home/alexey/projects/push_swap_4/src/read.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/e/shcool_42/push-swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/hash.dir/src/read.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/read.c.o   -c /cygdrive/e/shcool_42/push-swap/src/read.c
 
 CMakeFiles/hash.dir/src/read.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hash.dir/src/read.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/push_swap_4/src/read.c > CMakeFiles/hash.dir/src/read.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/e/shcool_42/push-swap/src/read.c > CMakeFiles/hash.dir/src/read.c.i
 
 CMakeFiles/hash.dir/src/read.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hash.dir/src/read.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap_4/src/read.c -o CMakeFiles/hash.dir/src/read.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/e/shcool_42/push-swap/src/read.c -o CMakeFiles/hash.dir/src/read.c.s
 
 CMakeFiles/hash.dir/src/ft_lstd_to_str.c.o: CMakeFiles/hash.dir/flags.make
 CMakeFiles/hash.dir/src/ft_lstd_to_str.c.o: ../src/ft_lstd_to_str.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/hash.dir/src/ft_lstd_to_str.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_lstd_to_str.c.o   -c /home/alexey/projects/push_swap_4/src/ft_lstd_to_str.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/e/shcool_42/push-swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/hash.dir/src/ft_lstd_to_str.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_lstd_to_str.c.o   -c /cygdrive/e/shcool_42/push-swap/src/ft_lstd_to_str.c
 
 CMakeFiles/hash.dir/src/ft_lstd_to_str.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hash.dir/src/ft_lstd_to_str.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/push_swap_4/src/ft_lstd_to_str.c > CMakeFiles/hash.dir/src/ft_lstd_to_str.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/e/shcool_42/push-swap/src/ft_lstd_to_str.c > CMakeFiles/hash.dir/src/ft_lstd_to_str.c.i
 
 CMakeFiles/hash.dir/src/ft_lstd_to_str.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hash.dir/src/ft_lstd_to_str.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap_4/src/ft_lstd_to_str.c -o CMakeFiles/hash.dir/src/ft_lstd_to_str.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/e/shcool_42/push-swap/src/ft_lstd_to_str.c -o CMakeFiles/hash.dir/src/ft_lstd_to_str.c.s
 
 CMakeFiles/hash.dir/src/ft_is_str_in_lstd.c.o: CMakeFiles/hash.dir/flags.make
 CMakeFiles/hash.dir/src/ft_is_str_in_lstd.c.o: ../src/ft_is_str_in_lstd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/hash.dir/src/ft_is_str_in_lstd.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_is_str_in_lstd.c.o   -c /home/alexey/projects/push_swap_4/src/ft_is_str_in_lstd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/e/shcool_42/push-swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/hash.dir/src/ft_is_str_in_lstd.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_is_str_in_lstd.c.o   -c /cygdrive/e/shcool_42/push-swap/src/ft_is_str_in_lstd.c
 
 CMakeFiles/hash.dir/src/ft_is_str_in_lstd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hash.dir/src/ft_is_str_in_lstd.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/push_swap_4/src/ft_is_str_in_lstd.c > CMakeFiles/hash.dir/src/ft_is_str_in_lstd.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/e/shcool_42/push-swap/src/ft_is_str_in_lstd.c > CMakeFiles/hash.dir/src/ft_is_str_in_lstd.c.i
 
 CMakeFiles/hash.dir/src/ft_is_str_in_lstd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hash.dir/src/ft_is_str_in_lstd.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap_4/src/ft_is_str_in_lstd.c -o CMakeFiles/hash.dir/src/ft_is_str_in_lstd.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/e/shcool_42/push-swap/src/ft_is_str_in_lstd.c -o CMakeFiles/hash.dir/src/ft_is_str_in_lstd.c.s
 
 CMakeFiles/hash.dir/src/ft_swap_stacks.c.o: CMakeFiles/hash.dir/flags.make
 CMakeFiles/hash.dir/src/ft_swap_stacks.c.o: ../src/ft_swap_stacks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/hash.dir/src/ft_swap_stacks.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_swap_stacks.c.o   -c /home/alexey/projects/push_swap_4/src/ft_swap_stacks.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/e/shcool_42/push-swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/hash.dir/src/ft_swap_stacks.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_swap_stacks.c.o   -c /cygdrive/e/shcool_42/push-swap/src/ft_swap_stacks.c
 
 CMakeFiles/hash.dir/src/ft_swap_stacks.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hash.dir/src/ft_swap_stacks.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/push_swap_4/src/ft_swap_stacks.c > CMakeFiles/hash.dir/src/ft_swap_stacks.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/e/shcool_42/push-swap/src/ft_swap_stacks.c > CMakeFiles/hash.dir/src/ft_swap_stacks.c.i
 
 CMakeFiles/hash.dir/src/ft_swap_stacks.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hash.dir/src/ft_swap_stacks.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap_4/src/ft_swap_stacks.c -o CMakeFiles/hash.dir/src/ft_swap_stacks.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/e/shcool_42/push-swap/src/ft_swap_stacks.c -o CMakeFiles/hash.dir/src/ft_swap_stacks.c.s
 
 CMakeFiles/hash.dir/src/ft_operation.c.o: CMakeFiles/hash.dir/flags.make
 CMakeFiles/hash.dir/src/ft_operation.c.o: ../src/ft_operation.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/hash.dir/src/ft_operation.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_operation.c.o   -c /home/alexey/projects/push_swap_4/src/ft_operation.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/e/shcool_42/push-swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/hash.dir/src/ft_operation.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_operation.c.o   -c /cygdrive/e/shcool_42/push-swap/src/ft_operation.c
 
 CMakeFiles/hash.dir/src/ft_operation.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hash.dir/src/ft_operation.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/push_swap_4/src/ft_operation.c > CMakeFiles/hash.dir/src/ft_operation.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/e/shcool_42/push-swap/src/ft_operation.c > CMakeFiles/hash.dir/src/ft_operation.c.i
 
 CMakeFiles/hash.dir/src/ft_operation.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hash.dir/src/ft_operation.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap_4/src/ft_operation.c -o CMakeFiles/hash.dir/src/ft_operation.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/e/shcool_42/push-swap/src/ft_operation.c -o CMakeFiles/hash.dir/src/ft_operation.c.s
 
 CMakeFiles/hash.dir/src/ft_sort_lstd.c.o: CMakeFiles/hash.dir/flags.make
 CMakeFiles/hash.dir/src/ft_sort_lstd.c.o: ../src/ft_sort_lstd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/hash.dir/src/ft_sort_lstd.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_sort_lstd.c.o   -c /home/alexey/projects/push_swap_4/src/ft_sort_lstd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/e/shcool_42/push-swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/hash.dir/src/ft_sort_lstd.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_sort_lstd.c.o   -c /cygdrive/e/shcool_42/push-swap/src/ft_sort_lstd.c
 
 CMakeFiles/hash.dir/src/ft_sort_lstd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hash.dir/src/ft_sort_lstd.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/push_swap_4/src/ft_sort_lstd.c > CMakeFiles/hash.dir/src/ft_sort_lstd.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/e/shcool_42/push-swap/src/ft_sort_lstd.c > CMakeFiles/hash.dir/src/ft_sort_lstd.c.i
 
 CMakeFiles/hash.dir/src/ft_sort_lstd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hash.dir/src/ft_sort_lstd.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap_4/src/ft_sort_lstd.c -o CMakeFiles/hash.dir/src/ft_sort_lstd.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/e/shcool_42/push-swap/src/ft_sort_lstd.c -o CMakeFiles/hash.dir/src/ft_sort_lstd.c.s
 
 CMakeFiles/hash.dir/src/dfs.c.o: CMakeFiles/hash.dir/flags.make
 CMakeFiles/hash.dir/src/dfs.c.o: ../src/dfs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/hash.dir/src/dfs.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/dfs.c.o   -c /home/alexey/projects/push_swap_4/src/dfs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/e/shcool_42/push-swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/hash.dir/src/dfs.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/dfs.c.o   -c /cygdrive/e/shcool_42/push-swap/src/dfs.c
 
 CMakeFiles/hash.dir/src/dfs.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hash.dir/src/dfs.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/push_swap_4/src/dfs.c > CMakeFiles/hash.dir/src/dfs.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/e/shcool_42/push-swap/src/dfs.c > CMakeFiles/hash.dir/src/dfs.c.i
 
 CMakeFiles/hash.dir/src/dfs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hash.dir/src/dfs.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap_4/src/dfs.c -o CMakeFiles/hash.dir/src/dfs.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/e/shcool_42/push-swap/src/dfs.c -o CMakeFiles/hash.dir/src/dfs.c.s
 
 CMakeFiles/hash.dir/src/ft_quick_sort.c.o: CMakeFiles/hash.dir/flags.make
 CMakeFiles/hash.dir/src/ft_quick_sort.c.o: ../src/ft_quick_sort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/hash.dir/src/ft_quick_sort.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_quick_sort.c.o   -c /home/alexey/projects/push_swap_4/src/ft_quick_sort.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/e/shcool_42/push-swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/hash.dir/src/ft_quick_sort.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_quick_sort.c.o   -c /cygdrive/e/shcool_42/push-swap/src/ft_quick_sort.c
 
 CMakeFiles/hash.dir/src/ft_quick_sort.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hash.dir/src/ft_quick_sort.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/push_swap_4/src/ft_quick_sort.c > CMakeFiles/hash.dir/src/ft_quick_sort.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/e/shcool_42/push-swap/src/ft_quick_sort.c > CMakeFiles/hash.dir/src/ft_quick_sort.c.i
 
 CMakeFiles/hash.dir/src/ft_quick_sort.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hash.dir/src/ft_quick_sort.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap_4/src/ft_quick_sort.c -o CMakeFiles/hash.dir/src/ft_quick_sort.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/e/shcool_42/push-swap/src/ft_quick_sort.c -o CMakeFiles/hash.dir/src/ft_quick_sort.c.s
 
 CMakeFiles/hash.dir/src/ft_ps_new_content.c.o: CMakeFiles/hash.dir/flags.make
 CMakeFiles/hash.dir/src/ft_ps_new_content.c.o: ../src/ft_ps_new_content.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/hash.dir/src/ft_ps_new_content.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_ps_new_content.c.o   -c /home/alexey/projects/push_swap_4/src/ft_ps_new_content.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/e/shcool_42/push-swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/hash.dir/src/ft_ps_new_content.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_ps_new_content.c.o   -c /cygdrive/e/shcool_42/push-swap/src/ft_ps_new_content.c
 
 CMakeFiles/hash.dir/src/ft_ps_new_content.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hash.dir/src/ft_ps_new_content.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/push_swap_4/src/ft_ps_new_content.c > CMakeFiles/hash.dir/src/ft_ps_new_content.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/e/shcool_42/push-swap/src/ft_ps_new_content.c > CMakeFiles/hash.dir/src/ft_ps_new_content.c.i
 
 CMakeFiles/hash.dir/src/ft_ps_new_content.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hash.dir/src/ft_ps_new_content.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap_4/src/ft_ps_new_content.c -o CMakeFiles/hash.dir/src/ft_ps_new_content.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/e/shcool_42/push-swap/src/ft_ps_new_content.c -o CMakeFiles/hash.dir/src/ft_ps_new_content.c.s
 
 CMakeFiles/hash.dir/src/ft_strsplit_to_inttab.c.o: CMakeFiles/hash.dir/flags.make
 CMakeFiles/hash.dir/src/ft_strsplit_to_inttab.c.o: ../src/ft_strsplit_to_inttab.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/hash.dir/src/ft_strsplit_to_inttab.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_strsplit_to_inttab.c.o   -c /home/alexey/projects/push_swap_4/src/ft_strsplit_to_inttab.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/e/shcool_42/push-swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/hash.dir/src/ft_strsplit_to_inttab.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_strsplit_to_inttab.c.o   -c /cygdrive/e/shcool_42/push-swap/src/ft_strsplit_to_inttab.c
 
 CMakeFiles/hash.dir/src/ft_strsplit_to_inttab.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hash.dir/src/ft_strsplit_to_inttab.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/push_swap_4/src/ft_strsplit_to_inttab.c > CMakeFiles/hash.dir/src/ft_strsplit_to_inttab.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/e/shcool_42/push-swap/src/ft_strsplit_to_inttab.c > CMakeFiles/hash.dir/src/ft_strsplit_to_inttab.c.i
 
 CMakeFiles/hash.dir/src/ft_strsplit_to_inttab.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hash.dir/src/ft_strsplit_to_inttab.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap_4/src/ft_strsplit_to_inttab.c -o CMakeFiles/hash.dir/src/ft_strsplit_to_inttab.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/e/shcool_42/push-swap/src/ft_strsplit_to_inttab.c -o CMakeFiles/hash.dir/src/ft_strsplit_to_inttab.c.s
 
 CMakeFiles/hash.dir/src/ft_lstd_del_2.c.o: CMakeFiles/hash.dir/flags.make
 CMakeFiles/hash.dir/src/ft_lstd_del_2.c.o: ../src/ft_lstd_del_2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/hash.dir/src/ft_lstd_del_2.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_lstd_del_2.c.o   -c /home/alexey/projects/push_swap_4/src/ft_lstd_del_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/e/shcool_42/push-swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/hash.dir/src/ft_lstd_del_2.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_lstd_del_2.c.o   -c /cygdrive/e/shcool_42/push-swap/src/ft_lstd_del_2.c
 
 CMakeFiles/hash.dir/src/ft_lstd_del_2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hash.dir/src/ft_lstd_del_2.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/push_swap_4/src/ft_lstd_del_2.c > CMakeFiles/hash.dir/src/ft_lstd_del_2.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/e/shcool_42/push-swap/src/ft_lstd_del_2.c > CMakeFiles/hash.dir/src/ft_lstd_del_2.c.i
 
 CMakeFiles/hash.dir/src/ft_lstd_del_2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hash.dir/src/ft_lstd_del_2.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap_4/src/ft_lstd_del_2.c -o CMakeFiles/hash.dir/src/ft_lstd_del_2.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/e/shcool_42/push-swap/src/ft_lstd_del_2.c -o CMakeFiles/hash.dir/src/ft_lstd_del_2.c.s
 
 CMakeFiles/hash.dir/src/ft_lstd_to_array.c.o: CMakeFiles/hash.dir/flags.make
 CMakeFiles/hash.dir/src/ft_lstd_to_array.c.o: ../src/ft_lstd_to_array.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/hash.dir/src/ft_lstd_to_array.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_lstd_to_array.c.o   -c /home/alexey/projects/push_swap_4/src/ft_lstd_to_array.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/e/shcool_42/push-swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/hash.dir/src/ft_lstd_to_array.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_lstd_to_array.c.o   -c /cygdrive/e/shcool_42/push-swap/src/ft_lstd_to_array.c
 
 CMakeFiles/hash.dir/src/ft_lstd_to_array.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hash.dir/src/ft_lstd_to_array.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/push_swap_4/src/ft_lstd_to_array.c > CMakeFiles/hash.dir/src/ft_lstd_to_array.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/e/shcool_42/push-swap/src/ft_lstd_to_array.c > CMakeFiles/hash.dir/src/ft_lstd_to_array.c.i
 
 CMakeFiles/hash.dir/src/ft_lstd_to_array.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hash.dir/src/ft_lstd_to_array.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap_4/src/ft_lstd_to_array.c -o CMakeFiles/hash.dir/src/ft_lstd_to_array.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/e/shcool_42/push-swap/src/ft_lstd_to_array.c -o CMakeFiles/hash.dir/src/ft_lstd_to_array.c.s
 
 CMakeFiles/hash.dir/src/ft_array_to_lstd.c.o: CMakeFiles/hash.dir/flags.make
 CMakeFiles/hash.dir/src/ft_array_to_lstd.c.o: ../src/ft_array_to_lstd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/hash.dir/src/ft_array_to_lstd.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_array_to_lstd.c.o   -c /home/alexey/projects/push_swap_4/src/ft_array_to_lstd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/e/shcool_42/push-swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/hash.dir/src/ft_array_to_lstd.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_array_to_lstd.c.o   -c /cygdrive/e/shcool_42/push-swap/src/ft_array_to_lstd.c
 
 CMakeFiles/hash.dir/src/ft_array_to_lstd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hash.dir/src/ft_array_to_lstd.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/push_swap_4/src/ft_array_to_lstd.c > CMakeFiles/hash.dir/src/ft_array_to_lstd.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/e/shcool_42/push-swap/src/ft_array_to_lstd.c > CMakeFiles/hash.dir/src/ft_array_to_lstd.c.i
 
 CMakeFiles/hash.dir/src/ft_array_to_lstd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hash.dir/src/ft_array_to_lstd.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap_4/src/ft_array_to_lstd.c -o CMakeFiles/hash.dir/src/ft_array_to_lstd.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/e/shcool_42/push-swap/src/ft_array_to_lstd.c -o CMakeFiles/hash.dir/src/ft_array_to_lstd.c.s
 
 CMakeFiles/hash.dir/src/ft_is_array_in_lstd.c.o: CMakeFiles/hash.dir/flags.make
 CMakeFiles/hash.dir/src/ft_is_array_in_lstd.c.o: ../src/ft_is_array_in_lstd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/hash.dir/src/ft_is_array_in_lstd.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_is_array_in_lstd.c.o   -c /home/alexey/projects/push_swap_4/src/ft_is_array_in_lstd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/e/shcool_42/push-swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/hash.dir/src/ft_is_array_in_lstd.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_is_array_in_lstd.c.o   -c /cygdrive/e/shcool_42/push-swap/src/ft_is_array_in_lstd.c
 
 CMakeFiles/hash.dir/src/ft_is_array_in_lstd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hash.dir/src/ft_is_array_in_lstd.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/push_swap_4/src/ft_is_array_in_lstd.c > CMakeFiles/hash.dir/src/ft_is_array_in_lstd.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/e/shcool_42/push-swap/src/ft_is_array_in_lstd.c > CMakeFiles/hash.dir/src/ft_is_array_in_lstd.c.i
 
 CMakeFiles/hash.dir/src/ft_is_array_in_lstd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hash.dir/src/ft_is_array_in_lstd.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap_4/src/ft_is_array_in_lstd.c -o CMakeFiles/hash.dir/src/ft_is_array_in_lstd.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/e/shcool_42/push-swap/src/ft_is_array_in_lstd.c -o CMakeFiles/hash.dir/src/ft_is_array_in_lstd.c.s
 
 CMakeFiles/hash.dir/src/ft_sort_ratio.c.o: CMakeFiles/hash.dir/flags.make
 CMakeFiles/hash.dir/src/ft_sort_ratio.c.o: ../src/ft_sort_ratio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/hash.dir/src/ft_sort_ratio.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_sort_ratio.c.o   -c /home/alexey/projects/push_swap_4/src/ft_sort_ratio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/e/shcool_42/push-swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/hash.dir/src/ft_sort_ratio.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_sort_ratio.c.o   -c /cygdrive/e/shcool_42/push-swap/src/ft_sort_ratio.c
 
 CMakeFiles/hash.dir/src/ft_sort_ratio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hash.dir/src/ft_sort_ratio.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/push_swap_4/src/ft_sort_ratio.c > CMakeFiles/hash.dir/src/ft_sort_ratio.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/e/shcool_42/push-swap/src/ft_sort_ratio.c > CMakeFiles/hash.dir/src/ft_sort_ratio.c.i
 
 CMakeFiles/hash.dir/src/ft_sort_ratio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hash.dir/src/ft_sort_ratio.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap_4/src/ft_sort_ratio.c -o CMakeFiles/hash.dir/src/ft_sort_ratio.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/e/shcool_42/push-swap/src/ft_sort_ratio.c -o CMakeFiles/hash.dir/src/ft_sort_ratio.c.s
 
 CMakeFiles/hash.dir/src/ft_queue_sort.c.o: CMakeFiles/hash.dir/flags.make
 CMakeFiles/hash.dir/src/ft_queue_sort.c.o: ../src/ft_queue_sort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/hash.dir/src/ft_queue_sort.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_queue_sort.c.o   -c /home/alexey/projects/push_swap_4/src/ft_queue_sort.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/e/shcool_42/push-swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/hash.dir/src/ft_queue_sort.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_queue_sort.c.o   -c /cygdrive/e/shcool_42/push-swap/src/ft_queue_sort.c
 
 CMakeFiles/hash.dir/src/ft_queue_sort.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hash.dir/src/ft_queue_sort.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/push_swap_4/src/ft_queue_sort.c > CMakeFiles/hash.dir/src/ft_queue_sort.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/e/shcool_42/push-swap/src/ft_queue_sort.c > CMakeFiles/hash.dir/src/ft_queue_sort.c.i
 
 CMakeFiles/hash.dir/src/ft_queue_sort.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hash.dir/src/ft_queue_sort.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap_4/src/ft_queue_sort.c -o CMakeFiles/hash.dir/src/ft_queue_sort.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/e/shcool_42/push-swap/src/ft_queue_sort.c -o CMakeFiles/hash.dir/src/ft_queue_sort.c.s
 
 CMakeFiles/hash.dir/src/ft_sort_tools.c.o: CMakeFiles/hash.dir/flags.make
 CMakeFiles/hash.dir/src/ft_sort_tools.c.o: ../src/ft_sort_tools.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/hash.dir/src/ft_sort_tools.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_sort_tools.c.o   -c /home/alexey/projects/push_swap_4/src/ft_sort_tools.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/e/shcool_42/push-swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/hash.dir/src/ft_sort_tools.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/src/ft_sort_tools.c.o   -c /cygdrive/e/shcool_42/push-swap/src/ft_sort_tools.c
 
 CMakeFiles/hash.dir/src/ft_sort_tools.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hash.dir/src/ft_sort_tools.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/push_swap_4/src/ft_sort_tools.c > CMakeFiles/hash.dir/src/ft_sort_tools.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/e/shcool_42/push-swap/src/ft_sort_tools.c > CMakeFiles/hash.dir/src/ft_sort_tools.c.i
 
 CMakeFiles/hash.dir/src/ft_sort_tools.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hash.dir/src/ft_sort_tools.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap_4/src/ft_sort_tools.c -o CMakeFiles/hash.dir/src/ft_sort_tools.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/e/shcool_42/push-swap/src/ft_sort_tools.c -o CMakeFiles/hash.dir/src/ft_sort_tools.c.s
 
 CMakeFiles/hash.dir/hash.c.o: CMakeFiles/hash.dir/flags.make
 CMakeFiles/hash.dir/hash.c.o: ../hash.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/hash.dir/hash.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/hash.c.o   -c /home/alexey/projects/push_swap_4/hash.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/e/shcool_42/push-swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/hash.dir/hash.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hash.dir/hash.c.o   -c /cygdrive/e/shcool_42/push-swap/hash.c
 
 CMakeFiles/hash.dir/hash.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hash.dir/hash.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/push_swap_4/hash.c > CMakeFiles/hash.dir/hash.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/e/shcool_42/push-swap/hash.c > CMakeFiles/hash.dir/hash.c.i
 
 CMakeFiles/hash.dir/hash.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hash.dir/hash.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap_4/hash.c -o CMakeFiles/hash.dir/hash.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/e/shcool_42/push-swap/hash.c -o CMakeFiles/hash.dir/hash.c.s
 
 # Object files for target hash
 hash_OBJECTS = \
@@ -357,35 +357,35 @@ hash_OBJECTS = \
 # External object files for target hash
 hash_EXTERNAL_OBJECTS =
 
-hash: CMakeFiles/hash.dir/src/is_sorted.c.o
-hash: CMakeFiles/hash.dir/src/ft_lstd_swap.c.o
-hash: CMakeFiles/hash.dir/src/ft_lstprint.c.o
-hash: CMakeFiles/hash.dir/src/read.c.o
-hash: CMakeFiles/hash.dir/src/ft_lstd_to_str.c.o
-hash: CMakeFiles/hash.dir/src/ft_is_str_in_lstd.c.o
-hash: CMakeFiles/hash.dir/src/ft_swap_stacks.c.o
-hash: CMakeFiles/hash.dir/src/ft_operation.c.o
-hash: CMakeFiles/hash.dir/src/ft_sort_lstd.c.o
-hash: CMakeFiles/hash.dir/src/dfs.c.o
-hash: CMakeFiles/hash.dir/src/ft_quick_sort.c.o
-hash: CMakeFiles/hash.dir/src/ft_ps_new_content.c.o
-hash: CMakeFiles/hash.dir/src/ft_strsplit_to_inttab.c.o
-hash: CMakeFiles/hash.dir/src/ft_lstd_del_2.c.o
-hash: CMakeFiles/hash.dir/src/ft_lstd_to_array.c.o
-hash: CMakeFiles/hash.dir/src/ft_array_to_lstd.c.o
-hash: CMakeFiles/hash.dir/src/ft_is_array_in_lstd.c.o
-hash: CMakeFiles/hash.dir/src/ft_sort_ratio.c.o
-hash: CMakeFiles/hash.dir/src/ft_queue_sort.c.o
-hash: CMakeFiles/hash.dir/src/ft_sort_tools.c.o
-hash: CMakeFiles/hash.dir/hash.c.o
-hash: CMakeFiles/hash.dir/build.make
-hash: lib/libft/liblibft.a
-hash: CMakeFiles/hash.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alexey/projects/push_swap_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking C executable hash"
+hash.exe: CMakeFiles/hash.dir/src/is_sorted.c.o
+hash.exe: CMakeFiles/hash.dir/src/ft_lstd_swap.c.o
+hash.exe: CMakeFiles/hash.dir/src/ft_lstprint.c.o
+hash.exe: CMakeFiles/hash.dir/src/read.c.o
+hash.exe: CMakeFiles/hash.dir/src/ft_lstd_to_str.c.o
+hash.exe: CMakeFiles/hash.dir/src/ft_is_str_in_lstd.c.o
+hash.exe: CMakeFiles/hash.dir/src/ft_swap_stacks.c.o
+hash.exe: CMakeFiles/hash.dir/src/ft_operation.c.o
+hash.exe: CMakeFiles/hash.dir/src/ft_sort_lstd.c.o
+hash.exe: CMakeFiles/hash.dir/src/dfs.c.o
+hash.exe: CMakeFiles/hash.dir/src/ft_quick_sort.c.o
+hash.exe: CMakeFiles/hash.dir/src/ft_ps_new_content.c.o
+hash.exe: CMakeFiles/hash.dir/src/ft_strsplit_to_inttab.c.o
+hash.exe: CMakeFiles/hash.dir/src/ft_lstd_del_2.c.o
+hash.exe: CMakeFiles/hash.dir/src/ft_lstd_to_array.c.o
+hash.exe: CMakeFiles/hash.dir/src/ft_array_to_lstd.c.o
+hash.exe: CMakeFiles/hash.dir/src/ft_is_array_in_lstd.c.o
+hash.exe: CMakeFiles/hash.dir/src/ft_sort_ratio.c.o
+hash.exe: CMakeFiles/hash.dir/src/ft_queue_sort.c.o
+hash.exe: CMakeFiles/hash.dir/src/ft_sort_tools.c.o
+hash.exe: CMakeFiles/hash.dir/hash.c.o
+hash.exe: CMakeFiles/hash.dir/build.make
+hash.exe: lib/libft/liblibft.a
+hash.exe: CMakeFiles/hash.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/e/shcool_42/push-swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking C executable hash.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hash.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/hash.dir/build: hash
+CMakeFiles/hash.dir/build: hash.exe
 
 .PHONY : CMakeFiles/hash.dir/build
 
@@ -394,6 +394,6 @@ CMakeFiles/hash.dir/clean:
 .PHONY : CMakeFiles/hash.dir/clean
 
 CMakeFiles/hash.dir/depend:
-	cd /home/alexey/projects/push_swap_4/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alexey/projects/push_swap_4 /home/alexey/projects/push_swap_4 /home/alexey/projects/push_swap_4/cmake-build-debug /home/alexey/projects/push_swap_4/cmake-build-debug /home/alexey/projects/push_swap_4/cmake-build-debug/CMakeFiles/hash.dir/DependInfo.cmake --color=$(COLOR)
+	cd /cygdrive/e/shcool_42/push-swap/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/e/shcool_42/push-swap /cygdrive/e/shcool_42/push-swap /cygdrive/e/shcool_42/push-swap/cmake-build-debug /cygdrive/e/shcool_42/push-swap/cmake-build-debug /cygdrive/e/shcool_42/push-swap/cmake-build-debug/CMakeFiles/hash.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/hash.dir/depend
 

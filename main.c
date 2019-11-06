@@ -122,12 +122,14 @@ int main(int argc, char **argv) {
 			steps++;
 		}
 	}
+	while (buff)
 
-	steps += sort_lstds(&list, &buff);
-
+		steps += sort_lstds(&list, &buff);
+//	steps += sort_lstds(&list, &buff);
+//	steps += sort_lstds(&list, &buff);
 //	steps += a_star(&list, &buff, &visited, &queue);
 
-	ft_lstditer_two(list, buff, &ft_lstprint3);
+//	ft_lstditer_two(list, buff, &ft_lstprint3);
 //	printf("--------------------------------------\n");
 //	printf("steps: %d\n", steps);
 
@@ -140,13 +142,14 @@ int main(int argc, char **argv) {
 //	ft_lstditer(list, &ft_lstprint);
 //	printf("here :%d\n",ft_lstdlen(buff));
 //
+
 	i = size;
 	while (i--) {
 		if ((((t_ps_content *) list->content)->serial) < 2)
 			break;
 		list= list->next;
 	}
-	if (i > size / 2) {
+	if (i * 2 > size ) {
 		i = size - i;
 		while (--i)
 			printf("ra\n");
@@ -176,7 +179,7 @@ int main(int argc, char **argv) {
 //			printf("rra\n");
 //	}
 
-
+	ft_lstditer_two(list, buff, &ft_lstprint3);
 
 
 	ft_lstd_del_2(&list);
