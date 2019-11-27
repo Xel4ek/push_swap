@@ -32,6 +32,4 @@ void  ft_array_to_lstd(int *tab, int len, t_list **list1, t_list **list2){
 		ft_memdel((void**)&item);
 		i++;
 	}
-	ft_memdel((void**)&tab);
-
  }

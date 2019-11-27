@@ -7,7 +7,7 @@ void	ft_lstprint(t_list *list){
 
 	if (list){
 		item = (t_ps_content*)list->content;
-		printf("%6d %6d %4d %3d\n",item->content, item->value, item->serial, item->operation);
+		printf("%6d %6d %4d %3d",item->content, item->value, item->serial, item->operation);
 
 	}	//write(1 , list->content, list->content_size);
 	else

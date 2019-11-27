@@ -28,11 +28,11 @@ int	is_sorted(t_list *list)
 {
 	int len;
 
-	len = ft_lstdlen(list) - 1;
+	len = ft_lstdlen(list);
 	if (len > 0)
-		while (len--) {
-			if (((t_ps_content*)(list->content))->value >=
-					((t_ps_content*)(list->next->content))->value)
+		while (--len) {
+			if (((t_ps_content*)(list->content))->serial >=
+					((t_ps_content*)(list->next->content))->serial)
 				return 0;
 			list = list->next;
 		}

@@ -79,6 +79,11 @@ void ft_queue_sort(t_list **source);
 void ft_circle(t_list *list);
 int a_star(t_list **list, t_list **buff, t_list **visited, t_list **queue);
 int sort_lstds(t_list **list, t_list **buff);
-void	ft_lstprint5(t_list *list);
-
+void ft_move_stack(t_list *list);
+int ft_sequence_prepear(t_list **list);
+int ft_first_step(t_list **list, t_list **buff, int take_it);
+t_list *ft_str_like_lstd(char *string);
+char *ft_get_str(int argc, char **argv);
+int ft_bfs_sort(t_list **list);
+char *ft_get_str_and_options(int argc, char **argv, int *options);
 #endif

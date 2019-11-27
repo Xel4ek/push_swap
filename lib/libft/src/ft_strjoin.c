@@ -16,7 +16,7 @@
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*ptr;
-	int		len;
+	size_t	len;
 
 	if (s1 && s2)
 	{
