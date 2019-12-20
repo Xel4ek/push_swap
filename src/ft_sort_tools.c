@@ -194,6 +194,15 @@ int ft_sequence_prepear(t_list **list){
 	}
 	return take_it;
 }
+int ft_is_number(char *string)
+{
+	return 1;
+}
+
+int ft_is_option(char *string)
+{
+	return 1;
+}
 
 char *ft_get_str_and_options(int argc, char **argv, int *options){
 	char *string;
@@ -201,13 +210,25 @@ char *ft_get_str_and_options(int argc, char **argv, int *options){
 	string = ft_strnew(0);
 	*string = 0;
 	while (--argc) {
-		temp = ft_strjoin(string, " ");
-		ft_memdel((void**)&string);
-		string = ft_strjoin(temp, argv[argc]);
-		ft_memdel((void**)&temp);
+		if (ft_is_number(argv[argc])) {
+			temp = ft_strjoin(string, " ");
+			ft_memdel((void **) &string);
+			string = ft_strjoin(temp, argv[argc]);
+			ft_memdel((void **) &temp);
+		}
+		else if (ft_is_option(argv[argc]))
+		{
+			//add option
+		}
+		else
+		{
+			ft_memdel((void **) &string);
+			return (NULL);
+		}
 	}
 	return string;
 }
+
 
 char *ft_get_str(int argc, char **argv){
 	char *string;
