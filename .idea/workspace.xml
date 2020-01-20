@@ -3,9 +3,9 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="push_swap" targetName="checker" />
-      <config projectName="push_swap" targetName="hash" />
       <config projectName="push_swap" targetName="libft" />
       <config projectName="push_swap" targetName="push_swap" />
+      <config projectName="push_swap" targetName="hash" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -16,16 +16,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2779692a-d878-4531-b1d1-2b626a8dadda" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hash.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hash.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libft/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/libft/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker.c" beforeDir="false" afterPath="$PROJECT_DIR$/checker.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/checker.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/checker.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_sort_tools.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_sort_tools.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/checker" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/checker" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ft_sort_tools.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_sort_tools.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -187,6 +182,7 @@
       <workItem from="1573738990240" duration="7665000" />
       <workItem from="1576152843584" duration="935000" />
       <workItem from="1576844488099" duration="2084000" />
+      <workItem from="1579520259198" duration="3285000" />
     </task>
     <task id="LOCAL-00001" summary="8th">
       <created>1571842397140</created>
@@ -229,10 +225,26 @@
     <option name="LAST_COMMIT_MESSAGE" value="8th" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="641" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1576844499034">
+    <state width="1874" height="185" key="GridCell.Tab.0.bottom" timestamp="1579522470031">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="641" y="348" key="com.intellij.ide.util.TipDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1576844499034" />
+    <state width="1874" height="185" key="GridCell.Tab.0.bottom/0.0.1920.1044@0.0.1920.1044" timestamp="1579522470031" />
+    <state width="1874" height="185" key="GridCell.Tab.0.center" timestamp="1579522470030">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state width="1874" height="185" key="GridCell.Tab.0.center/0.0.1920.1044@0.0.1920.1044" timestamp="1579522470030" />
+    <state width="1874" height="185" key="GridCell.Tab.0.left" timestamp="1579522470030">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state width="1874" height="185" key="GridCell.Tab.0.left/0.0.1920.1044@0.0.1920.1044" timestamp="1579522470030" />
+    <state width="1874" height="185" key="GridCell.Tab.0.right" timestamp="1579522470031">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state width="1874" height="185" key="GridCell.Tab.0.right/0.0.1920.1044@0.0.1920.1044" timestamp="1579522470031" />
+    <state x="641" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1579521905637">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="641" y="348" key="com.intellij.ide.util.TipDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1579521905637" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

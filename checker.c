@@ -17,8 +17,8 @@ int main(int argc, char **argv){
 
 
 	char *str;
-	if (argc > 1) {
-		if (!(str = ft_get_str_and_options(argc, argv,  NULL))) {
+	if (argc > 2) {
+		if (!(str = ft_get_str_and_options(argc, argv, NULL))) {
 			printf("Error\n");
 			return 0;
 		}

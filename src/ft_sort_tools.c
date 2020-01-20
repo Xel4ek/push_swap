@@ -196,19 +196,32 @@ int ft_sequence_prepear(t_list **list){
 }
 int ft_is_number(char *string)
 {
+	if ((*string == '-' || *string == '+') && !ft_isdigit(*(string+1)))
+		++string;
+	while (*string) {
+		if (ft_isdigit(*string) == -1)
+			return 0;
+		++string;
+	}
 	return 1;
 }
 
 int ft_is_option(char *string)
 {
-	return 1;
+	if (*(string++) == '-' && !*(string + 1))
+	{
+		return *string;
+	}
+	return 0;
 }
 
 char *ft_get_str_and_options(int argc, char **argv, int *options){
 	char *string;
 	char *temp;
+	int wow;
 	string = ft_strnew(0);
 	*string = 0;
+
 	while (--argc) {
 		if (ft_is_number(argv[argc])) {
 			temp = ft_strjoin(string, " ");
@@ -216,9 +229,9 @@ char *ft_get_str_and_options(int argc, char **argv, int *options){
 			string = ft_strjoin(temp, argv[argc]);
 			ft_memdel((void **) &temp);
 		}
-		else if (ft_is_option(argv[argc]))
+		else if ((wow = ft_is_option(argv[argc])))
 		{
-			//add option
+				printf("wow %c\n",wow);
 		}
 		else
 		{

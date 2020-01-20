@@ -20,9 +20,15 @@ string.h
 stdint.h
 -
 
-/home/alexey/projects/push_swap_4/src/ft_sort_tools.c
+/home/alexey/projects/push_swap_4/checker.c
 push_swap.h
-/home/alexey/projects/push_swap_4/src/push_swap.h
+/home/alexey/projects/push_swap_4/push_swap.h
 stdio.h
+-
+fcntl.h
+-
+stdlib.h
+-
+unistd.h
 -
 
