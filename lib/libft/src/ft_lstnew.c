@@ -6,7 +6,7 @@
 /*   By: hwolf <hwolf@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/06 14:07:21 by hwolf             #+#    #+#             */
-/*   Updated: 2019/09/08 20:12:10 by hwolf            ###   ########.fr       */
+/*   Updated: 2020/01/22 17:09:22 by hwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 t_forward_list	*ft_lstnew(void const *content, size_t content_size)
 {
 	t_forward_list *ptr;
-
 
 	if (!(ptr = (t_forward_list*)malloc(sizeof(*ptr))))
 		return (NULL);
@@ -29,7 +28,6 @@ t_forward_list	*ft_lstnew(void const *content, size_t content_size)
 			return (NULL);
 		}
 		ft_memcpy(ptr->content, content, content_size);
-
 	}
 	else
 		ptr->content = NULL;
@@ -37,7 +35,7 @@ t_forward_list	*ft_lstnew(void const *content, size_t content_size)
 	return (ptr);
 }
 
-t_list *ft_lstdnew(void const *content, size_t content_size)
+t_list			*ft_lstdnew(void const *content, size_t content_size)
 {
 	t_list *ptr;
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: odrinkwa <odrinkwa@student.42.fr>          +#+  +:+       +#+        */
+/*   By: hwolf <hwolf@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/07 15:12:19 by hwolf             #+#    #+#             */
-/*   Updated: 2019/09/18 23:34:50 by odrinkwa         ###   ########.fr       */
+/*   Updated: 2020/01/22 16:31:11 by hwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,10 +46,10 @@ static int		get_new_line(char **line, t_forward_list **ptr)
 
 int				get_next_line(const int fd, char **line)
 {
-	char			buf[BUFF_SIZE + 1];
-	int				ret;
-	static	t_forward_list	*ptr[MAX_FD];
-	char			*tmp;
+	char					buf[BUFF_SIZE + 1];
+	int						ret;
+	static t_forward_list	*ptr[MAX_FD];
+	char					*tmp;
 
 	if (fd < 0 || line == NULL || read(fd, buf, 0) < 0)
 		return (-1);
@@ -64,5 +64,5 @@ int				get_next_line(const int fd, char **line)
 		if (ft_strchr(ptr[fd]->content, '\n'))
 			break ;
 	}
-	return (get_new_line(line, ptr+fd));
+	return (get_new_line(line, ptr + fd));
 }

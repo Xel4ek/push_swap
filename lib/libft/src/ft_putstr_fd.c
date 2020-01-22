@@ -6,7 +6,7 @@
 /*   By: hwolf <hwolf@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/06 13:56:27 by hwolf             #+#    #+#             */
-/*   Updated: 2019/09/06 13:57:38 by hwolf            ###   ########.fr       */
+/*   Updated: 2020/01/22 16:58:56 by hwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_putstr_fd(char const *s, int fd)
 		write(fd, s, ft_strlen(s));
 }
 
-size_t	ft_putstr_ptr_fd(const int fd, char const *start ,char const *finish)
+size_t	ft_putstr_ptr_fd(const int fd, char const *start, char const *finish)
 {
 	if (start && finish && finish > start && fd > 0)
 		return (write(fd, start, finish - start));

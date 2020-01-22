@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   push_swap.h                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hwolf <hwolf@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/01/22 15:21:53 by hwolf             #+#    #+#             */
+/*   Updated: 2020/01/22 17:32:56 by hwolf            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef PUSH_SWAP_H
 #define PUSH_SWAP_H
 
@@ -5,23 +17,20 @@
 #include <sys/stat.h>
 #include "libft.h"
 
-# define MIN(x, y)		(x) < (y) ? (x) : (y)
-# define ABS(x)			(x) > 0 ? (x) : -(x)
-
 # define MAX_HASH_SIZE 1024
 # define MAX_QUEUE_SIZE 4096
 # define MAX_ITEARATIONS 1500000
 enum Operations{
-	SA, //0
-	SB, //1
-	SS, //2
-	RA, //3
-	RB, //4
-	RR, //5
-	RRA, //6
-	RRB, //7
-	RRR, //8
-	PA, //9
+	SA,
+	SB,
+	SS,
+	RA,
+	RB,
+	RR,
+	RRA,
+	RRB,
+	RRR,
+	PA,
 	PB,
 	FREEZE
 };
@@ -86,4 +95,9 @@ t_list *ft_str_like_lstd(char *string);
 char *ft_get_str(int argc, char **argv);
 int ft_bfs_sort(t_list **list);
 char *ft_get_str_and_options(int argc, char **argv, int *options);
+int ft_duplicate_finder(char *string);
+int ft_overloaded_checker(char *string);
+int ft_action_checker(char *string);
+int ft_get_data(t_list **list, int argc, char **argv);
+int ft_aply_actions(t_list **list, int option);
 #endif

@@ -6,7 +6,7 @@
 /*   By: hwolf <hwolf@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/06 16:54:43 by hwolf             #+#    #+#             */
-/*   Updated: 2019/09/07 19:18:04 by hwolf            ###   ########.fr       */
+/*   Updated: 2020/01/22 17:10:57 by hwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,13 @@ void	ft_lstditer(t_list *list, void (*f)())
 	t_list *ptr;
 
 	ptr = NULL;
-	if (*f) {
-		if (list) {
+	if (*f)
+	{
+		if (list)
+		{
 			if (list != list->next)
-				while (list && ptr != list->next) {
+				while (list && ptr != list->next)
+				{
 					if (!ptr)
 						ptr = list;
 					(*f)(list);
@@ -50,19 +53,25 @@ void	ft_lstditer_two(t_list *list1, t_list *list2, void (*f)(t_list *elem))
 	size_t i;
 
 	i = 0;
-	size = MAX((len1 = ft_lstdlen(list1)), (len2 = ft_lstdlen(list2)));
-	if (*f) {
-		while (i < size) {
-			if(i < len1) {
+	size = ft_max((len1 = ft_lstdlen(list1)), (len2 = ft_lstdlen(list2)));
+	if (*f)
+	{
+		while (i < size)
+		{
+			if (i < len1)
+			{
 				(*f)(list1);
 				list1 = list1->next;
-			}else
+			}
+			else
 				(*f)(NULL);
 			printf("\t");
-			if(i < len2) {
+			if (i < len2)
+			{
 				(*f)(list2);
 				list2 = list2->next;
-			}else
+			}
+			else
 				(*f)(NULL);
 			printf("\n");
 			i++;

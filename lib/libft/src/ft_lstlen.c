@@ -6,7 +6,7 @@
 /*   By: hwolf <hwolf@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/07 21:37:10 by hwolf             #+#    #+#             */
-/*   Updated: 2019/09/07 21:53:27 by hwolf            ###   ########.fr       */
+/*   Updated: 2020/01/22 17:22:18 by hwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,16 +26,17 @@ int	ft_lstlen(const t_forward_list *list)
 
 int	ft_lstdlen(const t_list *list)
 {
-	int	len;
-	t_list *ptr;
+	int		len;
+	t_list	*ptr;
 
 	len = 0;
 	ptr = NULL;
-
-	if (list) {
+	if (list)
+	{
 		len++;
 		if (list != list->next)
-			while (list && list->next != ptr) {
+			while (list && list->next != ptr)
+			{
 				if (!ptr)
 					ptr = (t_list*)list;
 				list = list->next;

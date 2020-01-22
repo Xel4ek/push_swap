@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/push_swap.dir/main.c.o"
   "CMakeFiles/push_swap.dir/src/dfs.c.o"
   "CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.o"
+  "CMakeFiles/push_swap.dir/src/ft_checker_tools.c.o"
   "CMakeFiles/push_swap.dir/src/ft_is_array_in_lstd.c.o"
   "CMakeFiles/push_swap.dir/src/ft_is_str_in_lstd.c.o"
   "CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.o"

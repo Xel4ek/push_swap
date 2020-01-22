@@ -19,15 +19,17 @@ string.h
 -
 stdint.h
 -
+libft_structs.h
+../lib/libft/includes/libft_structs.h
 
-/home/alexey/projects/push_swap_4/checker.c
+../lib/libft/includes/libft_structs.h
+string.h
+-
+
+/Users/hwolf/projects/push/src/ft_lstprint.c
 push_swap.h
-/home/alexey/projects/push_swap_4/push_swap.h
+/Users/hwolf/projects/push/src/push_swap.h
 stdio.h
--
-fcntl.h
--
-stdlib.h
 -
 unistd.h
 -

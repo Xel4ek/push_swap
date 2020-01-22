@@ -3,85 +3,111 @@
 
 CMakeFiles/checker.dir/checker.c.o: ../includes/push_swap.h
 CMakeFiles/checker.dir/checker.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/checker.dir/checker.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/checker.dir/checker.c.o: ../checker.c
 
 CMakeFiles/checker.dir/src/dfs.c.o: ../includes/push_swap.h
 CMakeFiles/checker.dir/src/dfs.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/checker.dir/src/dfs.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/checker.dir/src/dfs.c.o: ../src/dfs.c
 
 CMakeFiles/checker.dir/src/ft_array_to_lstd.c.o: ../includes/push_swap.h
 CMakeFiles/checker.dir/src/ft_array_to_lstd.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/checker.dir/src/ft_array_to_lstd.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/checker.dir/src/ft_array_to_lstd.c.o: ../src/ft_array_to_lstd.c
+
+CMakeFiles/checker.dir/src/ft_checker_tools.c.o: ../includes/push_swap.h
+CMakeFiles/checker.dir/src/ft_checker_tools.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/checker.dir/src/ft_checker_tools.c.o: ../lib/libft/includes/libft_structs.h
+CMakeFiles/checker.dir/src/ft_checker_tools.c.o: ../src/ft_checker_tools.c
 
 CMakeFiles/checker.dir/src/ft_is_array_in_lstd.c.o: ../includes/push_swap.h
 CMakeFiles/checker.dir/src/ft_is_array_in_lstd.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/checker.dir/src/ft_is_array_in_lstd.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/checker.dir/src/ft_is_array_in_lstd.c.o: ../src/ft_is_array_in_lstd.c
 
 CMakeFiles/checker.dir/src/ft_is_str_in_lstd.c.o: ../includes/push_swap.h
 CMakeFiles/checker.dir/src/ft_is_str_in_lstd.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/checker.dir/src/ft_is_str_in_lstd.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/checker.dir/src/ft_is_str_in_lstd.c.o: ../src/ft_is_str_in_lstd.c
 
 CMakeFiles/checker.dir/src/ft_lstd_del_2.c.o: ../includes/push_swap.h
 CMakeFiles/checker.dir/src/ft_lstd_del_2.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/checker.dir/src/ft_lstd_del_2.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/checker.dir/src/ft_lstd_del_2.c.o: ../src/ft_lstd_del_2.c
 
 CMakeFiles/checker.dir/src/ft_lstd_swap.c.o: ../includes/push_swap.h
 CMakeFiles/checker.dir/src/ft_lstd_swap.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/checker.dir/src/ft_lstd_swap.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/checker.dir/src/ft_lstd_swap.c.o: ../src/ft_lstd_swap.c
 
 CMakeFiles/checker.dir/src/ft_lstd_to_array.c.o: ../includes/push_swap.h
 CMakeFiles/checker.dir/src/ft_lstd_to_array.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/checker.dir/src/ft_lstd_to_array.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/checker.dir/src/ft_lstd_to_array.c.o: ../src/ft_lstd_to_array.c
 
 CMakeFiles/checker.dir/src/ft_lstd_to_str.c.o: ../includes/push_swap.h
 CMakeFiles/checker.dir/src/ft_lstd_to_str.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/checker.dir/src/ft_lstd_to_str.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/checker.dir/src/ft_lstd_to_str.c.o: ../src/ft_lstd_to_str.c
 
 CMakeFiles/checker.dir/src/ft_lstprint.c.o: ../includes/push_swap.h
 CMakeFiles/checker.dir/src/ft_lstprint.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/checker.dir/src/ft_lstprint.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/checker.dir/src/ft_lstprint.c.o: ../src/ft_lstprint.c
 
 CMakeFiles/checker.dir/src/ft_operation.c.o: ../includes/push_swap.h
 CMakeFiles/checker.dir/src/ft_operation.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/checker.dir/src/ft_operation.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/checker.dir/src/ft_operation.c.o: ../src/ft_operation.c
 
 CMakeFiles/checker.dir/src/ft_ps_new_content.c.o: ../includes/push_swap.h
 CMakeFiles/checker.dir/src/ft_ps_new_content.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/checker.dir/src/ft_ps_new_content.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/checker.dir/src/ft_ps_new_content.c.o: ../src/ft_ps_new_content.c
 
 CMakeFiles/checker.dir/src/ft_queue_sort.c.o: ../includes/push_swap.h
 CMakeFiles/checker.dir/src/ft_queue_sort.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/checker.dir/src/ft_queue_sort.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/checker.dir/src/ft_queue_sort.c.o: ../src/ft_queue_sort.c
 
 CMakeFiles/checker.dir/src/ft_quick_sort.c.o: ../includes/push_swap.h
 CMakeFiles/checker.dir/src/ft_quick_sort.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/checker.dir/src/ft_quick_sort.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/checker.dir/src/ft_quick_sort.c.o: ../src/ft_quick_sort.c
 
 CMakeFiles/checker.dir/src/ft_sort_lstd.c.o: ../includes/push_swap.h
 CMakeFiles/checker.dir/src/ft_sort_lstd.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/checker.dir/src/ft_sort_lstd.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/checker.dir/src/ft_sort_lstd.c.o: ../src/ft_sort_lstd.c
 
 CMakeFiles/checker.dir/src/ft_sort_ratio.c.o: ../includes/push_swap.h
 CMakeFiles/checker.dir/src/ft_sort_ratio.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/checker.dir/src/ft_sort_ratio.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/checker.dir/src/ft_sort_ratio.c.o: ../src/ft_sort_ratio.c
 
 CMakeFiles/checker.dir/src/ft_sort_tools.c.o: ../includes/push_swap.h
 CMakeFiles/checker.dir/src/ft_sort_tools.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/checker.dir/src/ft_sort_tools.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/checker.dir/src/ft_sort_tools.c.o: ../src/ft_sort_tools.c
 
 CMakeFiles/checker.dir/src/ft_strsplit_to_inttab.c.o: ../includes/push_swap.h
 CMakeFiles/checker.dir/src/ft_strsplit_to_inttab.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/checker.dir/src/ft_strsplit_to_inttab.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/checker.dir/src/ft_strsplit_to_inttab.c.o: ../src/ft_strsplit_to_inttab.c
 
 CMakeFiles/checker.dir/src/ft_swap_stacks.c.o: ../includes/push_swap.h
 CMakeFiles/checker.dir/src/ft_swap_stacks.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/checker.dir/src/ft_swap_stacks.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/checker.dir/src/ft_swap_stacks.c.o: ../src/ft_swap_stacks.c
 
 CMakeFiles/checker.dir/src/is_sorted.c.o: ../includes/push_swap.h
 CMakeFiles/checker.dir/src/is_sorted.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/checker.dir/src/is_sorted.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/checker.dir/src/is_sorted.c.o: ../src/is_sorted.c
 
 CMakeFiles/checker.dir/src/read.c.o: ../includes/push_swap.h
 CMakeFiles/checker.dir/src/read.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/checker.dir/src/read.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/checker.dir/src/read.c.o: ../src/read.c
 
