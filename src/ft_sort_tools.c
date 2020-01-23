@@ -57,17 +57,68 @@ int steps_to_add(t_list *list, t_list *buff)
 	return (0);
 }
 
+static void ft_aply_rr(int rr, t_list **list, t_list **buff)
+{
+	while (rr)
+	{
+		if (rr > 0)
+		{
+			ft_operations(RR, list, buff);
+			printf("rr\n");
+			--rr;
+		}
+		else
+		{
+			ft_operations(RRR, list, buff);
+			printf("rrr\n");
+			++rr;
+		}
+	}
+}
+
+static void ft_aply_ra(int ra, t_list **list, t_list **buff){
+	while (ra)
+	{
+		if (ra > 0)
+		{
+			ft_operations(RA, list, buff);
+			printf("ra\n");
+			--ra;
+		}
+		else
+		{
+			ft_operations(RRA, list, buff);
+			printf("rra\n");
+			++ra;
+		}
+	}
+}
+static void ft_aply_rb(int rb, t_list **list, t_list **buff)
+{
+	while (rb)
+	{
+		if (rb > 0)
+		{
+			ft_operations(RB, list, buff);
+			printf("rb\n");
+			--rb;
+		}
+		else
+		{
+			ft_operations(RRB, list, buff);
+			printf("rrb\n");
+			++rb;
+		}
+	}
+}
+
 int sort_lstds(t_list **list, t_list **buff)
 {
 	int size;
-	int dst_size;
-
-
 	int i;
 	int list_step;
 	int temp;
 	int min;
-
 	int tmp;
 	int sign;
 	int rr;
@@ -76,12 +127,12 @@ int sort_lstds(t_list **list, t_list **buff)
 	int wigth;
 	int summ;
 
-	dst_size = ft_lstdlen(*list);
 	if (!(size = ft_lstdlen(*buff)))
 		return (0);
-	int tab[size];
-	list_step = 0;
 	i = 0;
+	rr = 0;
+	rb = 0;
+	ra = 0;
 	wigth = -1;
 	while (i < size)
 	{
@@ -116,56 +167,40 @@ int sort_lstds(t_list **list, t_list **buff)
 		++i;
 		*buff = (*buff)->next;
 	}
-	while (rr)
-	{
-		if (rr > 0)
-		{
-			ft_operations(RR, list, buff);
-			printf("rr\n");
-			--rr;
-		}
-		else
-		{
-			ft_operations(RRR, list, buff);
-			printf("rrr\n");
-			++rr;
-		}
-	}
-	while (ra)
-	{
-		if (ra > 0)
-		{
-			ft_operations(RA, list, buff);
-			printf("ra\n");
-			--ra;
-		}
-		else
-		{
-			ft_operations(RRA, list, buff);
-			printf("rra\n");
-			++ra;
-		}
-	}
-	while (rb)
-	{
-		if (rb > 0)
-		{
-			ft_operations(RB, list, buff);
-			printf("rb\n");
-			--rb;
-		}
-		else
-		{
-			ft_operations(RRB, list, buff);
-			printf("rrb\n");
-			++rb;
-		}
-	}
+	ft_aply_rr(rr, list, buff);
+	ft_aply_ra(ra, list, buff);
+	ft_aply_rb(rb, list, buff);
 	ft_operations(PA, list, buff);
 	printf("pa\n");
 	return (1);
 }
 
+static void clear_lstd(t_list **list, int size)
+{
+	while (size--)
+	{
+		((t_ps_content*)(*list)->content)->operation = -1;
+		*list = (*list)->next;
+	}
+}
+
+static void mark_sequence(int take_it, t_list **list, t_list *buff, int size)
+{
+	int i;
+
+	while (take_it--)
+	{
+		i = size;
+		while (i--)
+		{
+			if (((t_ps_content*)(*list)->content)->serial ==
+					((t_ps_content*)buff->content)->value)
+				((t_ps_content*)(*list)->content)->operation = FREEZE;
+			(*list) = (*list)->next;
+		}
+		buff = buff->next;
+	}
+}
 
 int	ft_sequence_prepear(t_list **list)
 {
@@ -174,9 +209,6 @@ int	ft_sequence_prepear(t_list **list)
 	int max_steps;
 	int take_it;
 	t_list *buff;
-	int m;
-	int k;
-	int j;
 
 	size = ft_lstdlen(*list);
 	take_it = 0;
@@ -188,26 +220,8 @@ int	ft_sequence_prepear(t_list **list)
 		if (max_steps > take_it)
 		{
 			take_it = max_steps;
-
-			j = size;
-			while (j--)
-			{
-				((t_ps_content*)(*list)->content)->operation = -1;
-				*list = (*list)->next;
-			}
-			k = take_it;
-			while (k--)
-			{
-				m = size;
-				while (m--)
-				{
-					if (((t_ps_content*)(*list)->content)->serial ==
-						((t_ps_content*)buff->content)->value)
-						((t_ps_content*)(*list)->content)->operation = FREEZE;
-					(*list) = (*list)->next;
-				}
-				buff = buff->next;
-			}
+			clear_lstd(list, size);
+			mark_sequence(take_it, list, buff, size);
 		}
 		ft_lstd_del(&buff);
 		(*list) = (*list)->next;
