@@ -62,7 +62,7 @@ int sort_lstds(t_list **list, t_list **buff)
 	int size;
 	int dst_size;
 
-	int tab[size];
+
 	int i;
 	int list_step;
 	int temp;
@@ -79,6 +79,7 @@ int sort_lstds(t_list **list, t_list **buff)
 	dst_size = ft_lstdlen(*list);
 	if (!(size = ft_lstdlen(*buff)))
 		return (0);
+	int tab[size];
 	list_step = 0;
 	i = 0;
 	wigth = -1;
@@ -183,7 +184,7 @@ int	ft_sequence_prepear(t_list **list)
 	buff = NULL;
 	while (i--)
 	{
-		max_steps = longes_subsequence(*list, &buff);
+		max_steps = longest_subsequence_lstd(*list, &buff);
 		if (max_steps > take_it)
 		{
 			take_it = max_steps;
@@ -242,29 +243,49 @@ int	ft_is_option(char *string)
 	return (0);
 }
 
+char *ft_sort_args(char *arg, char *src, int *option){
+	char *temp;
+
+	if (ft_is_number(arg))
+	{
+		temp = ft_strjoin(src, " ");
+		ft_memdel((void **) &src);
+		src = ft_strjoin(temp, arg);
+		ft_memdel((void **) &temp);
+	} else if ((*option = ft_is_option(arg)))
+		;
+	else
+	{
+		ft_memdel((void **) &src);
+		return (NULL);
+	}
+	return (src);
+}
+
 char	*ft_get_str_and_options(int argc, char **argv, int *options)
 {
 	char *string;
-	char *temp;
+	char **splited_argv;
+	int i;
 
 	string = ft_strnew(0);
 	*string = 0;
 	while (--argc)
 	{
-		if (ft_is_number(argv[argc]))
+		splited_argv = ft_strsplit(argv[argc], ' ');
+		i = 0;
+		while(splited_argv[i])
 		{
-			temp = ft_strjoin(string, " ");
-			ft_memdel((void**)&string);
-			string = ft_strjoin(temp, argv[argc]);
-			ft_memdel((void**)&temp);
+			if (!(string = ft_sort_args(splited_argv[i], string, options)))
+			{
+				while(splited_argv[i])
+					ft_memdel((void**)&splited_argv[i++]);
+				ft_memdel((void **) &splited_argv);
+				return (NULL);
+			}
+			ft_memdel((void**)&splited_argv[i++]);
 		}
-		else if ((*options = ft_is_option(argv[argc])))
-			;
-		else
-		{
-			ft_memdel((void**)&string);
-			return (NULL);
-		}
+		ft_memdel((void **) &splited_argv);
 	}
 	return (string);
 }

@@ -5,109 +5,109 @@ CMakeFiles/checker.dir/checker.c.o
  ../includes/push_swap.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /Users/hwolf/projects/push/checker.c
+ /home/alexey/projects/push_swap/checker.c
 CMakeFiles/checker.dir/src/dfs.c.o
  ../includes/push_swap.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /Users/hwolf/projects/push/src/dfs.c
+ /home/alexey/projects/push_swap/src/dfs.c
 CMakeFiles/checker.dir/src/ft_array_to_lstd.c.o
  ../includes/push_swap.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /Users/hwolf/projects/push/src/ft_array_to_lstd.c
+ /home/alexey/projects/push_swap/src/ft_array_to_lstd.c
 CMakeFiles/checker.dir/src/ft_checker_tools.c.o
  ../includes/push_swap.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /Users/hwolf/projects/push/src/ft_checker_tools.c
+ /home/alexey/projects/push_swap/src/ft_checker_tools.c
 CMakeFiles/checker.dir/src/ft_is_array_in_lstd.c.o
  ../includes/push_swap.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /Users/hwolf/projects/push/src/ft_is_array_in_lstd.c
+ /home/alexey/projects/push_swap/src/ft_is_array_in_lstd.c
 CMakeFiles/checker.dir/src/ft_is_str_in_lstd.c.o
  ../includes/push_swap.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /Users/hwolf/projects/push/src/ft_is_str_in_lstd.c
+ /home/alexey/projects/push_swap/src/ft_is_str_in_lstd.c
 CMakeFiles/checker.dir/src/ft_lstd_del_2.c.o
  ../includes/push_swap.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /Users/hwolf/projects/push/src/ft_lstd_del_2.c
+ /home/alexey/projects/push_swap/src/ft_lstd_del_2.c
 CMakeFiles/checker.dir/src/ft_lstd_swap.c.o
  ../includes/push_swap.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /Users/hwolf/projects/push/src/ft_lstd_swap.c
+ /home/alexey/projects/push_swap/src/ft_lstd_swap.c
 CMakeFiles/checker.dir/src/ft_lstd_to_array.c.o
  ../includes/push_swap.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /Users/hwolf/projects/push/src/ft_lstd_to_array.c
+ /home/alexey/projects/push_swap/src/ft_lstd_to_array.c
 CMakeFiles/checker.dir/src/ft_lstd_to_str.c.o
  ../includes/push_swap.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /Users/hwolf/projects/push/src/ft_lstd_to_str.c
+ /home/alexey/projects/push_swap/src/ft_lstd_to_str.c
 CMakeFiles/checker.dir/src/ft_lstprint.c.o
  ../includes/push_swap.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /Users/hwolf/projects/push/src/ft_lstprint.c
+ /home/alexey/projects/push_swap/src/ft_lstprint.c
 CMakeFiles/checker.dir/src/ft_operation.c.o
  ../includes/push_swap.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /Users/hwolf/projects/push/src/ft_operation.c
+ /home/alexey/projects/push_swap/src/ft_operation.c
 CMakeFiles/checker.dir/src/ft_ps_new_content.c.o
  ../includes/push_swap.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /Users/hwolf/projects/push/src/ft_ps_new_content.c
+ /home/alexey/projects/push_swap/src/ft_ps_new_content.c
 CMakeFiles/checker.dir/src/ft_queue_sort.c.o
  ../includes/push_swap.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /Users/hwolf/projects/push/src/ft_queue_sort.c
+ /home/alexey/projects/push_swap/src/ft_queue_sort.c
 CMakeFiles/checker.dir/src/ft_quick_sort.c.o
  ../includes/push_swap.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /Users/hwolf/projects/push/src/ft_quick_sort.c
+ /home/alexey/projects/push_swap/src/ft_quick_sort.c
 CMakeFiles/checker.dir/src/ft_sort_lstd.c.o
  ../includes/push_swap.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /Users/hwolf/projects/push/src/ft_sort_lstd.c
+ /home/alexey/projects/push_swap/src/ft_sort_lstd.c
 CMakeFiles/checker.dir/src/ft_sort_ratio.c.o
  ../includes/push_swap.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /Users/hwolf/projects/push/src/ft_sort_ratio.c
+ /home/alexey/projects/push_swap/src/ft_sort_ratio.c
 CMakeFiles/checker.dir/src/ft_sort_tools.c.o
  ../includes/push_swap.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /Users/hwolf/projects/push/src/ft_sort_tools.c
+ /home/alexey/projects/push_swap/src/ft_sort_tools.c
 CMakeFiles/checker.dir/src/ft_strsplit_to_inttab.c.o
  ../includes/push_swap.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /Users/hwolf/projects/push/src/ft_strsplit_to_inttab.c
+ /home/alexey/projects/push_swap/src/ft_strsplit_to_inttab.c
 CMakeFiles/checker.dir/src/ft_swap_stacks.c.o
  ../includes/push_swap.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /Users/hwolf/projects/push/src/ft_swap_stacks.c
+ /home/alexey/projects/push_swap/src/ft_swap_stacks.c
 CMakeFiles/checker.dir/src/is_sorted.c.o
  ../includes/push_swap.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /Users/hwolf/projects/push/src/is_sorted.c
+ /home/alexey/projects/push_swap/src/is_sorted.c
 CMakeFiles/checker.dir/src/read.c.o
  ../includes/push_swap.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /Users/hwolf/projects/push/src/read.c
+ /home/alexey/projects/push_swap/src/read.c

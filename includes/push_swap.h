@@ -68,7 +68,7 @@ char					*ft_lstd_to_str(t_list *list1, t_list *list2, int size1, int size2, int
 int						ft_operations(enum Operations operation, t_list **a, t_list **b);
 //int					ft_quick_sort(t_list **list, t_list **buff, char *pivot);
 int bfs(t_list **list, t_list **buff, t_list **visited,  t_list **queue);
-int longes_subsequence(const t_list *list, t_list **buff);
+int longest_subsequence_lstd(const t_list *list, t_list **buff);
 t_ps_content *ft_ps_new_content(char *string);
 int ft_strsplit_to_inttab(int **vector, char *string);
 void	ft_lstprint3(t_list *list);

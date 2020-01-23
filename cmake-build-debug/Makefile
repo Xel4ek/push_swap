@@ -39,38 +39,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /snap/clion/100/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /snap/clion/100/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/hwolf/projects/push
+CMAKE_SOURCE_DIR = /home/alexey/projects/push_swap
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/hwolf/projects/push/cmake-build-debug
+CMAKE_BINARY_DIR = /home/alexey/projects/push_swap/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/100/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,11 +67,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/snap/clion/100/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hwolf/projects/push/cmake-build-debug/CMakeFiles /Users/hwolf/projects/push/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles /home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hwolf/projects/push/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named push_swap
-
-# Build rule for target.
-push_swap: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 push_swap
-.PHONY : push_swap
-
-# fast build rule for target.
-push_swap/fast:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/build
-.PHONY : push_swap/fast
-
-#=============================================================================
 # Target rules for targets named checker
 
 # Build rule for target.
@@ -148,6 +135,19 @@ hash: cmake_check_build_system
 hash/fast:
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/build
 .PHONY : hash/fast
+
+#=============================================================================
+# Target rules for targets named push_swap
+
+# Build rule for target.
+push_swap: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 push_swap
+.PHONY : push_swap
+
+# fast build rule for target.
+push_swap/fast:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/build
+.PHONY : push_swap/fast
 
 #=============================================================================
 # Target rules for targets named libft
@@ -249,9 +249,9 @@ src/dfs.o: src/dfs.c.o
 
 # target to build an object file
 src/dfs.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/dfs.c.o
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/dfs.c.o
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/dfs.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/dfs.c.o
 .PHONY : src/dfs.c.o
 
 src/dfs.i: src/dfs.c.i
@@ -260,9 +260,9 @@ src/dfs.i: src/dfs.c.i
 
 # target to preprocess a source file
 src/dfs.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/dfs.c.i
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/dfs.c.i
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/dfs.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/dfs.c.i
 .PHONY : src/dfs.c.i
 
 src/dfs.s: src/dfs.c.s
@@ -271,9 +271,9 @@ src/dfs.s: src/dfs.c.s
 
 # target to generate assembly for a file
 src/dfs.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/dfs.c.s
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/dfs.c.s
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/dfs.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/dfs.c.s
 .PHONY : src/dfs.c.s
 
 src/ft_array_to_lstd.o: src/ft_array_to_lstd.c.o
@@ -282,9 +282,9 @@ src/ft_array_to_lstd.o: src/ft_array_to_lstd.c.o
 
 # target to build an object file
 src/ft_array_to_lstd.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.o
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_array_to_lstd.c.o
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_array_to_lstd.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.o
 .PHONY : src/ft_array_to_lstd.c.o
 
 src/ft_array_to_lstd.i: src/ft_array_to_lstd.c.i
@@ -293,9 +293,9 @@ src/ft_array_to_lstd.i: src/ft_array_to_lstd.c.i
 
 # target to preprocess a source file
 src/ft_array_to_lstd.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.i
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_array_to_lstd.c.i
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_array_to_lstd.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.i
 .PHONY : src/ft_array_to_lstd.c.i
 
 src/ft_array_to_lstd.s: src/ft_array_to_lstd.c.s
@@ -304,9 +304,9 @@ src/ft_array_to_lstd.s: src/ft_array_to_lstd.c.s
 
 # target to generate assembly for a file
 src/ft_array_to_lstd.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.s
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_array_to_lstd.c.s
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_array_to_lstd.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.s
 .PHONY : src/ft_array_to_lstd.c.s
 
 src/ft_checker_tools.o: src/ft_checker_tools.c.o
@@ -315,9 +315,9 @@ src/ft_checker_tools.o: src/ft_checker_tools.c.o
 
 # target to build an object file
 src/ft_checker_tools.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_checker_tools.c.o
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_checker_tools.c.o
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_checker_tools.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_checker_tools.c.o
 .PHONY : src/ft_checker_tools.c.o
 
 src/ft_checker_tools.i: src/ft_checker_tools.c.i
@@ -326,9 +326,9 @@ src/ft_checker_tools.i: src/ft_checker_tools.c.i
 
 # target to preprocess a source file
 src/ft_checker_tools.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_checker_tools.c.i
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_checker_tools.c.i
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_checker_tools.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_checker_tools.c.i
 .PHONY : src/ft_checker_tools.c.i
 
 src/ft_checker_tools.s: src/ft_checker_tools.c.s
@@ -337,9 +337,9 @@ src/ft_checker_tools.s: src/ft_checker_tools.c.s
 
 # target to generate assembly for a file
 src/ft_checker_tools.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_checker_tools.c.s
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_checker_tools.c.s
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_checker_tools.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_checker_tools.c.s
 .PHONY : src/ft_checker_tools.c.s
 
 src/ft_is_array_in_lstd.o: src/ft_is_array_in_lstd.c.o
@@ -348,9 +348,9 @@ src/ft_is_array_in_lstd.o: src/ft_is_array_in_lstd.c.o
 
 # target to build an object file
 src/ft_is_array_in_lstd.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_is_array_in_lstd.c.o
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_is_array_in_lstd.c.o
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_is_array_in_lstd.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_is_array_in_lstd.c.o
 .PHONY : src/ft_is_array_in_lstd.c.o
 
 src/ft_is_array_in_lstd.i: src/ft_is_array_in_lstd.c.i
@@ -359,9 +359,9 @@ src/ft_is_array_in_lstd.i: src/ft_is_array_in_lstd.c.i
 
 # target to preprocess a source file
 src/ft_is_array_in_lstd.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_is_array_in_lstd.c.i
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_is_array_in_lstd.c.i
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_is_array_in_lstd.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_is_array_in_lstd.c.i
 .PHONY : src/ft_is_array_in_lstd.c.i
 
 src/ft_is_array_in_lstd.s: src/ft_is_array_in_lstd.c.s
@@ -370,9 +370,9 @@ src/ft_is_array_in_lstd.s: src/ft_is_array_in_lstd.c.s
 
 # target to generate assembly for a file
 src/ft_is_array_in_lstd.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_is_array_in_lstd.c.s
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_is_array_in_lstd.c.s
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_is_array_in_lstd.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_is_array_in_lstd.c.s
 .PHONY : src/ft_is_array_in_lstd.c.s
 
 src/ft_is_str_in_lstd.o: src/ft_is_str_in_lstd.c.o
@@ -381,9 +381,9 @@ src/ft_is_str_in_lstd.o: src/ft_is_str_in_lstd.c.o
 
 # target to build an object file
 src/ft_is_str_in_lstd.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_is_str_in_lstd.c.o
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_is_str_in_lstd.c.o
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_is_str_in_lstd.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_is_str_in_lstd.c.o
 .PHONY : src/ft_is_str_in_lstd.c.o
 
 src/ft_is_str_in_lstd.i: src/ft_is_str_in_lstd.c.i
@@ -392,9 +392,9 @@ src/ft_is_str_in_lstd.i: src/ft_is_str_in_lstd.c.i
 
 # target to preprocess a source file
 src/ft_is_str_in_lstd.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_is_str_in_lstd.c.i
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_is_str_in_lstd.c.i
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_is_str_in_lstd.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_is_str_in_lstd.c.i
 .PHONY : src/ft_is_str_in_lstd.c.i
 
 src/ft_is_str_in_lstd.s: src/ft_is_str_in_lstd.c.s
@@ -403,9 +403,9 @@ src/ft_is_str_in_lstd.s: src/ft_is_str_in_lstd.c.s
 
 # target to generate assembly for a file
 src/ft_is_str_in_lstd.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_is_str_in_lstd.c.s
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_is_str_in_lstd.c.s
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_is_str_in_lstd.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_is_str_in_lstd.c.s
 .PHONY : src/ft_is_str_in_lstd.c.s
 
 src/ft_lstd_del_2.o: src/ft_lstd_del_2.c.o
@@ -414,9 +414,9 @@ src/ft_lstd_del_2.o: src/ft_lstd_del_2.c.o
 
 # target to build an object file
 src/ft_lstd_del_2.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.o
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstd_del_2.c.o
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_lstd_del_2.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.o
 .PHONY : src/ft_lstd_del_2.c.o
 
 src/ft_lstd_del_2.i: src/ft_lstd_del_2.c.i
@@ -425,9 +425,9 @@ src/ft_lstd_del_2.i: src/ft_lstd_del_2.c.i
 
 # target to preprocess a source file
 src/ft_lstd_del_2.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.i
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstd_del_2.c.i
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_lstd_del_2.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.i
 .PHONY : src/ft_lstd_del_2.c.i
 
 src/ft_lstd_del_2.s: src/ft_lstd_del_2.c.s
@@ -436,9 +436,9 @@ src/ft_lstd_del_2.s: src/ft_lstd_del_2.c.s
 
 # target to generate assembly for a file
 src/ft_lstd_del_2.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.s
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstd_del_2.c.s
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_lstd_del_2.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.s
 .PHONY : src/ft_lstd_del_2.c.s
 
 src/ft_lstd_swap.o: src/ft_lstd_swap.c.o
@@ -447,9 +447,9 @@ src/ft_lstd_swap.o: src/ft_lstd_swap.c.o
 
 # target to build an object file
 src/ft_lstd_swap.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_swap.c.o
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstd_swap.c.o
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_lstd_swap.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_swap.c.o
 .PHONY : src/ft_lstd_swap.c.o
 
 src/ft_lstd_swap.i: src/ft_lstd_swap.c.i
@@ -458,9 +458,9 @@ src/ft_lstd_swap.i: src/ft_lstd_swap.c.i
 
 # target to preprocess a source file
 src/ft_lstd_swap.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_swap.c.i
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstd_swap.c.i
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_lstd_swap.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_swap.c.i
 .PHONY : src/ft_lstd_swap.c.i
 
 src/ft_lstd_swap.s: src/ft_lstd_swap.c.s
@@ -469,9 +469,9 @@ src/ft_lstd_swap.s: src/ft_lstd_swap.c.s
 
 # target to generate assembly for a file
 src/ft_lstd_swap.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_swap.c.s
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstd_swap.c.s
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_lstd_swap.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_swap.c.s
 .PHONY : src/ft_lstd_swap.c.s
 
 src/ft_lstd_to_array.o: src/ft_lstd_to_array.c.o
@@ -480,9 +480,9 @@ src/ft_lstd_to_array.o: src/ft_lstd_to_array.c.o
 
 # target to build an object file
 src/ft_lstd_to_array.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_to_array.c.o
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstd_to_array.c.o
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_lstd_to_array.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_to_array.c.o
 .PHONY : src/ft_lstd_to_array.c.o
 
 src/ft_lstd_to_array.i: src/ft_lstd_to_array.c.i
@@ -491,9 +491,9 @@ src/ft_lstd_to_array.i: src/ft_lstd_to_array.c.i
 
 # target to preprocess a source file
 src/ft_lstd_to_array.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_to_array.c.i
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstd_to_array.c.i
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_lstd_to_array.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_to_array.c.i
 .PHONY : src/ft_lstd_to_array.c.i
 
 src/ft_lstd_to_array.s: src/ft_lstd_to_array.c.s
@@ -502,9 +502,9 @@ src/ft_lstd_to_array.s: src/ft_lstd_to_array.c.s
 
 # target to generate assembly for a file
 src/ft_lstd_to_array.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_to_array.c.s
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstd_to_array.c.s
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_lstd_to_array.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_to_array.c.s
 .PHONY : src/ft_lstd_to_array.c.s
 
 src/ft_lstd_to_str.o: src/ft_lstd_to_str.c.o
@@ -513,9 +513,9 @@ src/ft_lstd_to_str.o: src/ft_lstd_to_str.c.o
 
 # target to build an object file
 src/ft_lstd_to_str.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_to_str.c.o
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstd_to_str.c.o
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_lstd_to_str.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_to_str.c.o
 .PHONY : src/ft_lstd_to_str.c.o
 
 src/ft_lstd_to_str.i: src/ft_lstd_to_str.c.i
@@ -524,9 +524,9 @@ src/ft_lstd_to_str.i: src/ft_lstd_to_str.c.i
 
 # target to preprocess a source file
 src/ft_lstd_to_str.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_to_str.c.i
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstd_to_str.c.i
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_lstd_to_str.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_to_str.c.i
 .PHONY : src/ft_lstd_to_str.c.i
 
 src/ft_lstd_to_str.s: src/ft_lstd_to_str.c.s
@@ -535,9 +535,9 @@ src/ft_lstd_to_str.s: src/ft_lstd_to_str.c.s
 
 # target to generate assembly for a file
 src/ft_lstd_to_str.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_to_str.c.s
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstd_to_str.c.s
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_lstd_to_str.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstd_to_str.c.s
 .PHONY : src/ft_lstd_to_str.c.s
 
 src/ft_lstprint.o: src/ft_lstprint.c.o
@@ -546,9 +546,9 @@ src/ft_lstprint.o: src/ft_lstprint.c.o
 
 # target to build an object file
 src/ft_lstprint.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstprint.c.o
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstprint.c.o
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_lstprint.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstprint.c.o
 .PHONY : src/ft_lstprint.c.o
 
 src/ft_lstprint.i: src/ft_lstprint.c.i
@@ -557,9 +557,9 @@ src/ft_lstprint.i: src/ft_lstprint.c.i
 
 # target to preprocess a source file
 src/ft_lstprint.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstprint.c.i
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstprint.c.i
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_lstprint.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstprint.c.i
 .PHONY : src/ft_lstprint.c.i
 
 src/ft_lstprint.s: src/ft_lstprint.c.s
@@ -568,9 +568,9 @@ src/ft_lstprint.s: src/ft_lstprint.c.s
 
 # target to generate assembly for a file
 src/ft_lstprint.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstprint.c.s
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_lstprint.c.s
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_lstprint.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_lstprint.c.s
 .PHONY : src/ft_lstprint.c.s
 
 src/ft_operation.o: src/ft_operation.c.o
@@ -579,9 +579,9 @@ src/ft_operation.o: src/ft_operation.c.o
 
 # target to build an object file
 src/ft_operation.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_operation.c.o
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_operation.c.o
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_operation.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_operation.c.o
 .PHONY : src/ft_operation.c.o
 
 src/ft_operation.i: src/ft_operation.c.i
@@ -590,9 +590,9 @@ src/ft_operation.i: src/ft_operation.c.i
 
 # target to preprocess a source file
 src/ft_operation.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_operation.c.i
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_operation.c.i
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_operation.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_operation.c.i
 .PHONY : src/ft_operation.c.i
 
 src/ft_operation.s: src/ft_operation.c.s
@@ -601,9 +601,9 @@ src/ft_operation.s: src/ft_operation.c.s
 
 # target to generate assembly for a file
 src/ft_operation.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_operation.c.s
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_operation.c.s
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_operation.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_operation.c.s
 .PHONY : src/ft_operation.c.s
 
 src/ft_ps_new_content.o: src/ft_ps_new_content.c.o
@@ -612,9 +612,9 @@ src/ft_ps_new_content.o: src/ft_ps_new_content.c.o
 
 # target to build an object file
 src/ft_ps_new_content.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_ps_new_content.c.o
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_ps_new_content.c.o
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_ps_new_content.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_ps_new_content.c.o
 .PHONY : src/ft_ps_new_content.c.o
 
 src/ft_ps_new_content.i: src/ft_ps_new_content.c.i
@@ -623,9 +623,9 @@ src/ft_ps_new_content.i: src/ft_ps_new_content.c.i
 
 # target to preprocess a source file
 src/ft_ps_new_content.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_ps_new_content.c.i
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_ps_new_content.c.i
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_ps_new_content.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_ps_new_content.c.i
 .PHONY : src/ft_ps_new_content.c.i
 
 src/ft_ps_new_content.s: src/ft_ps_new_content.c.s
@@ -634,9 +634,9 @@ src/ft_ps_new_content.s: src/ft_ps_new_content.c.s
 
 # target to generate assembly for a file
 src/ft_ps_new_content.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_ps_new_content.c.s
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_ps_new_content.c.s
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_ps_new_content.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_ps_new_content.c.s
 .PHONY : src/ft_ps_new_content.c.s
 
 src/ft_queue_sort.o: src/ft_queue_sort.c.o
@@ -645,9 +645,9 @@ src/ft_queue_sort.o: src/ft_queue_sort.c.o
 
 # target to build an object file
 src/ft_queue_sort.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_queue_sort.c.o
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_queue_sort.c.o
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_queue_sort.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_queue_sort.c.o
 .PHONY : src/ft_queue_sort.c.o
 
 src/ft_queue_sort.i: src/ft_queue_sort.c.i
@@ -656,9 +656,9 @@ src/ft_queue_sort.i: src/ft_queue_sort.c.i
 
 # target to preprocess a source file
 src/ft_queue_sort.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_queue_sort.c.i
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_queue_sort.c.i
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_queue_sort.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_queue_sort.c.i
 .PHONY : src/ft_queue_sort.c.i
 
 src/ft_queue_sort.s: src/ft_queue_sort.c.s
@@ -667,9 +667,9 @@ src/ft_queue_sort.s: src/ft_queue_sort.c.s
 
 # target to generate assembly for a file
 src/ft_queue_sort.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_queue_sort.c.s
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_queue_sort.c.s
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_queue_sort.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_queue_sort.c.s
 .PHONY : src/ft_queue_sort.c.s
 
 src/ft_quick_sort.o: src/ft_quick_sort.c.o
@@ -678,9 +678,9 @@ src/ft_quick_sort.o: src/ft_quick_sort.c.o
 
 # target to build an object file
 src/ft_quick_sort.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_quick_sort.c.o
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_quick_sort.c.o
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_quick_sort.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_quick_sort.c.o
 .PHONY : src/ft_quick_sort.c.o
 
 src/ft_quick_sort.i: src/ft_quick_sort.c.i
@@ -689,9 +689,9 @@ src/ft_quick_sort.i: src/ft_quick_sort.c.i
 
 # target to preprocess a source file
 src/ft_quick_sort.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_quick_sort.c.i
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_quick_sort.c.i
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_quick_sort.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_quick_sort.c.i
 .PHONY : src/ft_quick_sort.c.i
 
 src/ft_quick_sort.s: src/ft_quick_sort.c.s
@@ -700,9 +700,9 @@ src/ft_quick_sort.s: src/ft_quick_sort.c.s
 
 # target to generate assembly for a file
 src/ft_quick_sort.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_quick_sort.c.s
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_quick_sort.c.s
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_quick_sort.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_quick_sort.c.s
 .PHONY : src/ft_quick_sort.c.s
 
 src/ft_sort_lstd.o: src/ft_sort_lstd.c.o
@@ -711,9 +711,9 @@ src/ft_sort_lstd.o: src/ft_sort_lstd.c.o
 
 # target to build an object file
 src/ft_sort_lstd.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_lstd.c.o
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_sort_lstd.c.o
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_sort_lstd.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_lstd.c.o
 .PHONY : src/ft_sort_lstd.c.o
 
 src/ft_sort_lstd.i: src/ft_sort_lstd.c.i
@@ -722,9 +722,9 @@ src/ft_sort_lstd.i: src/ft_sort_lstd.c.i
 
 # target to preprocess a source file
 src/ft_sort_lstd.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_lstd.c.i
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_sort_lstd.c.i
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_sort_lstd.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_lstd.c.i
 .PHONY : src/ft_sort_lstd.c.i
 
 src/ft_sort_lstd.s: src/ft_sort_lstd.c.s
@@ -733,9 +733,9 @@ src/ft_sort_lstd.s: src/ft_sort_lstd.c.s
 
 # target to generate assembly for a file
 src/ft_sort_lstd.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_lstd.c.s
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_sort_lstd.c.s
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_sort_lstd.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_lstd.c.s
 .PHONY : src/ft_sort_lstd.c.s
 
 src/ft_sort_ratio.o: src/ft_sort_ratio.c.o
@@ -744,9 +744,9 @@ src/ft_sort_ratio.o: src/ft_sort_ratio.c.o
 
 # target to build an object file
 src/ft_sort_ratio.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_ratio.c.o
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_sort_ratio.c.o
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_sort_ratio.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_ratio.c.o
 .PHONY : src/ft_sort_ratio.c.o
 
 src/ft_sort_ratio.i: src/ft_sort_ratio.c.i
@@ -755,9 +755,9 @@ src/ft_sort_ratio.i: src/ft_sort_ratio.c.i
 
 # target to preprocess a source file
 src/ft_sort_ratio.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_ratio.c.i
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_sort_ratio.c.i
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_sort_ratio.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_ratio.c.i
 .PHONY : src/ft_sort_ratio.c.i
 
 src/ft_sort_ratio.s: src/ft_sort_ratio.c.s
@@ -766,9 +766,9 @@ src/ft_sort_ratio.s: src/ft_sort_ratio.c.s
 
 # target to generate assembly for a file
 src/ft_sort_ratio.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_ratio.c.s
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_sort_ratio.c.s
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_sort_ratio.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_ratio.c.s
 .PHONY : src/ft_sort_ratio.c.s
 
 src/ft_sort_tools.o: src/ft_sort_tools.c.o
@@ -777,9 +777,9 @@ src/ft_sort_tools.o: src/ft_sort_tools.c.o
 
 # target to build an object file
 src/ft_sort_tools.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_tools.c.o
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_sort_tools.c.o
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_sort_tools.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_tools.c.o
 .PHONY : src/ft_sort_tools.c.o
 
 src/ft_sort_tools.i: src/ft_sort_tools.c.i
@@ -788,9 +788,9 @@ src/ft_sort_tools.i: src/ft_sort_tools.c.i
 
 # target to preprocess a source file
 src/ft_sort_tools.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_tools.c.i
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_sort_tools.c.i
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_sort_tools.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_tools.c.i
 .PHONY : src/ft_sort_tools.c.i
 
 src/ft_sort_tools.s: src/ft_sort_tools.c.s
@@ -799,9 +799,9 @@ src/ft_sort_tools.s: src/ft_sort_tools.c.s
 
 # target to generate assembly for a file
 src/ft_sort_tools.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_tools.c.s
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_sort_tools.c.s
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_sort_tools.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_tools.c.s
 .PHONY : src/ft_sort_tools.c.s
 
 src/ft_strsplit_to_inttab.o: src/ft_strsplit_to_inttab.c.o
@@ -810,9 +810,9 @@ src/ft_strsplit_to_inttab.o: src/ft_strsplit_to_inttab.c.o
 
 # target to build an object file
 src/ft_strsplit_to_inttab.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_strsplit_to_inttab.c.o
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_strsplit_to_inttab.c.o
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_strsplit_to_inttab.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_strsplit_to_inttab.c.o
 .PHONY : src/ft_strsplit_to_inttab.c.o
 
 src/ft_strsplit_to_inttab.i: src/ft_strsplit_to_inttab.c.i
@@ -821,9 +821,9 @@ src/ft_strsplit_to_inttab.i: src/ft_strsplit_to_inttab.c.i
 
 # target to preprocess a source file
 src/ft_strsplit_to_inttab.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_strsplit_to_inttab.c.i
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_strsplit_to_inttab.c.i
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_strsplit_to_inttab.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_strsplit_to_inttab.c.i
 .PHONY : src/ft_strsplit_to_inttab.c.i
 
 src/ft_strsplit_to_inttab.s: src/ft_strsplit_to_inttab.c.s
@@ -832,9 +832,9 @@ src/ft_strsplit_to_inttab.s: src/ft_strsplit_to_inttab.c.s
 
 # target to generate assembly for a file
 src/ft_strsplit_to_inttab.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_strsplit_to_inttab.c.s
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_strsplit_to_inttab.c.s
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_strsplit_to_inttab.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_strsplit_to_inttab.c.s
 .PHONY : src/ft_strsplit_to_inttab.c.s
 
 src/ft_swap_stacks.o: src/ft_swap_stacks.c.o
@@ -843,9 +843,9 @@ src/ft_swap_stacks.o: src/ft_swap_stacks.c.o
 
 # target to build an object file
 src/ft_swap_stacks.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.o
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_swap_stacks.c.o
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_swap_stacks.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.o
 .PHONY : src/ft_swap_stacks.c.o
 
 src/ft_swap_stacks.i: src/ft_swap_stacks.c.i
@@ -854,9 +854,9 @@ src/ft_swap_stacks.i: src/ft_swap_stacks.c.i
 
 # target to preprocess a source file
 src/ft_swap_stacks.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.i
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_swap_stacks.c.i
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_swap_stacks.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.i
 .PHONY : src/ft_swap_stacks.c.i
 
 src/ft_swap_stacks.s: src/ft_swap_stacks.c.s
@@ -865,9 +865,9 @@ src/ft_swap_stacks.s: src/ft_swap_stacks.c.s
 
 # target to generate assembly for a file
 src/ft_swap_stacks.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.s
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_swap_stacks.c.s
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_swap_stacks.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.s
 .PHONY : src/ft_swap_stacks.c.s
 
 src/is_sorted.o: src/is_sorted.c.o
@@ -876,9 +876,9 @@ src/is_sorted.o: src/is_sorted.c.o
 
 # target to build an object file
 src/is_sorted.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/is_sorted.c.o
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/is_sorted.c.o
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/is_sorted.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/is_sorted.c.o
 .PHONY : src/is_sorted.c.o
 
 src/is_sorted.i: src/is_sorted.c.i
@@ -887,9 +887,9 @@ src/is_sorted.i: src/is_sorted.c.i
 
 # target to preprocess a source file
 src/is_sorted.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/is_sorted.c.i
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/is_sorted.c.i
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/is_sorted.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/is_sorted.c.i
 .PHONY : src/is_sorted.c.i
 
 src/is_sorted.s: src/is_sorted.c.s
@@ -898,9 +898,9 @@ src/is_sorted.s: src/is_sorted.c.s
 
 # target to generate assembly for a file
 src/is_sorted.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/is_sorted.c.s
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/is_sorted.c.s
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/is_sorted.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/is_sorted.c.s
 .PHONY : src/is_sorted.c.s
 
 src/read.o: src/read.c.o
@@ -909,9 +909,9 @@ src/read.o: src/read.c.o
 
 # target to build an object file
 src/read.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/read.c.o
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/read.c.o
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/read.c.o
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/read.c.o
 .PHONY : src/read.c.o
 
 src/read.i: src/read.c.i
@@ -920,9 +920,9 @@ src/read.i: src/read.c.i
 
 # target to preprocess a source file
 src/read.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/read.c.i
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/read.c.i
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/read.c.i
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/read.c.i
 .PHONY : src/read.c.i
 
 src/read.s: src/read.c.s
@@ -931,9 +931,9 @@ src/read.s: src/read.c.s
 
 # target to generate assembly for a file
 src/read.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/read.c.s
 	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/read.c.s
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/read.c.s
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/read.c.s
 .PHONY : src/read.c.s
 
 # Help Target
@@ -942,11 +942,11 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... push_swap"
+	@echo "... rebuild_cache"
 	@echo "... checker"
 	@echo "... hash"
+	@echo "... push_swap"
 	@echo "... libft"
 	@echo "... checker.o"
 	@echo "... checker.i"

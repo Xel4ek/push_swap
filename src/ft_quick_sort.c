@@ -14,8 +14,7 @@
 #include <stdio.h>
 #include <limits.h>
 
-int longes_subsequence(const t_list *list, t_list **buff){
-	int count;
+int longest_subsequence_lstd(const t_list *list, t_list **buff){
 	int len;
 
 	len = ft_lstdlen(list);
@@ -29,7 +28,6 @@ int longes_subsequence(const t_list *list, t_list **buff){
 	int j;
 	t_ps_content *item;
 
-	count = 0;
 	i = 0;
 	while (i < len)
 	{
@@ -77,4 +75,8 @@ int longes_subsequence(const t_list *list, t_list **buff){
 		i++;
 	}
 	return (ans);
+}
+
+int *longest_subsequence(const int *src, const int len){
+
 }
