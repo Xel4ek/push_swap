@@ -44,7 +44,7 @@ int		is_sorted(t_list *list)
 	int len;
 
 	len = ft_lstdlen(list);
-	if (len > 0)
+	if (len)
 		while (--len)
 		{
 			if (((t_ps_content*)(list->content))->serial >=

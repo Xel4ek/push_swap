@@ -3,9 +3,9 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="push_swap" targetName="checker" />
-      <config projectName="push_swap" targetName="hash" />
       <config projectName="push_swap" targetName="libft" />
       <config projectName="push_swap" targetName="push_swap" />
+      <config projectName="push_swap" targetName="hash" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -17,14 +17,33 @@
     <list default="true" id="2779692a-d878-4531-b1d1-2b626a8dadda" name="Default Changelist" comment="8th">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/dfs.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/dfs.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_quick_sort.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_quick_sort.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_sort_tools.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_sort_tools.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/dfs.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/dfs.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_is_array_in_lstd.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_is_array_in_lstd.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_is_str_in_lstd.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_is_str_in_lstd.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_lstd_to_array.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_lstd_to_array.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_lstd_to_str.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_lstd_to_str.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_lstprint.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_lstprint.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_operation.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_operation.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_ps_new_content.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_ps_new_content.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_queue_sort.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_queue_sort.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_quick_sort.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_quick_sort.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_sort_tools.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_sort_tools.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/is_sorted.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/is_sorted.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/read.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/read.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/checker" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/checker" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/push_swap" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/push_swap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ft_quick_sort.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_quick_sort.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ft_sort_tools.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_sort_tools.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/push_swap.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/push_swap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dfs.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/dfs.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_array_to_lstd.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_array_to_lstd.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/is_sorted.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/is_sorted.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,16 +86,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/cmake-build-debug" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.push_swap">
@@ -196,6 +215,7 @@
       <workItem from="1579699365926" duration="351000" />
       <workItem from="1579699726361" duration="8648000" />
       <workItem from="1579771496520" duration="15400000" />
+      <workItem from="1580113874585" duration="13868000" />
     </task>
     <task id="LOCAL-00001" summary="8th">
       <created>1571842397140</created>
@@ -251,25 +271,25 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="874" y="294" key="CommitChangelistDialog2/0.23.2560.1337@0.23.2560.1337" timestamp="1579695437049" />
-    <state width="1874" height="185" key="GridCell.Tab.0.bottom" timestamp="1579779197321">
+    <state width="1874" height="185" key="GridCell.Tab.0.bottom" timestamp="1580132998786">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state width="1874" height="185" key="GridCell.Tab.0.bottom/0.0.1920.1044@0.0.1920.1044" timestamp="1579779197321" />
+    <state width="1874" height="185" key="GridCell.Tab.0.bottom/0.0.1920.1044@0.0.1920.1044" timestamp="1580132998786" />
     <state width="2518" height="381" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1579709537553" />
-    <state width="1874" height="185" key="GridCell.Tab.0.center" timestamp="1579779197321">
+    <state width="1874" height="185" key="GridCell.Tab.0.center" timestamp="1580132998785">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state width="1874" height="185" key="GridCell.Tab.0.center/0.0.1920.1044@0.0.1920.1044" timestamp="1579779197321" />
+    <state width="1874" height="185" key="GridCell.Tab.0.center/0.0.1920.1044@0.0.1920.1044" timestamp="1580132998785" />
     <state width="2518" height="381" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1579709537551" />
-    <state width="1874" height="185" key="GridCell.Tab.0.left" timestamp="1579779197320">
+    <state width="1874" height="185" key="GridCell.Tab.0.left" timestamp="1580132998784">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state width="1874" height="185" key="GridCell.Tab.0.left/0.0.1920.1044@0.0.1920.1044" timestamp="1579779197320" />
+    <state width="1874" height="185" key="GridCell.Tab.0.left/0.0.1920.1044@0.0.1920.1044" timestamp="1580132998784" />
     <state width="2518" height="381" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1579709537551" />
-    <state width="1874" height="185" key="GridCell.Tab.0.right" timestamp="1579779197321">
+    <state width="1874" height="185" key="GridCell.Tab.0.right" timestamp="1580132998785">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state width="1874" height="185" key="GridCell.Tab.0.right/0.0.1920.1044@0.0.1920.1044" timestamp="1579779197321" />
+    <state width="1874" height="185" key="GridCell.Tab.0.right/0.0.1920.1044@0.0.1920.1044" timestamp="1580132998785" />
     <state width="2518" height="381" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1579709537552" />
     <state width="1874" height="185" key="GridCell.Tab.1.bottom" timestamp="1579779197322">
       <screen x="0" y="0" width="1920" height="1044" />
@@ -295,10 +315,10 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="427" y="429" width="1304" height="722" key="SettingsEditor/0.23.2560.1337@0.23.2560.1337" timestamp="1579697889008" />
-    <state x="641" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1579771498916">
+    <state x="641" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1580113879384">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="641" y="348" key="com.intellij.ide.util.TipDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1579771498916" />
+    <state x="641" y="348" key="com.intellij.ide.util.TipDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1580113879384" />
     <state x="855" y="469" key="com.intellij.ide.util.TipDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1579692760311" />
     <state x="753" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579772184390">
       <screen x="0" y="0" width="1920" height="1044" />

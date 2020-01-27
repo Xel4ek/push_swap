@@ -19,7 +19,6 @@
 
 # define MAX_HASH_SIZE 1024
 # define MAX_QUEUE_SIZE 4096
-# define MAX_ITEARATIONS 1500000
 enum Operations{
 	SA,
 	SB,
@@ -75,7 +74,7 @@ void	ft_lstprint3(t_list *list);
 void	ft_lstd_del_2(t_list **list);
 void	ft_lstd_del_3(t_list **list);
 int *ft_lstd_to_array(t_list *list1, t_list *list2, int len1, int len2);
-void ft_array_to_lstd(int *tab, int len, t_list **list1, t_list **list2);
+void ft_array_to_lstd(const int *tab, const int len, t_list **list1, t_list **list2);
 unsigned int ft_hash_int(const int *tab, unsigned int len,const unsigned int size);
 size_t ft_is_array_in_lstd(const int *tab, const int len, t_list *list);
 t_ps_content *ft_ps_new_content_int(int tab);
@@ -93,7 +92,7 @@ int ft_sequence_prepear(t_list **list);
 int ft_first_step(t_list **list, t_list **buff, int take_it);
 t_list *ft_str_like_lstd(char *string);
 char *ft_get_str(int argc, char **argv);
-int ft_bfs_sort(t_list **list);
+void ft_bfs_sort(t_list **list);
 char *ft_get_str_and_options(int argc, char **argv, int *options);
 int ft_duplicate_finder(char *string);
 int ft_overloaded_checker(char *string);

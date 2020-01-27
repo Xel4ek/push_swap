@@ -27,8 +27,7 @@ int	main(int argc, char **argv)
 		return (0);
 	if (ft_lstdlen(list) < 6)
 		ft_bfs_sort(&list);
-	else
-	{
+	else {
 		take_it = ft_sequence_prepear(&list);
 		ft_first_step(&list, &buff, take_it);
 		while (buff)
