@@ -135,22 +135,9 @@ CMakeFiles/push_swap.dir/src/ft_is_str_in_lstd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/src/ft_is_str_in_lstd.c.s"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap/src/ft_is_str_in_lstd.c -o CMakeFiles/push_swap.dir/src/ft_is_str_in_lstd.c.s
 
-CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.o: CMakeFiles/push_swap.dir/flags.make
-CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.o: ../src/ft_swap_stacks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.o   -c /home/alexey/projects/push_swap/src/ft_swap_stacks.c
-
-CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/push_swap/src/ft_swap_stacks.c > CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.i
-
-CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap/src/ft_swap_stacks.c -o CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.s
-
 CMakeFiles/push_swap.dir/src/ft_operation.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/src/ft_operation.c.o: ../src/ft_operation.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/push_swap.dir/src/ft_operation.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/push_swap.dir/src/ft_operation.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/src/ft_operation.c.o   -c /home/alexey/projects/push_swap/src/ft_operation.c
 
 CMakeFiles/push_swap.dir/src/ft_operation.c.i: cmake_force
@@ -163,7 +150,7 @@ CMakeFiles/push_swap.dir/src/ft_operation.c.s: cmake_force
 
 CMakeFiles/push_swap.dir/src/ft_sort_lstd.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/src/ft_sort_lstd.c.o: ../src/ft_sort_lstd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/push_swap.dir/src/ft_sort_lstd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/push_swap.dir/src/ft_sort_lstd.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/src/ft_sort_lstd.c.o   -c /home/alexey/projects/push_swap/src/ft_sort_lstd.c
 
 CMakeFiles/push_swap.dir/src/ft_sort_lstd.c.i: cmake_force
@@ -176,7 +163,7 @@ CMakeFiles/push_swap.dir/src/ft_sort_lstd.c.s: cmake_force
 
 CMakeFiles/push_swap.dir/src/dfs.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/src/dfs.c.o: ../src/dfs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/push_swap.dir/src/dfs.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/push_swap.dir/src/dfs.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/src/dfs.c.o   -c /home/alexey/projects/push_swap/src/dfs.c
 
 CMakeFiles/push_swap.dir/src/dfs.c.i: cmake_force
@@ -189,7 +176,7 @@ CMakeFiles/push_swap.dir/src/dfs.c.s: cmake_force
 
 CMakeFiles/push_swap.dir/src/ft_quick_sort.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/src/ft_quick_sort.c.o: ../src/ft_quick_sort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/push_swap.dir/src/ft_quick_sort.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/push_swap.dir/src/ft_quick_sort.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/src/ft_quick_sort.c.o   -c /home/alexey/projects/push_swap/src/ft_quick_sort.c
 
 CMakeFiles/push_swap.dir/src/ft_quick_sort.c.i: cmake_force
@@ -202,7 +189,7 @@ CMakeFiles/push_swap.dir/src/ft_quick_sort.c.s: cmake_force
 
 CMakeFiles/push_swap.dir/src/ft_ps_new_content.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/src/ft_ps_new_content.c.o: ../src/ft_ps_new_content.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/push_swap.dir/src/ft_ps_new_content.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/push_swap.dir/src/ft_ps_new_content.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/src/ft_ps_new_content.c.o   -c /home/alexey/projects/push_swap/src/ft_ps_new_content.c
 
 CMakeFiles/push_swap.dir/src/ft_ps_new_content.c.i: cmake_force
@@ -215,7 +202,7 @@ CMakeFiles/push_swap.dir/src/ft_ps_new_content.c.s: cmake_force
 
 CMakeFiles/push_swap.dir/src/ft_strsplit_to_inttab.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/src/ft_strsplit_to_inttab.c.o: ../src/ft_strsplit_to_inttab.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/push_swap.dir/src/ft_strsplit_to_inttab.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/push_swap.dir/src/ft_strsplit_to_inttab.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/src/ft_strsplit_to_inttab.c.o   -c /home/alexey/projects/push_swap/src/ft_strsplit_to_inttab.c
 
 CMakeFiles/push_swap.dir/src/ft_strsplit_to_inttab.c.i: cmake_force
@@ -228,7 +215,7 @@ CMakeFiles/push_swap.dir/src/ft_strsplit_to_inttab.c.s: cmake_force
 
 CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.o: ../src/ft_lstd_del_2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.o   -c /home/alexey/projects/push_swap/src/ft_lstd_del_2.c
 
 CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.i: cmake_force
@@ -241,7 +228,7 @@ CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.s: cmake_force
 
 CMakeFiles/push_swap.dir/src/ft_lstd_to_array.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/src/ft_lstd_to_array.c.o: ../src/ft_lstd_to_array.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/push_swap.dir/src/ft_lstd_to_array.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/push_swap.dir/src/ft_lstd_to_array.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/src/ft_lstd_to_array.c.o   -c /home/alexey/projects/push_swap/src/ft_lstd_to_array.c
 
 CMakeFiles/push_swap.dir/src/ft_lstd_to_array.c.i: cmake_force
@@ -254,7 +241,7 @@ CMakeFiles/push_swap.dir/src/ft_lstd_to_array.c.s: cmake_force
 
 CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.o: ../src/ft_array_to_lstd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.o   -c /home/alexey/projects/push_swap/src/ft_array_to_lstd.c
 
 CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.i: cmake_force
@@ -267,7 +254,7 @@ CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.s: cmake_force
 
 CMakeFiles/push_swap.dir/src/ft_is_array_in_lstd.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/src/ft_is_array_in_lstd.c.o: ../src/ft_is_array_in_lstd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/push_swap.dir/src/ft_is_array_in_lstd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/push_swap.dir/src/ft_is_array_in_lstd.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/src/ft_is_array_in_lstd.c.o   -c /home/alexey/projects/push_swap/src/ft_is_array_in_lstd.c
 
 CMakeFiles/push_swap.dir/src/ft_is_array_in_lstd.c.i: cmake_force
@@ -280,7 +267,7 @@ CMakeFiles/push_swap.dir/src/ft_is_array_in_lstd.c.s: cmake_force
 
 CMakeFiles/push_swap.dir/src/ft_sort_ratio.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/src/ft_sort_ratio.c.o: ../src/ft_sort_ratio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/push_swap.dir/src/ft_sort_ratio.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/push_swap.dir/src/ft_sort_ratio.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/src/ft_sort_ratio.c.o   -c /home/alexey/projects/push_swap/src/ft_sort_ratio.c
 
 CMakeFiles/push_swap.dir/src/ft_sort_ratio.c.i: cmake_force
@@ -293,7 +280,7 @@ CMakeFiles/push_swap.dir/src/ft_sort_ratio.c.s: cmake_force
 
 CMakeFiles/push_swap.dir/src/ft_queue_sort.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/src/ft_queue_sort.c.o: ../src/ft_queue_sort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/push_swap.dir/src/ft_queue_sort.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/push_swap.dir/src/ft_queue_sort.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/src/ft_queue_sort.c.o   -c /home/alexey/projects/push_swap/src/ft_queue_sort.c
 
 CMakeFiles/push_swap.dir/src/ft_queue_sort.c.i: cmake_force
@@ -306,7 +293,7 @@ CMakeFiles/push_swap.dir/src/ft_queue_sort.c.s: cmake_force
 
 CMakeFiles/push_swap.dir/src/ft_sort_tools.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/src/ft_sort_tools.c.o: ../src/ft_sort_tools.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/push_swap.dir/src/ft_sort_tools.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/push_swap.dir/src/ft_sort_tools.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/src/ft_sort_tools.c.o   -c /home/alexey/projects/push_swap/src/ft_sort_tools.c
 
 CMakeFiles/push_swap.dir/src/ft_sort_tools.c.i: cmake_force
@@ -319,7 +306,7 @@ CMakeFiles/push_swap.dir/src/ft_sort_tools.c.s: cmake_force
 
 CMakeFiles/push_swap.dir/src/ft_checker_tools.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/src/ft_checker_tools.c.o: ../src/ft_checker_tools.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/push_swap.dir/src/ft_checker_tools.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/push_swap.dir/src/ft_checker_tools.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/src/ft_checker_tools.c.o   -c /home/alexey/projects/push_swap/src/ft_checker_tools.c
 
 CMakeFiles/push_swap.dir/src/ft_checker_tools.c.i: cmake_force
@@ -332,7 +319,7 @@ CMakeFiles/push_swap.dir/src/ft_checker_tools.c.s: cmake_force
 
 CMakeFiles/push_swap.dir/main.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/push_swap.dir/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/push_swap.dir/main.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/main.c.o   -c /home/alexey/projects/push_swap/main.c
 
 CMakeFiles/push_swap.dir/main.c.i: cmake_force
@@ -351,7 +338,6 @@ push_swap_OBJECTS = \
 "CMakeFiles/push_swap.dir/src/read.c.o" \
 "CMakeFiles/push_swap.dir/src/ft_lstd_to_str.c.o" \
 "CMakeFiles/push_swap.dir/src/ft_is_str_in_lstd.c.o" \
-"CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.o" \
 "CMakeFiles/push_swap.dir/src/ft_operation.c.o" \
 "CMakeFiles/push_swap.dir/src/ft_sort_lstd.c.o" \
 "CMakeFiles/push_swap.dir/src/dfs.c.o" \
@@ -377,7 +363,6 @@ push_swap: CMakeFiles/push_swap.dir/src/ft_lstprint.c.o
 push_swap: CMakeFiles/push_swap.dir/src/read.c.o
 push_swap: CMakeFiles/push_swap.dir/src/ft_lstd_to_str.c.o
 push_swap: CMakeFiles/push_swap.dir/src/ft_is_str_in_lstd.c.o
-push_swap: CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.o
 push_swap: CMakeFiles/push_swap.dir/src/ft_operation.c.o
 push_swap: CMakeFiles/push_swap.dir/src/ft_sort_lstd.c.o
 push_swap: CMakeFiles/push_swap.dir/src/dfs.c.o
@@ -396,7 +381,7 @@ push_swap: CMakeFiles/push_swap.dir/main.c.o
 push_swap: CMakeFiles/push_swap.dir/build.make
 push_swap: lib/libft/liblibft.a
 push_swap: CMakeFiles/push_swap.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking C executable push_swap"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking C executable push_swap"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/push_swap.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

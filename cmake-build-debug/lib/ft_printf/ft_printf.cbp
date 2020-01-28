@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="ft_printf"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\ft_printf\;CMake Files\lib\libft\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/alexey/projects/push_swap/cmake-build-debug/lib/ft_printf"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/lib/ft_printf/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/lib/ft_printf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/lib/ft_printf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/lib/ft_printf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libft_printf">
+				<Option output="/home/alexey/projects/push_swap/cmake-build-debug/lib/ft_printf/liblibft_printf.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alexey/projects/push_swap/cmake-build-debug/lib/ft_printf"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/alexey/projects/push_swap/lib/libft/includes"/>
+					<Add directory="/home/alexey/projects/push_swap/lib/ft_printf/includes"/>
+					<Add directory="/home/alexey/projects/push_swap/includes"/>
+					<Add directory="/home/alexey/projects/push_swap/lib/ft_printf"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/lib/ft_printf/Makefile&quot;  VERBOSE=1 libft_printf"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/lib/ft_printf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/lib/ft_printf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/lib/ft_printf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libft_printf/fast">
+				<Option output="/home/alexey/projects/push_swap/cmake-build-debug/lib/ft_printf/liblibft_printf.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alexey/projects/push_swap/cmake-build-debug/lib/ft_printf"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/alexey/projects/push_swap/lib/libft/includes"/>
+					<Add directory="/home/alexey/projects/push_swap/lib/ft_printf/includes"/>
+					<Add directory="/home/alexey/projects/push_swap/includes"/>
+					<Add directory="/home/alexey/projects/push_swap/lib/ft_printf"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/lib/ft_printf/Makefile&quot;  VERBOSE=1 libft_printf/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/lib/ft_printf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/lib/ft_printf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/lib/ft_printf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/alexey/projects/push_swap/lib/ft_printf/includes/ft_printf.h">
+			<Option target="libft_printf"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/ft_printf/src/apply_flags.c">
+			<Option target="libft_printf"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/ft_printf/src/data.c">
+			<Option target="libft_printf"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/ft_printf/src/e_double.c">
+			<Option target="libft_printf"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/ft_printf/src/e_double_tool.c">
+			<Option target="libft_printf"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/ft_printf/src/f_double.c">
+			<Option target="libft_printf"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/ft_printf/src/ft_printf.c">
+			<Option target="libft_printf"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/ft_printf/src/int_funcions.c">
+			<Option target="libft_printf"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/ft_printf/src/parse.c">
+			<Option target="libft_printf"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/ft_printf/src/parse_tool.c">
+			<Option target="libft_printf"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/ft_printf/src/print_tool.c">
+			<Option target="libft_printf"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/ft_printf/src/string_tool.c">
+			<Option target="libft_printf"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/ft_printf/src/tools.c">
+			<Option target="libft_printf"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/includes">
+			<Option target="libft_printf"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/ft_printf/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\ft_printf\"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\libft\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

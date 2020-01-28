@@ -224,6 +224,18 @@ ft_BINARY_DIR:STATIC=/home/alexey/projects/push_swap/cmake-build-debug/lib/libft
 ft_SOURCE_DIR:STATIC=/home/alexey/projects/push_swap/lib/libft
 
 //Value Computed by CMake
+ft_printf_BINARY_DIR:STATIC=/home/alexey/projects/push_swap/cmake-build-debug/lib/ft_printf
+
+//Value Computed by CMake
+ft_printf_SOURCE_DIR:STATIC=/home/alexey/projects/push_swap/lib/ft_printf
+
+//Value Computed by CMake
+libft_BINARY_DIR:STATIC=/home/alexey/projects/push_swap/cmake-build-debug/lib/libft
+
+//Value Computed by CMake
+libft_SOURCE_DIR:STATIC=/home/alexey/projects/push_swap/lib/libft
+
+//Value Computed by CMake
 push_swap_BINARY_DIR:STATIC=/home/alexey/projects/push_swap/cmake-build-debug
 
 //Value Computed by CMake

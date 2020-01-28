@@ -18,7 +18,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/push_swap.dir/src/ft_sort_ratio.c.o"
   "CMakeFiles/push_swap.dir/src/ft_sort_tools.c.o"
   "CMakeFiles/push_swap.dir/src/ft_strsplit_to_inttab.c.o"
-  "CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.o"
   "CMakeFiles/push_swap.dir/src/is_sorted.c.o"
   "CMakeFiles/push_swap.dir/src/read.c.o"
   "push_swap"

@@ -23,7 +23,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/alexey/projects/push_swap/src/ft_sort_ratio.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/ft_sort_ratio.c.o"
   "/home/alexey/projects/push_swap/src/ft_sort_tools.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/ft_sort_tools.c.o"
   "/home/alexey/projects/push_swap/src/ft_strsplit_to_inttab.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/ft_strsplit_to_inttab.c.o"
-  "/home/alexey/projects/push_swap/src/ft_swap_stacks.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/ft_swap_stacks.c.o"
   "/home/alexey/projects/push_swap/src/is_sorted.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/is_sorted.c.o"
   "/home/alexey/projects/push_swap/src/read.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/read.c.o"
   )

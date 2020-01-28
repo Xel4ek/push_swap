@@ -3,9 +3,9 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="push_swap" targetName="checker" />
+      <config projectName="push_swap" targetName="hash" />
       <config projectName="push_swap" targetName="libft" />
       <config projectName="push_swap" targetName="push_swap" />
-      <config projectName="push_swap" targetName="hash" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -15,13 +15,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2779692a-d878-4531-b1d1-2b626a8dadda" name="Default Changelist" comment="8th">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/dfs.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/dfs.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_array_to_lstd.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_array_to_lstd.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_is_array_in_lstd.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_is_array_in_lstd.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_is_str_in_lstd.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_is_str_in_lstd.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_lstd_del_2.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_lstd_del_2.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_lstd_to_array.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_lstd_to_array.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_lstd_to_str.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_lstd_to_str.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_lstprint.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_lstprint.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_ps_new_content.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_ps_new_content.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_queue_sort.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_queue_sort.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_quick_sort.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_quick_sort.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_sort_tools.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_sort_tools.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/ft_swap_stacks.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/is_sorted.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/is_sorted.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/read.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/src/read.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hash.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hash.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hash.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hash.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hash.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hash.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hash.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hash.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hash.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hash.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/dfs.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/dfs.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_is_array_in_lstd.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_is_array_in_lstd.c.o" afterDir="false" />
@@ -30,20 +68,32 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_lstd_to_array.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_lstd_to_array.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_lstd_to_str.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_lstd_to_str.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_lstprint.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_lstprint.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_operation.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_operation.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_ps_new_content.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_ps_new_content.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_queue_sort.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_queue_sort.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_quick_sort.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_quick_sort.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_sort_tools.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_sort_tools.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/is_sorted.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/is_sorted.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/read.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/src/read.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/checker" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/checker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/src/ft_strnew.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/src/ft_strnew.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libft/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/libft/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libft/liblibft.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/libft/liblibft.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/push_swap" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/push_swap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/push_swap.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/push_swap.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/push_swap.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/push_swap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libft/src/ft_strnew.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libft/src/ft_strnew.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dfs.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/dfs.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ft_array_to_lstd.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_array_to_lstd.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/is_sorted.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/is_sorted.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_is_array_in_lstd.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_is_array_in_lstd.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_is_str_in_lstd.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_is_str_in_lstd.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_ps_new_content.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_ps_new_content.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_quick_sort.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_quick_sort.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_sort_tools.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_sort_tools.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_swap_stacks.c" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,19 +136,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/ft_printf/lib" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/ft_printf/lib" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/cmake-build-debug" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.push_swap">
+  <component name="RunManager" selected="CMake Application.checker">
     <configuration name="checker" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="push_swap" TARGET_NAME="checker" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="push_swap" RUN_TARGET_NAME="checker">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -215,7 +266,7 @@
       <workItem from="1579699365926" duration="351000" />
       <workItem from="1579699726361" duration="8648000" />
       <workItem from="1579771496520" duration="15400000" />
-      <workItem from="1580113874585" duration="13868000" />
+      <workItem from="1580113874585" duration="26319000" />
     </task>
     <task id="LOCAL-00001" summary="8th">
       <created>1571842397140</created>
@@ -258,6 +309,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="8th" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="419" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580200042372">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="419" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1580200042372" />
     <state x="765" y="373" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579782788668">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>

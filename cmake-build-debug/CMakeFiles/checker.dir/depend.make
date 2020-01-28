@@ -96,11 +96,6 @@ CMakeFiles/checker.dir/src/ft_strsplit_to_inttab.c.o: ../lib/libft/includes/libf
 CMakeFiles/checker.dir/src/ft_strsplit_to_inttab.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/checker.dir/src/ft_strsplit_to_inttab.c.o: ../src/ft_strsplit_to_inttab.c
 
-CMakeFiles/checker.dir/src/ft_swap_stacks.c.o: ../includes/push_swap.h
-CMakeFiles/checker.dir/src/ft_swap_stacks.c.o: ../lib/libft/includes/libft.h
-CMakeFiles/checker.dir/src/ft_swap_stacks.c.o: ../lib/libft/includes/libft_structs.h
-CMakeFiles/checker.dir/src/ft_swap_stacks.c.o: ../src/ft_swap_stacks.c
-
 CMakeFiles/checker.dir/src/is_sorted.c.o: ../includes/push_swap.h
 CMakeFiles/checker.dir/src/is_sorted.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/checker.dir/src/is_sorted.c.o: ../lib/libft/includes/libft_structs.h

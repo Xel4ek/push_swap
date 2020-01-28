@@ -18,7 +18,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/checker.dir/src/ft_sort_ratio.c.o"
   "CMakeFiles/checker.dir/src/ft_sort_tools.c.o"
   "CMakeFiles/checker.dir/src/ft_strsplit_to_inttab.c.o"
-  "CMakeFiles/checker.dir/src/ft_swap_stacks.c.o"
   "CMakeFiles/checker.dir/src/is_sorted.c.o"
   "CMakeFiles/checker.dir/src/read.c.o"
   "checker"

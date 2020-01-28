@@ -96,11 +96,6 @@ CMakeFiles/push_swap.dir/src/ft_strsplit_to_inttab.c.o: ../lib/libft/includes/li
 CMakeFiles/push_swap.dir/src/ft_strsplit_to_inttab.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/push_swap.dir/src/ft_strsplit_to_inttab.c.o: ../src/ft_strsplit_to_inttab.c
 
-CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.o: ../includes/push_swap.h
-CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.o: ../lib/libft/includes/libft.h
-CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.o: ../lib/libft/includes/libft_structs.h
-CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.o: ../src/ft_swap_stacks.c
-
 CMakeFiles/push_swap.dir/src/is_sorted.c.o: ../includes/push_swap.h
 CMakeFiles/push_swap.dir/src/is_sorted.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/push_swap.dir/src/is_sorted.c.o: ../lib/libft/includes/libft_structs.h

@@ -11,8 +11,6 @@
 /* ************************************************************************** */
 
 #include "push_swap.h"
-#include <stdio.h>
-#include <limits.h>
 
 static void longest_subsequence_finder(const int *src, int *p, int *d, const int len)
 {

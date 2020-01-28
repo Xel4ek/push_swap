@@ -112,68 +112,71 @@ static void ft_aply_rb(int rb, t_list **list, t_list **buff)
 	}
 }
 
-int sort_lstds(t_list **list, t_list **buff)
-{
-	int size;
-	int i;
-	int list_step;
-	int temp;
+int ft_find_min_step(int temp, int list_step){
 	int min;
-	int tmp;
 	int sign;
-	int rr;
-	int ra;
-	int rb;
-	int wigth;
+
+	min = 0;
+	if (!(((unsigned) (temp > 0)) ^ ((unsigned) (list_step > 0))))
+	{
+		sign = 1;
+		if (temp < 0 || list_step < 0)
+			sign = -1;
+		min = ft_min(ft_abs(temp), ft_abs(list_step)) * sign;
+	}
+	return (min);
+}
+
+t_rotate_data set_rotate(int const rr, int const ra, int const rb, int const summ){
+	t_rotate_data  item;
+
+	item.rr = rr;
+	item.ra = ra;
+	item.rb = rb;
+	item.summ = summ;
+	return (item);
+}
+
+t_rotate_data ft_find_min_rotatre(t_list **list, t_list **buff){
+	int i;
+	int size;
+	t_rotate_data rotate;
+	int temp;
+	int list_step;
+	int min;
 	int summ;
 
+	i = -1;
+	rotate = set_rotate(0, 0, 0, -1);
 	if (!(size = ft_lstdlen(*buff)))
-		return (0);
-	i = 0;
-	rr = 0;
-	rb = 0;
-	ra = 0;
-	wigth = -1;
-	while (i < size)
+		return (rotate);
+	while (++i < size)
 	{
-		if (size > 2 * i)
-			temp = i;
-		else
-			temp = i - size;
+		temp = i;
+		if (size < 2 * i)
+			temp -= size;
 		list_step = steps_to_add(*list, *buff);
-		tmp = (temp > 0) ^ (list_step > 0);
-		if (tmp)
-		{
-			min = 0;
-			summ = ft_abs(list_step) + ft_abs(temp);
-		}
-		else
-		{
-			if (temp >= 0 && list_step >= 0)
-				sign = 1;
-			else
-				sign = -1;
-			min = ft_min(ft_abs(temp), ft_abs(list_step));
-			min *= sign;
-			summ = ft_abs(list_step - min) + ft_abs(temp - min) + ft_abs(min);
-		}
-		if (wigth > summ || wigth == -1)
-		{
-			rr = min;
-			rb = temp - min;
-			ra = list_step - min;
-			wigth = summ;
-		}
-		++i;
+		min = ft_find_min_step(temp, list_step);
+		summ = ft_abs(list_step - min) + ft_abs(temp - min) + ft_abs(min);
+		if (rotate.summ > summ || rotate.summ == -1)
+			rotate = set_rotate(min, list_step - min, temp - min, summ);
 		*buff = (*buff)->next;
 	}
-	ft_aply_rr(rr, list, buff);
-	ft_aply_ra(ra, list, buff);
-	ft_aply_rb(rb, list, buff);
+	return (rotate);
+}
+
+void sort_lstds(t_list **list, t_list **buff)
+{
+	t_rotate_data rotate;
+
+	rotate = ft_find_min_rotatre(list,buff);
+	ft_aply_rr(rotate.rr, list, buff);
+	ft_aply_ra(rotate.ra, list, buff);
+	ft_aply_rb(rotate.rb, list, buff);
 	ft_operations(PA, list, buff);
 	printf("pa\n");
-	return (1);
 }
+
 
 static void clear_lstd(t_list **list, int size)
 {
@@ -283,7 +286,6 @@ char	*ft_get_str_and_options(int argc, char **argv, int *options)
 	int i;
 
 	string = ft_strnew(0);
-	*string = 0;
 	while (--argc)
 	{
 		splited_argv = ft_strsplit(argv[argc], ' ');
@@ -311,7 +313,6 @@ char	*ft_get_str(int argc, char **argv)
 	char *temp;
 
 	string = ft_strnew(0);
-	*string = 0;
 	while (--argc)
 	{
 		temp = ft_strjoin(string, " ");
@@ -337,13 +338,10 @@ t_list	*ft_str_like_lstd(char *string)
 	ft_quick_sort(vector, vector + size - 1);
 	while (i < size)
 	{
-		j = 0;
-		while (j < size)
-		{
+		j = -1;
+		while (++j < size)
 			if (vector[j] == ((t_ps_content*)list->content)->value)
 				((t_ps_content*)list->content)->serial = j;
-			++j;
-		}
 		list = list->next;
 		++i;
 	}
@@ -351,45 +349,37 @@ t_list	*ft_str_like_lstd(char *string)
 	return (list);
 }
 
-int	ft_first_step(t_list **list, t_list **buff, int take_it)
+static void ft_sep_lstd(t_list **list, t_list **buff, const int size){
+	if (2 * ((t_ps_content*)(*list)->content)->serial >= (size))
+	{
+		ft_operations(PB, list, buff);
+		printf("pb\n");
+	}
+	else
+	{
+		ft_operations(PB, list, buff);
+		printf("pb\n");
+		ft_operations(RB, list, buff);
+		printf("rb\n");
+	}
+}
+
+void	ft_first_step(t_list **list, t_list **buff, int take_it)
 {
 	int max_steps;
-	int steps;
 	int size;
-	int i;
 
 	size = ft_lstdlen(*list);
 	max_steps = size - take_it;
-	i = size;
-	steps = 0;
-	while (i-- && max_steps--)
-	{
-
+	while (max_steps--)
 		if ((((t_ps_content*)(*list)->content)->operation != FREEZE))
-		{
-			if (2 * ((t_ps_content*)(*list)->content)->serial >= (size))
-			{
-				ft_operations(PB, list, buff);
-				printf("pb\n");
-			}
-			else
-			{
-				ft_operations(PB, list, buff);
-				printf("pb\n");
-				ft_operations(RB, list, buff);
-				printf("rb\n");
-				steps++;
-			}
-		}
+			ft_sep_lstd(list, buff, size);
 		else
 		{
 			max_steps++;
 			ft_operations(RA, list, buff);
 			printf("ra\n");
 		}
-		steps++;
-	}
-	return (steps);
 }
 
 void	ft_move_stack(t_list *list)

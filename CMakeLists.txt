@@ -9,7 +9,6 @@ set(SRC
         src/read.c
         src/ft_lstd_to_str.c
         src/ft_is_str_in_lstd.c
-        src/ft_swap_stacks.c
         src/ft_operation.c
         src/ft_sort_lstd.c
         src/dfs.c

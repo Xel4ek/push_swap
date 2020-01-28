@@ -1,4 +1,4 @@
-project(ft)
+project(libft)
 set(SRC
         src/ft_atoi_base.c
         src/ft_atoi.c
@@ -82,4 +82,5 @@ set(SRC
         src/ft_max.c src/ft_abs.c src/ft_min.c)
 set(HEADERS includes/libft.h)
 add_library(libft STATIC ${SRC} ${HEADERS})
+
 target_include_directories(libft PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

@@ -16,7 +16,6 @@
 t_ps_content	*ft_ps_new_content_int(int tab)
 {
 	t_ps_content	*ptr;
-	size_t			content_size;
 
 	if (!(ptr = (t_ps_content*)malloc(sizeof(*ptr))))
 		return (NULL);
@@ -25,6 +24,5 @@ t_ps_content	*ft_ps_new_content_int(int tab)
 	ptr->serial = -1;
 	ptr->content_size = sizeof(int);
 	ptr->content = tab;
-
 	return (ptr);
 }

@@ -837,39 +837,6 @@ src/ft_strsplit_to_inttab.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_strsplit_to_inttab.c.s
 .PHONY : src/ft_strsplit_to_inttab.c.s
 
-src/ft_swap_stacks.o: src/ft_swap_stacks.c.o
-
-.PHONY : src/ft_swap_stacks.o
-
-# target to build an object file
-src/ft_swap_stacks.c.o:
-	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_swap_stacks.c.o
-	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_swap_stacks.c.o
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.o
-.PHONY : src/ft_swap_stacks.c.o
-
-src/ft_swap_stacks.i: src/ft_swap_stacks.c.i
-
-.PHONY : src/ft_swap_stacks.i
-
-# target to preprocess a source file
-src/ft_swap_stacks.c.i:
-	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_swap_stacks.c.i
-	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_swap_stacks.c.i
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.i
-.PHONY : src/ft_swap_stacks.c.i
-
-src/ft_swap_stacks.s: src/ft_swap_stacks.c.s
-
-.PHONY : src/ft_swap_stacks.s
-
-# target to generate assembly for a file
-src/ft_swap_stacks.c.s:
-	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/ft_swap_stacks.c.s
-	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/ft_swap_stacks.c.s
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_swap_stacks.c.s
-.PHONY : src/ft_swap_stacks.c.s
-
 src/is_sorted.o: src/is_sorted.c.o
 
 .PHONY : src/is_sorted.o
@@ -1011,9 +978,6 @@ help:
 	@echo "... src/ft_strsplit_to_inttab.o"
 	@echo "... src/ft_strsplit_to_inttab.i"
 	@echo "... src/ft_strsplit_to_inttab.s"
-	@echo "... src/ft_swap_stacks.o"
-	@echo "... src/ft_swap_stacks.i"
-	@echo "... src/ft_swap_stacks.s"
 	@echo "... src/is_sorted.o"
 	@echo "... src/is_sorted.i"
 	@echo "... src/is_sorted.s"

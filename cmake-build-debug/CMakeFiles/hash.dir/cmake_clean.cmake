@@ -18,7 +18,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/hash.dir/src/ft_sort_ratio.c.o"
   "CMakeFiles/hash.dir/src/ft_sort_tools.c.o"
   "CMakeFiles/hash.dir/src/ft_strsplit_to_inttab.c.o"
-  "CMakeFiles/hash.dir/src/ft_swap_stacks.c.o"
   "CMakeFiles/hash.dir/src/is_sorted.c.o"
   "CMakeFiles/hash.dir/src/read.c.o"
   "hash"

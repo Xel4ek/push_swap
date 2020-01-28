@@ -107,10 +107,6 @@ push_swap.h
 /home/alexey/projects/push_swap/src/ft_quick_sort.c
 push_swap.h
 /home/alexey/projects/push_swap/src/push_swap.h
-stdio.h
--
-limits.h
--
 
 /home/alexey/projects/push_swap/src/ft_sort_lstd.c
 push_swap.h
@@ -132,12 +128,6 @@ stdio.h
 push_swap.h
 /home/alexey/projects/push_swap/src/push_swap.h
 stdlib.h
--
-
-/home/alexey/projects/push_swap/src/ft_swap_stacks.c
-push_swap.h
-/home/alexey/projects/push_swap/src/push_swap.h
-stdio.h
 -
 
 /home/alexey/projects/push_swap/src/is_sorted.c

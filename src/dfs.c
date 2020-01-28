@@ -66,7 +66,7 @@ void add_item_in_queue(t_list **queue, t_list **visited, t_list **list, t_list *
 	item->size = list_len + buff_len + 1;
 	if (0 == ft_is_array_in_lstd(item->string, item->size, *visited)) {
 		item->queue = (char*)malloc(sizeof(char) * MAX_QUEUE_SIZE);
-		item->last = operation;
+//		item->last = operation;
 		ft_strcpy(item->queue, temp);
 		ft_strcat(item->queue, " ");
 		itoa_ptr  = ft_itoa(operation);
@@ -74,7 +74,8 @@ void add_item_in_queue(t_list **queue, t_list **visited, t_list **list, t_list *
 		ft_memdel((void**)&(itoa_ptr));
 		ft_lstd_push_back(queue, ft_lstdnew(item, sizeof(*item)));
 		ft_lstd_push_back(visited, ft_lstdnew(item, sizeof(*item)));
-	} else
+	}
+	else
 		ft_memdel((	void**)&(item->string));
 	ft_memdel((void**)&item);
 	operation_move_bask(operation, list, buff);
@@ -93,7 +94,7 @@ void init_queue(t_list *list, t_list *buff, t_list **queue, t_list **visited){
 	item->queue = (char*)malloc(sizeof(char)*MAX_QUEUE_SIZE);
 	item->queue[0] = '+';
 	item->queue[1] = 0;
-	item->last = -1;
+//	item->last = -1;
 	ft_lstd_push_back(queue, ft_lstdnew(item, sizeof(*item)));
 	ft_lstd_push_back(visited, ft_lstdnew(item, sizeof(*item)));
 	ft_memdel((	void**)&item);

@@ -570,11 +570,6 @@
 			<Option target="hash"/>
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/alexey/projects/push_swap/src/ft_swap_stacks.c">
-			<Option target="checker"/>
-			<Option target="hash"/>
-			<Option target="push_swap"/>
-		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/src/is_sorted.c">
 			<Option target="checker"/>
 			<Option target="hash"/>
