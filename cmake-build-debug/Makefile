@@ -276,6 +276,39 @@ src/dfs.c.s:
 	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/dfs.c.s
 .PHONY : src/dfs.c.s
 
+src/dfs_tool.o: src/dfs_tool.c.o
+
+.PHONY : src/dfs_tool.o
+
+# target to build an object file
+src/dfs_tool.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/dfs_tool.c.o
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/dfs_tool.c.o
+	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/dfs_tool.c.o
+.PHONY : src/dfs_tool.c.o
+
+src/dfs_tool.i: src/dfs_tool.c.i
+
+.PHONY : src/dfs_tool.i
+
+# target to preprocess a source file
+src/dfs_tool.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/dfs_tool.c.i
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/dfs_tool.c.i
+	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/dfs_tool.c.i
+.PHONY : src/dfs_tool.c.i
+
+src/dfs_tool.s: src/dfs_tool.c.s
+
+.PHONY : src/dfs_tool.s
+
+# target to generate assembly for a file
+src/dfs_tool.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/dfs_tool.c.s
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/dfs_tool.c.s
+	$(MAKE) -f CMakeFiles/hash.dir/build.make CMakeFiles/hash.dir/src/dfs_tool.c.s
+.PHONY : src/dfs_tool.c.s
+
 src/ft_array_to_lstd.o: src/ft_array_to_lstd.c.o
 
 .PHONY : src/ft_array_to_lstd.o
@@ -993,6 +1026,9 @@ help:
 	@echo "... src/dfs.o"
 	@echo "... src/dfs.i"
 	@echo "... src/dfs.s"
+	@echo "... src/dfs_tool.o"
+	@echo "... src/dfs_tool.i"
+	@echo "... src/dfs_tool.s"
 	@echo "... src/ft_array_to_lstd.o"
 	@echo "... src/ft_array_to_lstd.i"
 	@echo "... src/ft_array_to_lstd.s"

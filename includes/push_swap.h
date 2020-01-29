@@ -35,6 +35,13 @@ enum opns{
 	FREEZE
 };
 
+typedef  struct  s_plist{
+	t_list *list;
+	t_list *buff;
+	t_list *queue;
+	t_list *visited;
+}	t_plist;
+
 typedef struct s_rotate_data{
 	int rr;
 	int ra;
@@ -114,5 +121,5 @@ int			ft_find_min_step(int temp, int list_step);
 void	operation_move_bask(enum opns operation,
 							t_list **list, t_list **buff);
 void	ft_print_operators(const char *string);
-
+void	ft_add_digit_to_str(char* dist, const  char* src, enum opns operation);
 #endif

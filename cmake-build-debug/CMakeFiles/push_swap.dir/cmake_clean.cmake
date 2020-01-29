@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/push_swap.dir/push_swap.c.o"
   "CMakeFiles/push_swap.dir/src/dfs.c.o"
+  "CMakeFiles/push_swap.dir/src/dfs_tool.c.o"
   "CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.o"
   "CMakeFiles/push_swap.dir/src/ft_checker_tools.c.o"
   "CMakeFiles/push_swap.dir/src/ft_is_array_in_lstd.c.o"

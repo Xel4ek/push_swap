@@ -532,6 +532,11 @@
 			<Option target="checker"/>
 			<Option target="hash"/>
 		</Unit>
+		<Unit filename="/Users/hwolf/projects/push/src/dfs_tool.c">
+			<Option target="push_swap"/>
+			<Option target="checker"/>
+			<Option target="hash"/>
+		</Unit>
 		<Unit filename="/Users/hwolf/projects/push/src/ft_array_to_lstd.c">
 			<Option target="push_swap"/>
 			<Option target="checker"/>

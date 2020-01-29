@@ -6,7 +6,7 @@
 /*   By: hwolf <hwolf@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/22 15:19:56 by hwolf             #+#    #+#             */
-/*   Updated: 2020/01/29 16:21:24 by hwolf            ###   ########.fr       */
+/*   Updated: 2020/01/29 18:23:58 by hwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,13 +108,11 @@ int	ft_get_data(t_list **list, int argc, char **argv)
 
 int	ft_aply_actions(t_list **list, int option)
 {
-	int		fd;
 	char	*line;
 	t_list	*buff;
 
 	buff = NULL;
-	fd = STDIN_FILENO;
-	while (get_next_line(fd, &line) > 0)
+	while (get_next_line(STDIN_FILENO, &line) > 0)
 	{
 		if (ft_action_checker(line))
 		{
@@ -131,10 +129,7 @@ int	ft_aply_actions(t_list **list, int option)
 		}
 		ft_memdel((void**)&line);
 	}
-	if (is_sorted(*list) && !buff)
-		ft_printf("OK");
-	else
-		ft_printf("KO");
+	(is_sorted(*list) && !buff) ? ft_printf("OK") : ft_printf("KO");
 	ft_lstd_del(&buff);
 	return (1);
 }

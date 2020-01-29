@@ -19,7 +19,7 @@ set(SRC
         src/ft_sort_ratio.c
         src/ft_queue_sort.c
         src/ft_sort_tools.c
-        src/ft_checker_tools.c src/ft_operation2.c src/ft_sort_tools2.c src/ft_sort_tools3.c src/ft_sort_tools4.c src/ft_output.c)
+        src/ft_checker_tools.c src/ft_operation2.c src/ft_sort_tools2.c src/ft_sort_tools3.c src/ft_sort_tools4.c src/ft_output.c src/dfs_tool.c)
 
 
 include_directories(lib/libft/includes)

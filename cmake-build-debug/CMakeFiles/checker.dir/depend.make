@@ -13,6 +13,12 @@ CMakeFiles/checker.dir/src/dfs.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/checker.dir/src/dfs.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/checker.dir/src/dfs.c.o: ../src/dfs.c
 
+CMakeFiles/checker.dir/src/dfs_tool.c.o: ../includes/push_swap.h
+CMakeFiles/checker.dir/src/dfs_tool.c.o: ../lib/libft/includes/ft_printf.h
+CMakeFiles/checker.dir/src/dfs_tool.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/checker.dir/src/dfs_tool.c.o: ../lib/libft/includes/libft_structs.h
+CMakeFiles/checker.dir/src/dfs_tool.c.o: ../src/dfs_tool.c
+
 CMakeFiles/checker.dir/src/ft_array_to_lstd.c.o: ../includes/push_swap.h
 CMakeFiles/checker.dir/src/ft_array_to_lstd.c.o: ../lib/libft/includes/ft_printf.h
 CMakeFiles/checker.dir/src/ft_array_to_lstd.c.o: ../lib/libft/includes/libft.h

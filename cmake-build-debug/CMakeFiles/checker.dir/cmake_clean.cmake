@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/checker.dir/checker.c.o"
   "CMakeFiles/checker.dir/src/dfs.c.o"
+  "CMakeFiles/checker.dir/src/dfs_tool.c.o"
   "CMakeFiles/checker.dir/src/ft_array_to_lstd.c.o"
   "CMakeFiles/checker.dir/src/ft_checker_tools.c.o"
   "CMakeFiles/checker.dir/src/ft_is_array_in_lstd.c.o"

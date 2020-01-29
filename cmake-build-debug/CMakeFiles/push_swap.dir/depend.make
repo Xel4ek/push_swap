@@ -13,6 +13,12 @@ CMakeFiles/push_swap.dir/src/dfs.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/push_swap.dir/src/dfs.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/push_swap.dir/src/dfs.c.o: ../src/dfs.c
 
+CMakeFiles/push_swap.dir/src/dfs_tool.c.o: ../includes/push_swap.h
+CMakeFiles/push_swap.dir/src/dfs_tool.c.o: ../lib/libft/includes/ft_printf.h
+CMakeFiles/push_swap.dir/src/dfs_tool.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/push_swap.dir/src/dfs_tool.c.o: ../lib/libft/includes/libft_structs.h
+CMakeFiles/push_swap.dir/src/dfs_tool.c.o: ../src/dfs_tool.c
+
 CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.o: ../includes/push_swap.h
 CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.o: ../lib/libft/includes/ft_printf.h
 CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.o: ../lib/libft/includes/libft.h

@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/hwolf/projects/push/push_swap.c" "/Users/hwolf/projects/push/cmake-build-debug/CMakeFiles/push_swap.dir/push_swap.c.o"
   "/Users/hwolf/projects/push/src/dfs.c" "/Users/hwolf/projects/push/cmake-build-debug/CMakeFiles/push_swap.dir/src/dfs.c.o"
+  "/Users/hwolf/projects/push/src/dfs_tool.c" "/Users/hwolf/projects/push/cmake-build-debug/CMakeFiles/push_swap.dir/src/dfs_tool.c.o"
   "/Users/hwolf/projects/push/src/ft_array_to_lstd.c" "/Users/hwolf/projects/push/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.o"
   "/Users/hwolf/projects/push/src/ft_checker_tools.c" "/Users/hwolf/projects/push/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_checker_tools.c.o"
   "/Users/hwolf/projects/push/src/ft_is_array_in_lstd.c" "/Users/hwolf/projects/push/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_is_array_in_lstd.c.o"

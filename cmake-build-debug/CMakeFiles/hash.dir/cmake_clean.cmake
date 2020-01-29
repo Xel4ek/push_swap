@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/hash.dir/hash.c.o"
   "CMakeFiles/hash.dir/src/dfs.c.o"
+  "CMakeFiles/hash.dir/src/dfs_tool.c.o"
   "CMakeFiles/hash.dir/src/ft_array_to_lstd.c.o"
   "CMakeFiles/hash.dir/src/ft_checker_tools.c.o"
   "CMakeFiles/hash.dir/src/ft_is_array_in_lstd.c.o"
