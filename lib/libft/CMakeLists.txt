@@ -79,8 +79,22 @@ set(SRC
         src/ft_hash.c
         src/ft_hash_del.c
         src/ft_merge_sort.c
-        src/ft_max.c src/ft_abs.c src/ft_min.c)
-set(HEADERS includes/libft.h)
+        src/ft_max.c src/ft_abs.c src/ft_min.c
+        src/ft_printf_src/apply_flags.c
+        src/ft_printf_src/data.c
+        src/ft_printf_src/e_double.c
+        src/ft_printf_src/e_double_tool.c
+        src/ft_printf_src/f_double.c
+        src/ft_printf_src/ft_printf.c
+        src/ft_printf_src/int_funcions.c
+        src/ft_printf_src/parse.c
+        src/ft_printf_src/parse_tool.c
+        src/ft_printf_src/print_tool.c
+        src/ft_printf_src/string_tool.c
+        src/ft_printf_src/tools.c)
+set(HEADERS
+        includes/libft.h
+        includes/ft_printf.h)
 add_library(libft STATIC ${SRC} ${HEADERS})
 
 target_include_directories(libft PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

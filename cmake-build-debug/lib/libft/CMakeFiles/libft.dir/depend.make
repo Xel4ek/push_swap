@@ -22,6 +22,7 @@ lib/libft/CMakeFiles/libft.dir/src/ft_hash.c.o: ../lib/libft/includes/libft_stru
 lib/libft/CMakeFiles/libft.dir/src/ft_hash.c.o: ../lib/libft/src/ft_hash.c
 
 lib/libft/CMakeFiles/libft.dir/src/ft_hash_del.c.o: ../includes/push_swap.h
+lib/libft/CMakeFiles/libft.dir/src/ft_hash_del.c.o: ../lib/libft/includes/ft_printf.h
 lib/libft/CMakeFiles/libft.dir/src/ft_hash_del.c.o: ../lib/libft/includes/libft.h
 lib/libft/CMakeFiles/libft.dir/src/ft_hash_del.c.o: ../lib/libft/includes/libft_structs.h
 lib/libft/CMakeFiles/libft.dir/src/ft_hash_del.c.o: ../lib/libft/src/ft_hash_del.c
@@ -143,6 +144,66 @@ lib/libft/CMakeFiles/libft.dir/src/ft_min.c.o: ../lib/libft/src/ft_min.c
 lib/libft/CMakeFiles/libft.dir/src/ft_nbrlen.c.o: ../lib/libft/includes/libft.h
 lib/libft/CMakeFiles/libft.dir/src/ft_nbrlen.c.o: ../lib/libft/includes/libft_structs.h
 lib/libft/CMakeFiles/libft.dir/src/ft_nbrlen.c.o: ../lib/libft/src/ft_nbrlen.c
+
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/apply_flags.c.o: ../lib/libft/includes/ft_printf.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/apply_flags.c.o: ../lib/libft/includes/libft.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/apply_flags.c.o: ../lib/libft/includes/libft_structs.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/apply_flags.c.o: ../lib/libft/src/ft_printf_src/apply_flags.c
+
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/data.c.o: ../lib/libft/includes/ft_printf.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/data.c.o: ../lib/libft/includes/libft.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/data.c.o: ../lib/libft/includes/libft_structs.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/data.c.o: ../lib/libft/src/ft_printf_src/data.c
+
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/e_double.c.o: ../lib/libft/includes/ft_printf.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/e_double.c.o: ../lib/libft/includes/libft.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/e_double.c.o: ../lib/libft/includes/libft_structs.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/e_double.c.o: ../lib/libft/src/ft_printf_src/e_double.c
+
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/e_double_tool.c.o: ../lib/libft/includes/ft_printf.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/e_double_tool.c.o: ../lib/libft/includes/libft.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/e_double_tool.c.o: ../lib/libft/includes/libft_structs.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/e_double_tool.c.o: ../lib/libft/src/ft_printf_src/e_double_tool.c
+
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/f_double.c.o: ../lib/libft/includes/ft_printf.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/f_double.c.o: ../lib/libft/includes/libft.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/f_double.c.o: ../lib/libft/includes/libft_structs.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/f_double.c.o: ../lib/libft/src/ft_printf_src/f_double.c
+
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/ft_printf.c.o: ../lib/libft/includes/ft_printf.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/ft_printf.c.o: ../lib/libft/includes/libft.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/ft_printf.c.o: ../lib/libft/includes/libft_structs.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/ft_printf.c.o: ../lib/libft/src/ft_printf_src/ft_printf.c
+
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/int_funcions.c.o: ../lib/libft/includes/ft_printf.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/int_funcions.c.o: ../lib/libft/includes/libft.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/int_funcions.c.o: ../lib/libft/includes/libft_structs.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/int_funcions.c.o: ../lib/libft/src/ft_printf_src/int_funcions.c
+
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/parse.c.o: ../lib/libft/includes/ft_printf.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/parse.c.o: ../lib/libft/includes/libft.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/parse.c.o: ../lib/libft/includes/libft_structs.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/parse.c.o: ../lib/libft/src/ft_printf_src/parse.c
+
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/parse_tool.c.o: ../lib/libft/includes/ft_printf.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/parse_tool.c.o: ../lib/libft/includes/libft.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/parse_tool.c.o: ../lib/libft/includes/libft_structs.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/parse_tool.c.o: ../lib/libft/src/ft_printf_src/parse_tool.c
+
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/print_tool.c.o: ../lib/libft/includes/ft_printf.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/print_tool.c.o: ../lib/libft/includes/libft.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/print_tool.c.o: ../lib/libft/includes/libft_structs.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/print_tool.c.o: ../lib/libft/src/ft_printf_src/print_tool.c
+
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/string_tool.c.o: ../lib/libft/includes/ft_printf.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/string_tool.c.o: ../lib/libft/includes/libft.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/string_tool.c.o: ../lib/libft/includes/libft_structs.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/string_tool.c.o: ../lib/libft/src/ft_printf_src/string_tool.c
+
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/tools.c.o: ../lib/libft/includes/ft_printf.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/tools.c.o: ../lib/libft/includes/libft.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/tools.c.o: ../lib/libft/includes/libft_structs.h
+lib/libft/CMakeFiles/libft.dir/src/ft_printf_src/tools.c.o: ../lib/libft/src/ft_printf_src/tools.c
 
 lib/libft/CMakeFiles/libft.dir/src/ft_putchar.c.o: ../lib/libft/includes/libft.h
 lib/libft/CMakeFiles/libft.dir/src/ft_putchar.c.o: ../lib/libft/includes/libft_structs.h

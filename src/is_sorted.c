@@ -34,11 +34,6 @@ void	ft_lstditer_reduce(t_list *list, int *n, void (*f)())
 	}
 }
 
-void	reduce(t_list *list, int *n)
-{
-	*n += (*(int*)(list->content) == 0);
-}
-
 int		is_sorted(t_list *list)
 {
 	int len;

@@ -6,14 +6,14 @@
 /*   By: hwolf <hwolf@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/22 15:19:52 by hwolf             #+#    #+#             */
-/*   Updated: 2020/01/22 19:52:29 by hwolf            ###   ########.fr       */
+/*   Updated: 2020/01/29 16:05:19 by hwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-#include <stdlib.h>
 
-void	ft_add_int_at_lstd(t_list **lstd, const int num){
+void	ft_add_int_at_lstd(t_list **lstd, const int num)
+{
 	t_ps_content	*item;
 
 	item = (t_ps_content*)malloc(sizeof(t_ps_content));
@@ -26,7 +26,8 @@ void	ft_add_int_at_lstd(t_list **lstd, const int num){
 	ft_memdel((void**)&item);
 }
 
-void	ft_array_to_lstd(const int *tab, const int len, t_list **list1, t_list **list2)
+void	ft_array_to_lstd(const int *tab, const int len,
+		t_list **list1, t_list **list2)
 {
 	int				i;
 

@@ -6,13 +6,13 @@
 /*   By: hwolf <hwolf@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/22 15:19:56 by hwolf             #+#    #+#             */
-/*   Updated: 2020/01/22 19:51:19 by hwolf            ###   ########.fr       */
+/*   Updated: 2020/01/29 16:21:24 by hwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-#include <stdio.h>
 #include <unistd.h>
+#include <stdio.h>
 
 int	ft_duplicate_finder(char *string)
 {
@@ -53,21 +53,17 @@ int	ft_overloaded_checker(char *string)
 	if (!string)
 		return (0);
 	tab = ft_strsplit(string, ' ');
-	size = 0;
-	while (tab[size])
+	size = -1;
+	while (tab[++size])
 	{
 		item = ft_atoi(tab[size]);
-		if (is_valid)
-		{
-			if ((ft_strlen(tab[size]) > 2 && (item == 0 || item == -1)))
-				is_valid = 0;
-			tmp = ft_itoa(item);
-			if (ft_strcmp(tab[size], tmp))
-				is_valid = 0;
-			ft_memdel((void**)&tmp);
-		}
+		if ((ft_strlen(tab[size]) > 2 && (item == 0 || item == -1)))
+			is_valid = 0;
+		tmp = ft_itoa(item);
+		if (ft_strcmp(tab[size], tmp))
+			is_valid = 0;
+		ft_memdel((void**)&tmp);
 		ft_memdel((void**)&tab[size]);
-		++size;
 	}
 	ft_memdel((void**)&tab);
 	return (!is_valid);
@@ -75,10 +71,12 @@ int	ft_overloaded_checker(char *string)
 
 int	ft_action_checker(char *string)
 {
-	if (!ft_strcmp(string,"pa") || !ft_strcmp(string,"pb") ||
-			!ft_strcmp(string,"ra") || !ft_strcmp(string,"rb") || !ft_strcmp(string,"rr") ||
-					!ft_strcmp(string,"rra") || !ft_strcmp(string,"rrb") || !ft_strcmp(string,"rrr") ||
-		!ft_strcmp(string,"sa") || !ft_strcmp(string,"sb") || !ft_strcmp(string,"ss"))
+	if (!ft_strcmp(string, "pa") || !ft_strcmp(string, "pb") ||
+		!ft_strcmp(string, "ra") || !ft_strcmp(string, "rb") ||
+		!ft_strcmp(string, "rr") || !ft_strcmp(string, "rra") ||
+		!ft_strcmp(string, "rrb") || !ft_strcmp(string, "rrr") ||
+		!ft_strcmp(string, "sa") || !ft_strcmp(string, "sb") ||
+		!ft_strcmp(string, "ss"))
 		return (0);
 	return (1);
 }
@@ -94,7 +92,7 @@ int	ft_get_data(t_list **list, int argc, char **argv)
 	if (!(str = ft_get_str_and_options(argc, argv, &option)) ||
 			ft_overloaded_checker(str) || ft_duplicate_finder(str))
 	{
-		printf("Error\n");
+		ft_printf("Error\n");
 		ft_memdel((void**)&str);
 		return (-1);
 	}
@@ -102,7 +100,7 @@ int	ft_get_data(t_list **list, int argc, char **argv)
 	ft_memdel((void**)&str);
 	if (option)
 	{
-		printf("\033cInput\n");
+		ft_printf("\033cInput\n");
 		ft_lstditer_two(*list, NULL, &ft_lstprint3);
 	}
 	return (option);
@@ -134,9 +132,9 @@ int	ft_aply_actions(t_list **list, int option)
 		ft_memdel((void**)&line);
 	}
 	if (is_sorted(*list) && !buff)
-		printf("OK");
+		ft_printf("OK");
 	else
-		printf("KO");
+		ft_printf("KO");
 	ft_lstd_del(&buff);
 	return (1);
 }

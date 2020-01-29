@@ -6,13 +6,14 @@
 /*   By: hwolf <hwolf@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/22 15:20:53 by hwolf             #+#    #+#             */
-/*   Updated: 2020/01/22 19:18:10 by hwolf            ###   ########.fr       */
+/*   Updated: 2020/01/29 16:22:50 by hwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-static void longest_subsequence_finder(const int *src, int *p, int *d, const int len)
+static void	longest_subsequence_finder(const int *src, int *p, int *d,
+										const int len)
 {
 	int i;
 	int j;
@@ -32,7 +33,8 @@ static void longest_subsequence_finder(const int *src, int *p, int *d, const int
 	}
 }
 
-static void write_to_lstd(int pos, const int *src, int *p, t_list **buff){
+static void	write_to_lstd(int pos, const int *src, int *p, t_list **buff)
+{
 	t_ps_content *item;
 
 	while (pos != -1)
@@ -44,7 +46,7 @@ static void write_to_lstd(int pos, const int *src, int *p, t_list **buff){
 	}
 }
 
-int longest_subsequence(const int *src, const int len, t_list **buff)
+int			longest_subsequence(const int *src, const int len, t_list **buff)
 {
 	int p[len];
 	int d[len];
@@ -66,11 +68,9 @@ int longest_subsequence(const int *src, const int len, t_list **buff)
 	return (ans);
 }
 
-int longest_subsequence_lstd(const t_list *list, t_list **buff){
-	int len;
-
-	len = ft_lstdlen(list);
-
+int			longest_subsequence_lstd(const t_list *list, t_list **buff,
+									int const len)
+{
 	int a[len];
 	int i;
 
@@ -82,4 +82,3 @@ int longest_subsequence_lstd(const t_list *list, t_list **buff){
 	}
 	return (longest_subsequence(a, len, buff));
 }
-

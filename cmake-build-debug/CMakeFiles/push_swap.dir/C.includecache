@@ -13,11 +13,27 @@ sys/stat.h
 -
 libft.h
 ../includes/libft.h
+ft_printf.h
+../includes/ft_printf.h
+
+../lib/libft/includes/ft_printf.h
+stdarg.h
+-
+stdlib.h
+-
+stdint.h
+-
+string.h
+-
+libft.h
+../lib/libft/includes/libft.h
 
 ../lib/libft/includes/libft.h
 string.h
 -
 stdint.h
+-
+stdlib.h
 -
 libft_structs.h
 ../lib/libft/includes/libft_structs.h
@@ -26,9 +42,11 @@ libft_structs.h
 string.h
 -
 
-/home/alexey/projects/push_swap/src/ft_sort_tools.c
+/Users/hwolf/projects/push/src/dfs.c
 push_swap.h
-/home/alexey/projects/push_swap/src/push_swap.h
-stdio.h
--
+/Users/hwolf/projects/push/src/push_swap.h
+
+/Users/hwolf/projects/push/src/ft_output.c
+push_swap.h
+/Users/hwolf/projects/push/src/push_swap.h
 

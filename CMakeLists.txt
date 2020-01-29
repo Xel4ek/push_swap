@@ -7,10 +7,7 @@ set(SRC
         src/ft_lstd_swap.c
         src/ft_lstprint.c
         src/read.c
-        src/ft_lstd_to_str.c
-        src/ft_is_str_in_lstd.c
         src/ft_operation.c
-        src/ft_sort_lstd.c
         src/dfs.c
         src/ft_quick_sort.c
         src/ft_ps_new_content.c
@@ -22,13 +19,13 @@ set(SRC
         src/ft_sort_ratio.c
         src/ft_queue_sort.c
         src/ft_sort_tools.c
-        src/ft_checker_tools.c)
+        src/ft_checker_tools.c src/ft_operation2.c src/ft_sort_tools2.c src/ft_sort_tools3.c src/ft_sort_tools4.c src/ft_output.c)
 
 
 include_directories(lib/libft/includes)
 include_directories(includes)
 add_executable(hash ${SRC} hash.c)
-add_executable(push_swap ${SRC} main.c)
+add_executable(push_swap ${SRC} push_swap.c)
 add_executable(checker ${SRC} checker.c )
 
 add_subdirectory(lib/libft)

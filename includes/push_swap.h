@@ -6,7 +6,7 @@
 /*   By: hwolf <hwolf@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/22 15:21:53 by hwolf             #+#    #+#             */
-/*   Updated: 2020/01/22 17:32:56 by hwolf            ###   ########.fr       */
+/*   Updated: 2020/01/29 16:02:10 by hwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,11 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include "libft.h"
+#include "ft_printf.h"
 
 # define MAX_HASH_SIZE 1024
 # define MAX_QUEUE_SIZE 4096
-enum Operations{
+enum opns{
 	SA,
 	SB,
 	SS,
@@ -71,10 +72,10 @@ int						ft_operation(char *string, t_list **a, t_list **b);
 int						ft_sort_lstd(t_list **list, t_list **buff);
 int						dfs_with_max_len(t_list **list, t_list **buff, t_list **visited, int max_steps);
 char					*ft_lstd_to_str(t_list *list1, t_list *list2, int size1, int size2, int len1, int len2);
-int						ft_operations(enum Operations operation, t_list **a, t_list **b);
+int						ft_operations(enum opns operation, t_list **a, t_list **b);
 //int					ft_quick_sort(t_list **list, t_list **buff, char *pivot);
 int bfs(t_list **list, t_list **buff, t_list **visited,  t_list **queue);
-int longest_subsequence_lstd(const t_list *list, t_list **buff);
+int longest_subsequence_lstd(const t_list *list, t_list **buff, int const len);
 t_ps_content *ft_ps_new_content(char *string);
 int ft_strsplit_to_inttab(int **vector, char *string);
 void	ft_lstprint3(t_list *list);
@@ -106,4 +107,12 @@ int ft_overloaded_checker(char *string);
 int ft_action_checker(char *string);
 int ft_get_data(t_list **list, int argc, char **argv);
 int ft_aply_actions(t_list **list, int option);
+int			steps_to_add(t_list *list, t_list *buff);
+char	*ft_sort_args(char *arg, char *src, int *option);
+t_rotate_data	ft_find_min_rotatre(t_list **list, t_list **buff);
+int			ft_find_min_step(int temp, int list_step);
+void	operation_move_bask(enum opns operation,
+							t_list **list, t_list **buff);
+void	ft_print_operators(const char *string);
+
 #endif

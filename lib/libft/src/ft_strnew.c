@@ -6,7 +6,7 @@
 /*   By: hwolf <hwolf@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 21:12:46 by hwolf             #+#    #+#             */
-/*   Updated: 2019/09/07 19:20:18 by hwolf            ###   ########.fr       */
+/*   Updated: 2020/01/29 16:32:43 by hwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 char	*ft_strnew(size_t size)
 {
 	char *string;
+
 	string = (char*)ft_memalloc(size + 1);
 	*string = 0;
 	return (string);
