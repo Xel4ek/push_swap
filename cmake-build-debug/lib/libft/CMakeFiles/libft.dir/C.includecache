@@ -6,28 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../includes/push_swap.h
-sys/types.h
--
-sys/stat.h
--
-libft.h
-../includes/libft.h
-ft_printf.h
-../includes/ft_printf.h
-
-../lib/libft/includes/ft_printf.h
-stdarg.h
--
-stdlib.h
--
-stdint.h
--
-string.h
--
-libft.h
-../lib/libft/includes/libft.h
-
 ../lib/libft/includes/libft.h
 string.h
 -
@@ -42,9 +20,7 @@ libft_structs.h
 string.h
 -
 
-/Users/hwolf/projects/push/lib/libft/src/ft_hash_del.c
+/home/alexey/projects/push_swap/lib/libft/src/ft_strncpy.c
 libft.h
-/Users/hwolf/projects/push/lib/libft/src/libft.h
-push_swap.h
-/Users/hwolf/projects/push/lib/libft/src/push_swap.h
+/home/alexey/projects/push_swap/lib/libft/src/libft.h
 

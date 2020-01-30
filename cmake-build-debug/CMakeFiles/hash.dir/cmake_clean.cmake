@@ -5,7 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/hash.dir/src/ft_array_to_lstd.c.o"
   "CMakeFiles/hash.dir/src/ft_checker_tools.c.o"
   "CMakeFiles/hash.dir/src/ft_is_array_in_lstd.c.o"
-  "CMakeFiles/hash.dir/src/ft_lstd_del_2.c.o"
+  "CMakeFiles/hash.dir/src/ft_lstd_deep_del.c.o"
   "CMakeFiles/hash.dir/src/ft_lstd_swap.c.o"
   "CMakeFiles/hash.dir/src/ft_lstd_to_array.c.o"
   "CMakeFiles/hash.dir/src/ft_lstprint.c.o"

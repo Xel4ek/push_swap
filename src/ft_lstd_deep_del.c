@@ -12,21 +12,7 @@
 
 #include "push_swap.h"
 
-void	ft_lstd_del_2(t_list **list)
-{
-	if (list)
-		while (*list)
-			ft_lstd_pop_front(list);
-}
-
-void	ft_lstd_del_3(t_list **list)
-{
-	if (list)
-		while (*list)
-			ft_lstd_pop_front(list);
-}
-
-void	ft_lstd_del_4(t_list **list)
+void	ft_lstd_deep_del(t_list **list)
 {
 	if (list)
 		while (*list)

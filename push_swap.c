@@ -31,6 +31,6 @@ int	main(int argc, char **argv)
 			sort_lstds(&list, &buff);
 		ft_move_stack(list);
 	}
-	ft_lstd_del_2(&list);
+	ft_lstd_del(&list);
 	return (0);
 }

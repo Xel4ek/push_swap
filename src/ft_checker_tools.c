@@ -12,7 +12,6 @@
 
 #include "push_swap.h"
 #include <unistd.h>
-#include <stdio.h>
 
 int	ft_duplicate_finder(char *string)
 {
@@ -123,7 +122,7 @@ int	ft_aply_actions(t_list **list, int option)
 		ft_operation(line, list, &buff);
 		if (option)
 		{
-			printf("\033cExec %s:\n", line);
+			ft_printf("\033cExec %s:\n", line);
 			ft_lstditer_two(*list, buff, &ft_lstprint3);
 			sleep(1);
 		}

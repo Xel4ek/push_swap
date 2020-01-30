@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "push_swap.h"
-#include <stdio.h>
 
 int	main(int argc, char **argv)
 {
@@ -21,7 +20,7 @@ int	main(int argc, char **argv)
 	if ((option = ft_get_data(&list, argc, argv)) == -1)
 		return (0);
 	if (!ft_aply_actions(&list, option))
-		printf("Error\n");
+		ft_printf("Error\n");
 	ft_lstd_del(&list);
 	return (0);
 }

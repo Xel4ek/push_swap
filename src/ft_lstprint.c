@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "push_swap.h"
-#include <stdio.h>
 
 void	ft_lstprint(t_list *list)
 {
@@ -40,10 +39,10 @@ void	ft_lstprint3(t_list *list)
 		line[stars] = 0;
 		while (stars-- > 0)
 			line[stars] = '*';
-		printf("\e[1;35m""%-50s ""\e[0m", line);
+		ft_printf("\e[1;35m""%-50s ""\e[0m", line);
 	}
 	else
-		printf("%5s%50s", "", "");
+		ft_printf("%5s%50s", "", "");
 }
 
 void	ft_lstprint5(t_list *list)

@@ -42,23 +42,7 @@ libft_structs.h
 string.h
 -
 
-/Users/hwolf/projects/push/src/dfs.c
+/home/alexey/projects/push_swap/src/ft_sort_tools4.c
 push_swap.h
-/Users/hwolf/projects/push/src/push_swap.h
-
-/Users/hwolf/projects/push/src/dfs_tool.c
-push_swap.h
-/Users/hwolf/projects/push/src/push_swap.h
-
-/Users/hwolf/projects/push/src/ft_checker_tools.c
-push_swap.h
-/Users/hwolf/projects/push/src/push_swap.h
-unistd.h
--
-stdio.h
--
-
-/Users/hwolf/projects/push/src/ft_sort_tools.c
-push_swap.h
-/Users/hwolf/projects/push/src/push_swap.h
+/home/alexey/projects/push_swap/src/push_swap.h
 

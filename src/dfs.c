@@ -78,8 +78,8 @@ char	*ft_take_from_queue(t_list **list, t_list **buff, t_list **queue)
 	t_ps_string	*item;
 	char		*queue_sting;
 
-	ft_lstd_del_2(list);
-	ft_lstd_del_2(buff);
+	ft_lstd_del(list);
+	ft_lstd_del(buff);
 	item = (t_ps_string*)((*queue)->content);
 	ft_array_to_lstd(item->string, item->size, list, buff);
 	queue_sting = (char*)malloc(sizeof(char) * MAX_QUEUE_SIZE);
@@ -108,6 +108,6 @@ void	ft_bfs_sort(t_list **list)
 		ft_memdel((void**)&item);
 	}
 	ft_lstd_del(&(pack.queue));
-	ft_lstd_del_4(&(pack.visited));
+	ft_lstd_deep_del(&(pack.visited));
 	*list = pack.list;
 }

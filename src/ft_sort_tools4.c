@@ -28,29 +28,26 @@ t_rotate_data	ft_find_min_rotatre(t_list **list, t_list **buff)
 {
 	int i;
 	int size;
-	t_rotate_data rotate;
-	int temp;
-	int list_step;
-	int min;
-	int summ;
+	t_rotate_data rot;
+	t_rotate_data nr;
 
 	i = -1;
-	rotate = set_rotate(0, 0, 0, -1);
+	rot = set_rotate(0, 0, 0, -1);
 	if (!(size = ft_lstdlen(*buff)))
-		return (rotate);
+		return (rot);
 	while (++i < size)
 	{
-		temp = i;
+		nr.ra = i;
 		if (size < 2 * i)
-			temp -= size;
-		list_step = steps_to_add(*list, *buff);
-		min = ft_find_min_step(temp, list_step);
-		summ = ft_abs(list_step - min) + ft_abs(temp - min) + ft_abs(min);
-		if (rotate.summ > summ || rotate.summ == -1)
-			rotate = set_rotate(min, list_step - min, temp - min, summ);
+			nr.ra -= size;
+		nr.rb = steps_to_add(*list, *buff);
+		nr.rr = ft_find_min_step(nr.ra, nr.rb);
+		nr.summ = ft_abs(nr.rb - nr.rr) + ft_abs(nr.ra - nr.rr) + ft_abs(nr.rr);
+		if (rot.summ > nr.summ || rot.summ == -1)
+			rot = set_rotate(nr.rr, nr.rb - nr.rr, nr.ra - nr.rr, nr.summ);
 		*buff = (*buff)->next;
 	}
-	return (rotate);
+	return (rot);
 }
 
 static void		clear_lstd(t_list **list, int size)

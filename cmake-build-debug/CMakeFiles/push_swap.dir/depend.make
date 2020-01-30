@@ -37,11 +37,11 @@ CMakeFiles/push_swap.dir/src/ft_is_array_in_lstd.c.o: ../lib/libft/includes/libf
 CMakeFiles/push_swap.dir/src/ft_is_array_in_lstd.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/push_swap.dir/src/ft_is_array_in_lstd.c.o: ../src/ft_is_array_in_lstd.c
 
-CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.o: ../includes/push_swap.h
-CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.o: ../lib/libft/includes/ft_printf.h
-CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.o: ../lib/libft/includes/libft.h
-CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.o: ../lib/libft/includes/libft_structs.h
-CMakeFiles/push_swap.dir/src/ft_lstd_del_2.c.o: ../src/ft_lstd_del_2.c
+CMakeFiles/push_swap.dir/src/ft_lstd_deep_del.c.o: ../includes/push_swap.h
+CMakeFiles/push_swap.dir/src/ft_lstd_deep_del.c.o: ../lib/libft/includes/ft_printf.h
+CMakeFiles/push_swap.dir/src/ft_lstd_deep_del.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/push_swap.dir/src/ft_lstd_deep_del.c.o: ../lib/libft/includes/libft_structs.h
+CMakeFiles/push_swap.dir/src/ft_lstd_deep_del.c.o: ../src/ft_lstd_deep_del.c
 
 CMakeFiles/push_swap.dir/src/ft_lstd_swap.c.o: ../includes/push_swap.h
 CMakeFiles/push_swap.dir/src/ft_lstd_swap.c.o: ../lib/libft/includes/ft_printf.h
