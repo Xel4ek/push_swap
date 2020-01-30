@@ -17,12 +17,10 @@ int	*ft_lstd_to_array(t_list *list1, t_list *list2, int len1, int len2)
 {
 	int *ptr;
 	int *temp;
-	int i;
 
 	if (!(ptr = (int*)malloc(sizeof(int) * (len1 + len2 + 1))))
 		return (NULL);
 	temp = ptr;
-	i = 0;
 	while (len1)
 	{
 		len1--;

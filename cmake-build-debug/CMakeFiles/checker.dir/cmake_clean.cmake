@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/checker.dir/checker.c.o"
+  "CMakeFiles/checker.dir/src/checker.c.o"
   "CMakeFiles/checker.dir/src/dfs.c.o"
   "CMakeFiles/checker.dir/src/dfs_tool.c.o"
   "CMakeFiles/checker.dir/src/ft_array_to_lstd.c.o"

@@ -4,7 +4,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/alexey/projects/push_swap/push_swap.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/push_swap.c.o"
   "/home/alexey/projects/push_swap/src/dfs.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/dfs.c.o"
   "/home/alexey/projects/push_swap/src/dfs_tool.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/dfs_tool.c.o"
   "/home/alexey/projects/push_swap/src/ft_array_to_lstd.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.o"
@@ -27,6 +26,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/alexey/projects/push_swap/src/ft_sort_tools4.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_sort_tools4.c.o"
   "/home/alexey/projects/push_swap/src/ft_strsplit_to_inttab.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_strsplit_to_inttab.c.o"
   "/home/alexey/projects/push_swap/src/is_sorted.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/is_sorted.c.o"
+  "/home/alexey/projects/push_swap/src/push_swap.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/push_swap.c.o"
   "/home/alexey/projects/push_swap/src/read.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/read.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

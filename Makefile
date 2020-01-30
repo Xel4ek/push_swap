@@ -10,12 +10,37 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME = push_swap
-CC =  gcc
-CFLAGS = #-Wall -Wextra -Werror
+NAME1 = checker
+NAME2 = push_swap
 
-SRC = ft_lstprint.c read.c\
-		../main.c
+CC =  gcc
+CFLAGS = -Wall -Wextra -Werror
+
+SRC = 	dfs.c \
+		dfs_tool.c \
+		ft_array_to_lstd.c \
+		ft_checker_tools.c \
+		ft_is_array_in_lstd.c \
+		ft_lstd_deep_del.c \
+		ft_lstd_swap.c \
+		ft_lstd_to_array.c \
+		ft_lstprint.c \
+		ft_operation2.c \
+		ft_operation.c \
+		ft_output.c \
+		ft_ps_new_content.c \
+		ft_queue_sort.c \
+		ft_quick_sort.c \
+		ft_sort_ratio.c \
+		ft_sort_tools2.c \
+		ft_sort_tools3.c \
+		ft_sort_tools4.c \
+		ft_sort_tools.c \
+		ft_strsplit_to_inttab.c \
+		is_sorted.c \
+		read.c \
+		checker.c \
+		push_swap.c
 
 SRCDIR = src
 OBJDIR = obj
@@ -25,11 +50,11 @@ LIB = libft.a
 OBJ =$(addprefix $(OBJDIR)/, $(SRC:.c=.o))
 
 HEADERS = -Ilib/libft/includes -Iincludes
-HEADER = includes/push_swap.h
+#HEADER = includes/push_swap.h
 
 .PHONY: all clean fclean re help
 
-all: $(NAME)
+all: $(NAME1) $(NAME2)
 
 help:
 	@echo "Usage :"
@@ -43,14 +68,18 @@ clean:
 	@make clean -C $(LIBDIR)
 
 fclean: clean
-	rm -f $(NAME)
+	rm -f $(NAME1)
+	rm -f $(NAME2)
 	@make fclean -C $(LIBDIR)
 
 re: fclean all
 
-$(NAME): $(OBJDIR) $(OBJ) $(HEADER) $(LIBDIR)/$(LIB)
-	$(CC) $(OBJ) -L$(LIBDIR) -lft $(HEADERS) -o $(NAME)
+$(NAME1): $(OBJDIR) $(OBJ) $(HEADER) $(LIBDIR)/$(LIB) $(SRCDIR)/checker.c
+	$(CC) $($(OBJ) - obj/checker.o) -L$(LIBDIR) -lft $(HEADERS) -o $(NAME1)
 
+
+$(NAME2): $(OBJDIR) $(OBJ) $(HEADER) $(LIBDIR)/$(LIB) $(SRCDIR)/push_swap.c
+	$(CC) $($(OBJ) - obj/push_swap.o) -L$(LIBDIR) -lft $(HEADERS) -o $(NAME2)
 
 $(LIBDIR)/$(LIB):
 	make -C $(LIBDIR)

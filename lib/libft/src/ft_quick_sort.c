@@ -12,11 +12,6 @@
 
 #include "libft.h"
 
-static int	ft_less(const int *a, const int *b)
-{
-	return (*a - *b);
-}
-
 static void	ft_quick_sort_healper(int **pivot_left,
 							int **pivot_right, int pivot)
 {

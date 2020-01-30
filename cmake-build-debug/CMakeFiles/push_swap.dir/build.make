@@ -356,18 +356,18 @@ CMakeFiles/push_swap.dir/src/dfs_tool.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/src/dfs_tool.c.s"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap/src/dfs_tool.c -o CMakeFiles/push_swap.dir/src/dfs_tool.c.s
 
-CMakeFiles/push_swap.dir/push_swap.c.o: CMakeFiles/push_swap.dir/flags.make
-CMakeFiles/push_swap.dir/push_swap.c.o: ../push_swap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/push_swap.dir/push_swap.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/push_swap.c.o   -c /home/alexey/projects/push_swap/push_swap.c
+CMakeFiles/push_swap.dir/src/push_swap.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/src/push_swap.c.o: ../src/push_swap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/push_swap.dir/src/push_swap.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/src/push_swap.c.o   -c /home/alexey/projects/push_swap/src/push_swap.c
 
-CMakeFiles/push_swap.dir/push_swap.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/push_swap.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/push_swap/push_swap.c > CMakeFiles/push_swap.dir/push_swap.c.i
+CMakeFiles/push_swap.dir/src/push_swap.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/src/push_swap.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/push_swap/src/push_swap.c > CMakeFiles/push_swap.dir/src/push_swap.c.i
 
-CMakeFiles/push_swap.dir/push_swap.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/push_swap.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap/push_swap.c -o CMakeFiles/push_swap.dir/push_swap.c.s
+CMakeFiles/push_swap.dir/src/push_swap.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/src/push_swap.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap/src/push_swap.c -o CMakeFiles/push_swap.dir/src/push_swap.c.s
 
 # Object files for target push_swap
 push_swap_OBJECTS = \
@@ -394,7 +394,7 @@ push_swap_OBJECTS = \
 "CMakeFiles/push_swap.dir/src/ft_sort_tools4.c.o" \
 "CMakeFiles/push_swap.dir/src/ft_output.c.o" \
 "CMakeFiles/push_swap.dir/src/dfs_tool.c.o" \
-"CMakeFiles/push_swap.dir/push_swap.c.o"
+"CMakeFiles/push_swap.dir/src/push_swap.c.o"
 
 # External object files for target push_swap
 push_swap_EXTERNAL_OBJECTS =
@@ -422,7 +422,7 @@ push_swap: CMakeFiles/push_swap.dir/src/ft_sort_tools3.c.o
 push_swap: CMakeFiles/push_swap.dir/src/ft_sort_tools4.c.o
 push_swap: CMakeFiles/push_swap.dir/src/ft_output.c.o
 push_swap: CMakeFiles/push_swap.dir/src/dfs_tool.c.o
-push_swap: CMakeFiles/push_swap.dir/push_swap.c.o
+push_swap: CMakeFiles/push_swap.dir/src/push_swap.c.o
 push_swap: CMakeFiles/push_swap.dir/build.make
 push_swap: lib/libft/liblibft.a
 push_swap: CMakeFiles/push_swap.dir/link.txt

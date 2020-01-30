@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/alexey/projects/push_swap/checker.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/checker.c.o"
+  "/home/alexey/projects/push_swap/src/checker.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/checker.c.o"
   "/home/alexey/projects/push_swap/src/dfs.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/dfs.c.o"
   "/home/alexey/projects/push_swap/src/dfs_tool.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/dfs_tool.c.o"
   "/home/alexey/projects/push_swap/src/ft_array_to_lstd.c" "/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir/src/ft_array_to_lstd.c.o"

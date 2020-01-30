@@ -21,8 +21,6 @@ lib/libft/CMakeFiles/libft.dir/src/ft_hash.c.o: ../lib/libft/includes/libft.h
 lib/libft/CMakeFiles/libft.dir/src/ft_hash.c.o: ../lib/libft/includes/libft_structs.h
 lib/libft/CMakeFiles/libft.dir/src/ft_hash.c.o: ../lib/libft/src/ft_hash.c
 
-lib/libft/CMakeFiles/libft.dir/src/ft_hash_del.c.o: ../includes/push_swap.h
-lib/libft/CMakeFiles/libft.dir/src/ft_hash_del.c.o: ../lib/libft/includes/ft_printf.h
 lib/libft/CMakeFiles/libft.dir/src/ft_hash_del.c.o: ../lib/libft/includes/libft.h
 lib/libft/CMakeFiles/libft.dir/src/ft_hash_del.c.o: ../lib/libft/includes/libft_structs.h
 lib/libft/CMakeFiles/libft.dir/src/ft_hash_del.c.o: ../lib/libft/src/ft_hash_del.c

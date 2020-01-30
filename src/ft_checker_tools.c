@@ -99,7 +99,7 @@ int	ft_get_data(t_list **list, int argc, char **argv)
 	ft_memdel((void**)&str);
 	if (option)
 	{
-		ft_printf("\033cInput\n");
+		ft_printf("\033cInput:\n");
 		ft_lstditer_two(*list, NULL, &ft_lstprint3);
 	}
 	return (option);

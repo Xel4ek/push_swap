@@ -76,7 +76,7 @@ int		ft_is_number(char *string)
 
 int		ft_is_option(char *string)
 {
-	if (*(string++) == '-' && !*(string + 1))
+	if (*(string++) == '-' && *string && !*(string + 1))
 	{
 		if (*string == 'v' || *string == 'V')
 			return (*string);

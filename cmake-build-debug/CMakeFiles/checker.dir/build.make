@@ -356,18 +356,18 @@ CMakeFiles/checker.dir/src/dfs_tool.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/checker.dir/src/dfs_tool.c.s"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap/src/dfs_tool.c -o CMakeFiles/checker.dir/src/dfs_tool.c.s
 
-CMakeFiles/checker.dir/checker.c.o: CMakeFiles/checker.dir/flags.make
-CMakeFiles/checker.dir/checker.c.o: ../checker.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/checker.dir/checker.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/checker.dir/checker.c.o   -c /home/alexey/projects/push_swap/checker.c
+CMakeFiles/checker.dir/src/checker.c.o: CMakeFiles/checker.dir/flags.make
+CMakeFiles/checker.dir/src/checker.c.o: ../src/checker.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/checker.dir/src/checker.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/checker.dir/src/checker.c.o   -c /home/alexey/projects/push_swap/src/checker.c
 
-CMakeFiles/checker.dir/checker.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/checker.dir/checker.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/push_swap/checker.c > CMakeFiles/checker.dir/checker.c.i
+CMakeFiles/checker.dir/src/checker.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/checker.dir/src/checker.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/push_swap/src/checker.c > CMakeFiles/checker.dir/src/checker.c.i
 
-CMakeFiles/checker.dir/checker.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/checker.dir/checker.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap/checker.c -o CMakeFiles/checker.dir/checker.c.s
+CMakeFiles/checker.dir/src/checker.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/checker.dir/src/checker.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/push_swap/src/checker.c -o CMakeFiles/checker.dir/src/checker.c.s
 
 # Object files for target checker
 checker_OBJECTS = \
@@ -394,7 +394,7 @@ checker_OBJECTS = \
 "CMakeFiles/checker.dir/src/ft_sort_tools4.c.o" \
 "CMakeFiles/checker.dir/src/ft_output.c.o" \
 "CMakeFiles/checker.dir/src/dfs_tool.c.o" \
-"CMakeFiles/checker.dir/checker.c.o"
+"CMakeFiles/checker.dir/src/checker.c.o"
 
 # External object files for target checker
 checker_EXTERNAL_OBJECTS =
@@ -422,7 +422,7 @@ checker: CMakeFiles/checker.dir/src/ft_sort_tools3.c.o
 checker: CMakeFiles/checker.dir/src/ft_sort_tools4.c.o
 checker: CMakeFiles/checker.dir/src/ft_output.c.o
 checker: CMakeFiles/checker.dir/src/dfs_tool.c.o
-checker: CMakeFiles/checker.dir/checker.c.o
+checker: CMakeFiles/checker.dir/src/checker.c.o
 checker: CMakeFiles/checker.dir/build.make
 checker: lib/libft/liblibft.a
 checker: CMakeFiles/checker.dir/link.txt

@@ -24,11 +24,9 @@ set(SRC
 
 include_directories(lib/libft/includes)
 include_directories(includes)
-add_executable(hash ${SRC} hash.c)
-add_executable(push_swap ${SRC} push_swap.c)
-add_executable(checker ${SRC} checker.c )
+add_executable(push_swap ${SRC} src/push_swap.c)
+add_executable(checker ${SRC} src/checker.c)
 
 add_subdirectory(lib/libft)
 target_link_libraries(push_swap libft)
 target_link_libraries(checker libft)
-target_link_libraries(hash libft)

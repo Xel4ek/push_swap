@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/push_swap.dir/push_swap.c.o"
   "CMakeFiles/push_swap.dir/src/dfs.c.o"
   "CMakeFiles/push_swap.dir/src/dfs_tool.c.o"
   "CMakeFiles/push_swap.dir/src/ft_array_to_lstd.c.o"
@@ -22,6 +21,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/push_swap.dir/src/ft_sort_tools4.c.o"
   "CMakeFiles/push_swap.dir/src/ft_strsplit_to_inttab.c.o"
   "CMakeFiles/push_swap.dir/src/is_sorted.c.o"
+  "CMakeFiles/push_swap.dir/src/push_swap.c.o"
   "CMakeFiles/push_swap.dir/src/read.c.o"
   "push_swap"
   "push_swap.pdb"

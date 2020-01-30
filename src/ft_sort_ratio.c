@@ -23,7 +23,7 @@ int	ft_sort_ratio(const int *tab, size_t size)
 	res = 0;
 	k = 0;
 	i = -1;
-	while (tab[++i] != -1 && i < (size - 1))
+	while (tab[++i] != -1 && i < (int)(size - 1))
 		if (tab[i] % 2 == 1)
 		{
 			if (pivot > tab[i])
@@ -33,7 +33,7 @@ int	ft_sort_ratio(const int *tab, size_t size)
 		}
 		else
 			res += ft_abs(++k + pivot - tab[i]);
-	while (i++ < (size - 2))
+	while (i++ < (int)(size - 2))
 		if (tab[i] > tab[i + 1])
 			res++;
 		else

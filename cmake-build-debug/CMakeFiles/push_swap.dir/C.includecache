@@ -42,7 +42,17 @@ libft_structs.h
 string.h
 -
 
-/home/alexey/projects/push_swap/src/ft_sort_tools4.c
+/home/alexey/projects/push_swap/src/ft_lstd_to_array.c
+push_swap.h
+/home/alexey/projects/push_swap/src/push_swap.h
+stdlib.h
+-
+
+/home/alexey/projects/push_swap/src/ft_sort_ratio.c
+push_swap.h
+/home/alexey/projects/push_swap/src/push_swap.h
+
+/home/alexey/projects/push_swap/src/push_swap.c
 push_swap.h
 /home/alexey/projects/push_swap/src/push_swap.h
 

@@ -27,6 +27,52 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="push_swap">
+				<Option output="/home/alexey/projects/push_swap/cmake-build-debug/push_swap" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alexey/projects/push_swap/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/alexey/projects/push_swap/lib/libft/includes"/>
+					<Add directory="/home/alexey/projects/push_swap/includes"/>
+					<Add directory="/home/alexey/projects/push_swap/lib/libft"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 push_swap"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="push_swap/fast">
+				<Option output="/home/alexey/projects/push_swap/cmake-build-debug/push_swap" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alexey/projects/push_swap/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/alexey/projects/push_swap/lib/libft/includes"/>
+					<Add directory="/home/alexey/projects/push_swap/includes"/>
+					<Add directory="/home/alexey/projects/push_swap/lib/libft"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 push_swap/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="/home/alexey/projects/push_swap/cmake-build-debug"/>
 				<Option type="4"/>
@@ -83,98 +129,6 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="hash">
-				<Option output="/home/alexey/projects/push_swap/cmake-build-debug/hash" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/alexey/projects/push_swap/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/alexey/projects/push_swap/lib/libft/includes"/>
-					<Add directory="/home/alexey/projects/push_swap/includes"/>
-					<Add directory="/home/alexey/projects/push_swap/lib/libft"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 hash"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="hash/fast">
-				<Option output="/home/alexey/projects/push_swap/cmake-build-debug/hash" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/alexey/projects/push_swap/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/alexey/projects/push_swap/lib/libft/includes"/>
-					<Add directory="/home/alexey/projects/push_swap/includes"/>
-					<Add directory="/home/alexey/projects/push_swap/lib/libft"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 hash/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="push_swap">
-				<Option output="/home/alexey/projects/push_swap/cmake-build-debug/push_swap" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/alexey/projects/push_swap/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/alexey/projects/push_swap/lib/libft/includes"/>
-					<Add directory="/home/alexey/projects/push_swap/includes"/>
-					<Add directory="/home/alexey/projects/push_swap/lib/libft"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 push_swap"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="push_swap/fast">
-				<Option output="/home/alexey/projects/push_swap/cmake-build-debug/push_swap" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/alexey/projects/push_swap/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/alexey/projects/push_swap/lib/libft/includes"/>
-					<Add directory="/home/alexey/projects/push_swap/includes"/>
-					<Add directory="/home/alexey/projects/push_swap/lib/libft"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 push_swap/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="libft">
 				<Option output="/home/alexey/projects/push_swap/cmake-build-debug/lib/libft/liblibft.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/alexey/projects/push_swap/cmake-build-debug/lib/libft"/>
@@ -222,12 +176,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/alexey/projects/push_swap/checker.c">
-			<Option target="checker"/>
-		</Unit>
-		<Unit filename="/home/alexey/projects/push_swap/hash.c">
-			<Option target="hash"/>
-		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/lib/libft/includes/ft_printf.h">
 			<Option target="libft"/>
 		</Unit>
@@ -516,123 +464,103 @@
 		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/get_next_line.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/home/alexey/projects/push_swap/push_swap.c">
-			<Option target="push_swap"/>
+		<Unit filename="/home/alexey/projects/push_swap/src/checker.c">
+			<Option target="checker"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/src/dfs.c">
-			<Option target="checker"/>
-			<Option target="hash"/>
 			<Option target="push_swap"/>
+			<Option target="checker"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/src/dfs_tool.c">
-			<Option target="checker"/>
-			<Option target="hash"/>
 			<Option target="push_swap"/>
+			<Option target="checker"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/src/ft_array_to_lstd.c">
-			<Option target="checker"/>
-			<Option target="hash"/>
 			<Option target="push_swap"/>
+			<Option target="checker"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/src/ft_checker_tools.c">
-			<Option target="checker"/>
-			<Option target="hash"/>
 			<Option target="push_swap"/>
+			<Option target="checker"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/src/ft_is_array_in_lstd.c">
-			<Option target="checker"/>
-			<Option target="hash"/>
 			<Option target="push_swap"/>
+			<Option target="checker"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/src/ft_lstd_deep_del.c">
-			<Option target="checker"/>
-			<Option target="hash"/>
 			<Option target="push_swap"/>
+			<Option target="checker"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/src/ft_lstd_swap.c">
-			<Option target="checker"/>
-			<Option target="hash"/>
 			<Option target="push_swap"/>
+			<Option target="checker"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/src/ft_lstd_to_array.c">
-			<Option target="checker"/>
-			<Option target="hash"/>
 			<Option target="push_swap"/>
+			<Option target="checker"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/src/ft_lstprint.c">
-			<Option target="checker"/>
-			<Option target="hash"/>
 			<Option target="push_swap"/>
+			<Option target="checker"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/src/ft_operation.c">
-			<Option target="checker"/>
-			<Option target="hash"/>
 			<Option target="push_swap"/>
+			<Option target="checker"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/src/ft_operation2.c">
-			<Option target="checker"/>
-			<Option target="hash"/>
 			<Option target="push_swap"/>
+			<Option target="checker"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/src/ft_output.c">
-			<Option target="checker"/>
-			<Option target="hash"/>
 			<Option target="push_swap"/>
+			<Option target="checker"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/src/ft_ps_new_content.c">
-			<Option target="checker"/>
-			<Option target="hash"/>
 			<Option target="push_swap"/>
+			<Option target="checker"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/src/ft_queue_sort.c">
-			<Option target="checker"/>
-			<Option target="hash"/>
 			<Option target="push_swap"/>
+			<Option target="checker"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/src/ft_quick_sort.c">
-			<Option target="checker"/>
-			<Option target="hash"/>
 			<Option target="push_swap"/>
+			<Option target="checker"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/src/ft_sort_ratio.c">
-			<Option target="checker"/>
-			<Option target="hash"/>
 			<Option target="push_swap"/>
+			<Option target="checker"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/src/ft_sort_tools.c">
-			<Option target="checker"/>
-			<Option target="hash"/>
 			<Option target="push_swap"/>
+			<Option target="checker"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/src/ft_sort_tools2.c">
-			<Option target="checker"/>
-			<Option target="hash"/>
 			<Option target="push_swap"/>
+			<Option target="checker"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/src/ft_sort_tools3.c">
-			<Option target="checker"/>
-			<Option target="hash"/>
 			<Option target="push_swap"/>
+			<Option target="checker"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/src/ft_sort_tools4.c">
-			<Option target="checker"/>
-			<Option target="hash"/>
 			<Option target="push_swap"/>
+			<Option target="checker"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/src/ft_strsplit_to_inttab.c">
-			<Option target="checker"/>
-			<Option target="hash"/>
 			<Option target="push_swap"/>
+			<Option target="checker"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/src/is_sorted.c">
+			<Option target="push_swap"/>
 			<Option target="checker"/>
-			<Option target="hash"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/src/push_swap.c">
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/src/read.c">
-			<Option target="checker"/>
-			<Option target="hash"/>
 			<Option target="push_swap"/>
+			<Option target="checker"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/push_swap/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
