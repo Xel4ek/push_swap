@@ -1,7 +1,9 @@
-/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir
-/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir
-/home/alexey/projects/push_swap/cmake-build-debug/lib/libft/CMakeFiles/rebuild_cache.dir
-/home/alexey/projects/push_swap/cmake-build-debug/lib/libft/CMakeFiles/libft.dir
-/home/alexey/projects/push_swap/cmake-build-debug/lib/libft/CMakeFiles/edit_cache.dir
+/home/xel/projects/push_swap/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/xel/projects/push_swap/cmake-build-debug/CMakeFiles/speedtest_or.dir
+/home/xel/projects/push_swap/cmake-build-debug/CMakeFiles/speedtest.dir
+/home/xel/projects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir
+/home/xel/projects/push_swap/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/xel/projects/push_swap/cmake-build-debug/CMakeFiles/checker.dir
+/home/xel/projects/push_swap/cmake-build-debug/lib/libft/CMakeFiles/rebuild_cache.dir
+/home/xel/projects/push_swap/cmake-build-debug/lib/libft/CMakeFiles/libft.dir
+/home/xel/projects/push_swap/cmake-build-debug/lib/libft/CMakeFiles/edit_cache.dir

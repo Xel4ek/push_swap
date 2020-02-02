@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/100/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /opt/clion-2019.3.3/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/100/bin/cmake/linux/bin/cmake -E remove -f
+RM = /opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alexey/projects/push_swap
+CMAKE_SOURCE_DIR = /home/xel/projects/push_swap
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alexey/projects/push_swap/cmake-build-debug
+CMAKE_BINARY_DIR = /home/xel/projects/push_swap/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/alexey/projects/push_swap/cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/100/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/100/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles /home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xel/projects/push_swap/cmake-build-debug/CMakeFiles /home/xel/projects/push_swap/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexey/projects/push_swap/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xel/projects/push_swap/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -109,6 +109,32 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named speedtest_or
+
+# Build rule for target.
+speedtest_or: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 speedtest_or
+.PHONY : speedtest_or
+
+# fast build rule for target.
+speedtest_or/fast:
+	$(MAKE) -f CMakeFiles/speedtest_or.dir/build.make CMakeFiles/speedtest_or.dir/build
+.PHONY : speedtest_or/fast
+
+#=============================================================================
+# Target rules for targets named speedtest
+
+# Build rule for target.
+speedtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 speedtest
+.PHONY : speedtest
+
+# fast build rule for target.
+speedtest/fast:
+	$(MAKE) -f CMakeFiles/speedtest.dir/build.make CMakeFiles/speedtest.dir/build
+.PHONY : speedtest/fast
 
 #=============================================================================
 # Target rules for targets named push_swap
@@ -148,6 +174,60 @@ libft: cmake_check_build_system
 libft/fast:
 	$(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/build
 .PHONY : libft/fast
+
+spedtest_or.o: spedtest_or.c.o
+
+.PHONY : spedtest_or.o
+
+# target to build an object file
+spedtest_or.c.o:
+	$(MAKE) -f CMakeFiles/speedtest_or.dir/build.make CMakeFiles/speedtest_or.dir/spedtest_or.c.o
+.PHONY : spedtest_or.c.o
+
+spedtest_or.i: spedtest_or.c.i
+
+.PHONY : spedtest_or.i
+
+# target to preprocess a source file
+spedtest_or.c.i:
+	$(MAKE) -f CMakeFiles/speedtest_or.dir/build.make CMakeFiles/speedtest_or.dir/spedtest_or.c.i
+.PHONY : spedtest_or.c.i
+
+spedtest_or.s: spedtest_or.c.s
+
+.PHONY : spedtest_or.s
+
+# target to generate assembly for a file
+spedtest_or.c.s:
+	$(MAKE) -f CMakeFiles/speedtest_or.dir/build.make CMakeFiles/speedtest_or.dir/spedtest_or.c.s
+.PHONY : spedtest_or.c.s
+
+speed_test.o: speed_test.c.o
+
+.PHONY : speed_test.o
+
+# target to build an object file
+speed_test.c.o:
+	$(MAKE) -f CMakeFiles/speedtest.dir/build.make CMakeFiles/speedtest.dir/speed_test.c.o
+.PHONY : speed_test.c.o
+
+speed_test.i: speed_test.c.i
+
+.PHONY : speed_test.i
+
+# target to preprocess a source file
+speed_test.c.i:
+	$(MAKE) -f CMakeFiles/speedtest.dir/build.make CMakeFiles/speedtest.dir/speed_test.c.i
+.PHONY : speed_test.c.i
+
+speed_test.s: speed_test.c.s
+
+.PHONY : speed_test.s
+
+# target to generate assembly for a file
+speed_test.c.s:
+	$(MAKE) -f CMakeFiles/speedtest.dir/build.make CMakeFiles/speedtest.dir/speed_test.c.s
+.PHONY : speed_test.c.s
 
 src/checker.o: src/checker.c.o
 
@@ -900,10 +980,18 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... speedtest_or"
+	@echo "... speedtest"
 	@echo "... push_swap"
 	@echo "... rebuild_cache"
 	@echo "... checker"
 	@echo "... libft"
+	@echo "... spedtest_or.o"
+	@echo "... spedtest_or.i"
+	@echo "... spedtest_or.s"
+	@echo "... speed_test.o"
+	@echo "... speed_test.i"
+	@echo "... speed_test.s"
 	@echo "... src/checker.o"
 	@echo "... src/checker.i"
 	@echo "... src/checker.s"

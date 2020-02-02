@@ -1,0 +1,1 @@
+/usr/bin/cc  -O0 -g   CMakeFiles/speedtest_or.dir/spedtest_or.c.o  -o speedtest_or 

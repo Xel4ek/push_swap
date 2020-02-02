@@ -10,8 +10,8 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME1 = checker
-NAME2 = push_swap
+CHECKER = checker
+PUSH_SWAP = push_swap
 
 CC =  gcc
 CFLAGS = -Wall -Wextra -Werror
@@ -38,9 +38,9 @@ SRC = 	dfs.c \
 		ft_sort_tools.c \
 		ft_strsplit_to_inttab.c \
 		is_sorted.c \
-		read.c \
-		checker.c \
-		push_swap.c
+		read.c
+#		checker.c \
+#		push_swap.c
 
 SRCDIR = src
 OBJDIR = obj
@@ -50,43 +50,48 @@ LIB = libft.a
 OBJ =$(addprefix $(OBJDIR)/, $(SRC:.c=.o))
 
 HEADERS = -Ilib/libft/includes -Iincludes
-#HEADER = includes/push_swap.h
+HEADER = includes/push_swap.h
 
 .PHONY: all clean fclean re help
 
-all: $(NAME1) $(NAME2)
+PROGRAMS = $(PUSH_SWAP) $(CHECKER)
+
+all: $(PROGRAMS)
 
 help:
 	@echo "Usage :"
-	@echo "\tmake //create binary"
+	@echo "\tmake //create push_swap && checker"
+	@echo "\tmake push_swap //create push_swap"
+	@echo "\tmake checker //create checker"
 	@echo "\tmake clean // remove *.o files"
-	@echo "\tmake flean //remove *.o files and binary"
-	@echo "\tmake re // redo binary"
+	@echo "\tmake flean //remove *.o and binary files"
+	@echo "\tmake re // recreate binary files"
 
 clean:
 	rm -rf $(OBJDIR)
 	@make clean -C $(LIBDIR)
 
 fclean: clean
-	rm -f $(NAME1)
-	rm -f $(NAME2)
+	rm -f $(CHECKER)
+	rm -f $(PUSH_SWAP)
 	@make fclean -C $(LIBDIR)
 
 re: fclean all
 
-$(NAME1): $(OBJDIR) $(OBJ) $(HEADER) $(LIBDIR)/$(LIB) $(SRCDIR)/checker.c
-	$(CC) $($(OBJ) - obj/checker.o) -L$(LIBDIR) -lft $(HEADERS) -o $(NAME1)
+$(CHECKER): $(OBJDIR) $(OBJ) $(LIBDIR)/$(LIB) $(OBJDIR)/checker.o
+	$(CC) $(OBJ) $(OBJDIR)/checker.o -L$(LIBDIR) -lft $(HEADERS) -o $(CHECKER)
 
-
-$(NAME2): $(OBJDIR) $(OBJ) $(HEADER) $(LIBDIR)/$(LIB) $(SRCDIR)/push_swap.c
-	$(CC) $($(OBJ) - obj/push_swap.o) -L$(LIBDIR) -lft $(HEADERS) -o $(NAME2)
+$(PUSH_SWAP): $(OBJDIR) $(OBJ) $(HEADER) $(LIBDIR)/$(LIB) $(OBJDIR)/push_swap.o
+	$(CC) $(OBJ) $(OBJDIR)/push_swap.o -L$(LIBDIR) -lft $(HEADERS) -o $(PUSH_SWAP)
 
 $(LIBDIR)/$(LIB):
 	make -C $(LIBDIR)
 	@make clean -C $(LIBDIR)
 
-$(OBJ):$(OBJDIR)/%o:$(SRCDIR)/%c
+$(OBJ): $(OBJDIR)/%o: $(SRCDIR)/%c  $(HEADER)
 	$(CC) $(CFLAGS) $(HEADERS) -o $@ -c $<
+	$(CC) $(CFLAGS) $(HEADERS) -o $(OBJDIR)/checker.o -c $(SRCDIR)/checker.c
+	$(CC) $(CFLAGS) $(HEADERS) -o $(OBJDIR)/push_swap.o -c $(SRCDIR)/push_swap.c
 
 $(OBJDIR):
 	mkdir -p $(OBJDIR)

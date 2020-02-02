@@ -5,8 +5,6 @@ lib/libft/CMakeFiles/libft.dir/src/ft_abs.c.o: ../lib/libft/includes/libft.h
 lib/libft/CMakeFiles/libft.dir/src/ft_abs.c.o: ../lib/libft/includes/libft_structs.h
 lib/libft/CMakeFiles/libft.dir/src/ft_abs.c.o: ../lib/libft/src/ft_abs.c
 
-lib/libft/CMakeFiles/libft.dir/src/ft_atoi.c.o: ../lib/libft/includes/libft.h
-lib/libft/CMakeFiles/libft.dir/src/ft_atoi.c.o: ../lib/libft/includes/libft_structs.h
 lib/libft/CMakeFiles/libft.dir/src/ft_atoi.c.o: ../lib/libft/src/ft_atoi.c
 
 lib/libft/CMakeFiles/libft.dir/src/ft_atoi_base.c.o: ../lib/libft/src/ft_atoi_base.c

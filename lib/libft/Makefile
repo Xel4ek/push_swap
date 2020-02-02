@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft.a
+NAME = libfts.a
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 SRC =	ft_abs.c \
@@ -112,7 +112,7 @@ SRCDIR = src
 OBJDIR = obj
 HEADERS = includes
 OBJ = $(addprefix $(OBJDIR)/,$(SRC:.c=.o))
-HEADER  = libft.h
+HEADER  = libft.h ft_printf.h libft_structs.h
 
 
 .PHONY: all clean fclean re help
@@ -134,7 +134,7 @@ fclean: clean
 
 re: fclean  all
 
-$(OBJ):$(OBJDIR)/%o:$(SRCDIR)/%c
+$(OBJ): $(OBJDIR)/%o: $(SRCDIR)/%c $(addprefix $(HEADERS)/,$(HEADER))
 	$(CC) $(CFLAGS) -I$(HEADERS) -o $@ -c $<
 
 $(OBJDIR):

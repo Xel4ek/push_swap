@@ -1,0 +1,1 @@
+/usr/bin/cc  -O0 -g   CMakeFiles/speedtest.dir/speed_test.c.o  -o speedtest lib/libft/liblibft.a 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/alexey/projects/push_swap/lib/libft
+# Install script for directory: /home/xel/projects/push_swap/lib/libft
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
