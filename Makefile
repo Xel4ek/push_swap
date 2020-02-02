@@ -90,7 +90,11 @@ $(LIBDIR)/$(LIB):
 
 $(OBJ): $(OBJDIR)/%o: $(SRCDIR)/%c  $(HEADER)
 	$(CC) $(CFLAGS) $(HEADERS) -o $@ -c $<
+
+$(OBJDIR)/checker.o: $(SRCDIR)/checker.c $(HEADER)
 	$(CC) $(CFLAGS) $(HEADERS) -o $(OBJDIR)/checker.o -c $(SRCDIR)/checker.c
+
+$(OBJDIR)/push_swap.o: $(SRCDIR)/push_swap.c $(HEADER)
 	$(CC) $(CFLAGS) $(HEADERS) -o $(OBJDIR)/push_swap.o -c $(SRCDIR)/push_swap.c
 
 $(OBJDIR):
